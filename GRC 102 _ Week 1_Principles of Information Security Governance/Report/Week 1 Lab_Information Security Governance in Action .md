@@ -10,9 +10,10 @@
 > **Full Practical Laboratory Report**  
 > **Prepared by:** Olubunmi Adesanmi  
 > **Simulation Role:** Director of Information Security Governance  
-> **Programme:** GRC Engineering  
+> **Course:** GRC102 – Information Security Governance
+> **Module** Module 1 – Principles of Information Security Governance  
 > **Assessment:** GRC102, Week 1 Practical Laboratory  
-> **Classification:** Educational Use
+
 
 ---
 
@@ -20,7 +21,7 @@
 
 - [Executive Summary](#executive-summary)
 - [Project Overview](#project-overview)
-- [Scenario Context](#scenario-context)
+- [Methodology](#methodology)
 - [Strategic Business Drivers](#strategic-business-drivers)
 - [Role and Responsibilities](#role-and-responsibilities)
 - [Project Objectives](#project-objectives)
@@ -80,11 +81,16 @@ The work treats information security as an enterprise risk-management responsibi
 
 ---
 
-## Scenario Context
+## Methodology
+This practical laboratory used a **scenario-based governance assessment methodology** to evaluate the current information security governance environment of GlobalHealth Connect and develop a structured improvement programme.
+
+The methodology combined qualitative governance analysis, quantitative security-metric analysis, responsibility modelling, executive reporting, and maturity assessment. All conclusions were based on the organisational information, stakeholder concerns, security data, and current-state evidence provided in the laboratory brief
+
 
 Organisation: GlobalHealth Connect (GHC)
 Industry: Health Technology
 Business Model: Cloud-based patient-management systems
+
 
 GHC is pursuing rapid growth and innovation. However, two acquisitions introduced inconsistent policies and practices, while a contained data-leakage near-miss highlighted weaknesses in security ownership, escalation, oversight, and decision-making.
 
