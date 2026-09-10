@@ -295,26 +295,8 @@ Comp = Compliance Officer
 HR = Human Resources
 Dev = Development
 
-```text
-Activity                                   Board CEO Gov SSC CTO IT Comp HR Dev
---------------------------------------------------------------------------------
-Approve Information Security Charter         A    R   C   C   I  I   C   I  I
-Approve enterprise security policies         I    A   R   C   C  C   C   C  C
-Review enterprise security risks             I    A   R   C   C  C   C   C  C
-Assign business risk owners                   I    A   R   C   C  C   C   C  C
-Develop risk-treatment plans                  I    I   C   C   A  R   C   C  R
-Accept material residual risk                 I    A   R   C   C  C   C   I  I
-Prepare Board security reporting              I    A   R   C   C  C   C   I  I
-Review material incidents                     I    A   R   C   C  R   C   C  C
-Maintain incident-response capability         I    I   C   C   A  R   C   C  C
-Deliver security-awareness programme          I    I   C   C   I  C   C   A  R
-Conduct third-party security reviews          I    I   C   C   C  R   A   I  C
-Conduct acquisition security assessments      I    A   R   C   C  C   C   C  C
-Maintain security metrics                     I    I   A   C   C  R   C   C  C
-Approve critical policy exceptions            I    A   R   C   C  C   C   I  I
-```
+fig 1 screenshot RACI 
 
-Note: The matrix is a governance design for the educational scenario. Detailed process-level RACIs may be developed for operational implementation.
 
 ### 7.6 GOVERNANCE RATIONALE
 
