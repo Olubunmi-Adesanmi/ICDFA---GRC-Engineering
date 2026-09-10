@@ -10,7 +10,8 @@
 > **Full Practical Laboratory Report**  
 > **Prepared by:** Olubunmi Adesanmi  
 > **Simulation Role:** Director of Information Security Governance  
-> **Programme:** GRC Engineering  
+> **Course:** GRC102 – Information Security Governance                                                                                                        
+> **Module:** Module 1 – Principles of Information Security Governance  
 > **Assessment:** GRC102, Week 1 Practical Laboratory  
 > **Classification:** Educational Use
 
@@ -281,34 +282,19 @@ I = Informed
 Roles:
 Board = Board of Directors
 CEO = Chief Executive Officer
-Gov = Director of Information Security Governance
+Dir. ISG = Director of Information Security Governance
 SSC = Security Steering Committee
 CTO = Chief Technology Officer
 IT = IT Operations
-Comp = Compliance Officer
+Comp = Compliance and Legal Officer
 HR = Human Resources
 Dev = Development
+Fin =Finance
 
 ```text
-Activity                                   Board CEO Gov SSC CTO IT Comp HR Dev
---------------------------------------------------------------------------------
-Approve Information Security Charter         A    R   C   C   I  I   C   I  I
-Approve enterprise security policies         I    A   R   C   C  C   C   C  C
-Review enterprise security risks             I    A   R   C   C  C   C   C  C
-Assign business risk owners                   I    A   R   C   C  C   C   C  C
-Develop risk-treatment plans                  I    I   C   C   A  R   C   C  R
-Accept material residual risk                 I    A   R   C   C  C   C   I  I
-Prepare Board security reporting              I    A   R   C   C  C   C   I  I
-Review material incidents                     I    A   R   C   C  R   C   C  C
-Maintain incident-response capability         I    I   C   C   A  R   C   C  C
-Deliver security-awareness programme          I    I   C   C   I  C   C   A  R
-Conduct third-party security reviews          I    I   C   C   C  R   A   I  C
-Conduct acquisition security assessments      I    A   R   C   C  C   C   C  C
-Maintain security metrics                     I    I   A   C   C  R   C   C  C
-Approve critical policy exceptions            I    A   R   C   C  C   C   I  I
-```
+Insert fig 1: HERE FROM excel worksheet (SCREENSHOT)
 
-Note: The matrix is a governance design for the educational scenario. Detailed process-level RACIs may be developed for operational implementation.
+
 
 ### 7.6 GOVERNANCE RATIONALE
 
@@ -318,7 +304,9 @@ It deliberately avoids making the governance function responsible for every cont
 
 “Governance defines direction, oversight, and accountability; operational functions implement and maintain controls.”
 
-The Security Steering Committee creates a formal mechanism for decisions that cross functional boundaries. The RACI reduces ambiguity by identifying one accountable role for important governance outcomes.
+The Security Steering Committee creates a formal mechanism for decisions that cross functional boundaries. The RACI reduces ambiguity by identifying one accountable role for important governance outcomes.The proposed structure:
+
+Ensures transparency with clear reporting lines to CEO and Board. It also aligns with business goals and improves risk management through structured reviews and proactive oversight.
 
 ---
 
