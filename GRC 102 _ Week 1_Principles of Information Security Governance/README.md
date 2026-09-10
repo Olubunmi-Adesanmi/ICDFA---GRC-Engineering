@@ -117,7 +117,7 @@ My responsibilities included:
   
 ---
 
-## ✅ Project Objectives
+## ✅ Lab Objectives
 
 The laboratory assessed my ability to:
 
@@ -560,7 +560,7 @@ This practical laboratory strengthened my understanding that Governance, Risk, a
 
 ---
 
-## Project Status
+## Lab Status
 
 **✅ Completed**  
 **Course:** GRC102, Information Security Governance  
