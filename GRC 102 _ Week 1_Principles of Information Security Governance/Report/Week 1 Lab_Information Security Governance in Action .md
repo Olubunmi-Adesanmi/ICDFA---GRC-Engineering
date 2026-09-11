@@ -486,8 +486,7 @@ Immediate management priorities should include threat-exposure reduction, risk-b
 | **Security Training Completion** | 45% | 70% | **+25 percentage points** |
 | **High-Risk Incidents** | 2 | 7 | **+250%** |
 
-<img width="1324" height="398" alt="Evidence 3b" src="https://github.com/user-attachments/assets/d6263095-1345-4fe5-8599-0c5fe4db09cd" />
-<img width="1313" height="506" alt="Evidendence 3 " src="https://github.com/user-attachments/assets/8890a581-dd23-4c70-ba95-45185029ec4a" />
+<img width="1233" height="266" alt="Six month evidence" src="https://github.com/user-attachments/assets/0caf3a58-d5ec-47ad-b039-f655f1ff93ed" />
 
 
 #### Phishing Events
