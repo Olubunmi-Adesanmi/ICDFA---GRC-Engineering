@@ -554,9 +554,6 @@ Establish vulnerability-remediation service-level agreements prioritised accordi
 
 #### Risk 3: Governance Accountability Gap
 
-<img width="1128" height="423" alt="Evidence 5" src="https://github.com/user-attachments/assets/d7e0fc1e-9686-4950-ae2a-1007aef5fe51" />
-<img width="1090" height="390" alt="Evidence 5b" src="https://github.com/user-attachments/assets/9994853f-9770-46b5-8950-6e1a550027f4" />
-
 Security ownership was unclear, reporting was limited, and risk management was reactive.
 
 Potential Impact:
@@ -1085,5 +1082,5 @@ No real patient information, credentials, confidential organisational informatio
 This report represents an educational governance simulation. The recommendations and governance artefacts were developed for the GRC102 practical laboratory and should not be interpreted as professional legal, regulatory, or security advice for an actual healthcare organisation.
 
 ## AI Usage Declaration
-ChatGPT (OpenAI) and Copilot was used during the brainstorming stage to generate ideas and help with correcting  grammatical errors of this assignment. I independently reviewed, verified, edited and developed the content before submission and remain responsible for the final work and its accuracy.
+ChatGPT (OpenAI) and Copilot was used during the brainstorming stage to generate ideas, and help with Writing part of and correcting  grammatical errors of the report. I independently reviewed, verified, edited and developed the content before submission and remain responsible for the final work and its accuracy.
 
