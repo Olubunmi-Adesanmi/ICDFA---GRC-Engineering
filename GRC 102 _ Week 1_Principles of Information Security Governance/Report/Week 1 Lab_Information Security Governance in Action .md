@@ -267,13 +267,13 @@ I = Informed
 Roles:
 Board = Board of Directors
 CEO = Chief Executive Officer
-Gov = Director of Information Security Governance
+Dir ISG  = Director of Information Security Governance
 SSC = Security Steering Committee
 CTO = Chief Technology Officer
 IT = IT Operations
 Comp = Compliance Officer
 HR = Human Resources
-Dev = Development
+Dev  = Development
 
 fig 1: RACI Matrix
 <img width="988" height="416" alt="Evidence 1b" src="https://github.com/user-attachments/assets/c1377a46-6ee7-4219-9ae9-0b8c17aeb2e9" />
@@ -1082,5 +1082,5 @@ No real patient information, credentials, confidential organisational informatio
 This report represents an educational governance simulation. The recommendations and governance artefacts were developed for the GRC102 practical laboratory and should not be interpreted as professional legal, regulatory, or security advice for an actual healthcare organisation.
 
 ## AI Usage Declaration
-ChatGPT (OpenAI) and Copilot was used during the brainstorming stage to generate ideas, and help with Writing part of and correcting  grammatical errors of the report. I independently reviewed, verified, edited and developed the content before submission and remain responsible for the final work and its accuracy.
+ChatGPT (OpenAI) and Copilot was used during the brainstorming stage to generate ideas, and help with Writing part of and correcting  grammatical errors of the report. I independently reviewed, edited and developed the content before submission and remain responsible for the final work and its accuracy.
 
