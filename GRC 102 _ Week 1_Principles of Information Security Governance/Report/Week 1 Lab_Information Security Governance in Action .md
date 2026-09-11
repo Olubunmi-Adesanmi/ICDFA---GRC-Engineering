@@ -1082,5 +1082,6 @@ No real patient information, credentials, confidential organisational informatio
 This report represents an educational governance simulation. The recommendations and governance artefacts were developed for the GRC102 practical laboratory and should not be interpreted as professional legal, regulatory, or security advice for an actual healthcare organisation.
 
 ## AI Usage Declaration
-ChatGPT (OpenAI) and Copilot was used during the brainstorming stage to generate ideas, and help with Writing part of and correcting  grammatical errors of the report. I independently reviewed, edited and developed the content before submission and remain responsible for the final work and its accuracy.
+
+ChatGPT (OpenAI) and Microsoft Copilot were used during the brainstorming stage to generate ideas, and identify and correct grammatical errors. I independently reviewed, edited, verified, and developed the content before submission. I remain responsible for the final work, including its accuracy, analysis, and conclusions.
 
