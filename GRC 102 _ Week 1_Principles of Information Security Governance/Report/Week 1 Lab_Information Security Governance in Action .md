@@ -295,8 +295,8 @@ Comp = Compliance Officer
 HR = Human Resources
 Dev = Development
 
-fig 1 screenshot RACI 
-
+fig 1: RACI Matrix
+<img width="988" height="416" alt="Evidence 1b" src="https://github.com/user-attachments/assets/c1377a46-6ee7-4219-9ae9-0b8c17aeb2e9" />
 
 ### 7.6 GOVERNANCE RATIONALE
 
@@ -460,7 +460,9 @@ Recommendation: Support approval of the Information Security Charter and the pha
 
 ### 9.1 BOARD EXECUTIVE SUMMARY
 
-> 🔴 **Overall Security Posture: RED – Immediate Management Attention Required**
+> 🔴 **Overall Security Posture: RED – Immediate Management Attention Required
+<img width="1296" height="363" alt="Security Dashboard Evidence" src="https://github.com/user-attachments/assets/09e0cc56-1651-4114-a486-2ca9c50308c9" />
+<img width="1311" height="355" alt="SECURITY DASHBOARD 1" src="https://github.com/user-attachments/assets/995d8aa7-f393-43a5-b948-eeaa9d0b6790" />
 
 GHC's six-month security indicators show a deterioration in threat exposure and incident risk. Phishing increased by 113%, malware events doubled, high-risk incidents increased by 250%, and critical vulnerability patching coverage declined by 12 percentage points.
 
@@ -483,6 +485,10 @@ Immediate management priorities should include threat-exposure reduction, risk-b
 | **Critical Vulnerability Patching** | 67% | 55% | **-12 percentage points** |
 | **Security Training Completion** | 45% | 70% | **+25 percentage points** |
 | **High-Risk Incidents** | 2 | 7 | **+250%** |
+
+<img width="1324" height="398" alt="Evidence 3b" src="https://github.com/user-attachments/assets/d6263095-1345-4fe5-8599-0c5fe4db09cd" />
+<img width="1313" height="506" alt="Evidendence 3 " src="https://github.com/user-attachments/assets/8890a581-dd23-4c70-ba95-45185029ec4a" />
+
 
 #### Phishing Events
 
@@ -526,7 +532,10 @@ The RED rating does not mean that every security activity failed. It means that 
 
 #### Risk 1: Increasing Security Incident Exposure
 
-Evidence:
+<img width="1313" height="506" alt="Evidendence 3 " src="https://github.com/user-attachments/assets/ef3787fb-cbac-40c1-b3b8-bf5b39a044fd" />
+
+<img width="1324" height="398" alt="Evidence 3b" src="https://github.com/user-attachments/assets/1487f08b-dc36-426f-8b19-acbd49d3e4d3" />
+
 
 - Phishing increased by 113%.
 - Malware increased by 100%.
@@ -565,7 +574,8 @@ Establish vulnerability-remediation service-level agreements prioritised accordi
 
 #### Risk 3: Governance Accountability Gap
 
-Evidence:
+<img width="1128" height="423" alt="Evidence 5" src="https://github.com/user-attachments/assets/d7e0fc1e-9686-4950-ae2a-1007aef5fe51" />
+<img width="1090" height="390" alt="Evidence 5b" src="https://github.com/user-attachments/assets/9994853f-9770-46b5-8950-6e1a550027f4" />
 
 Security ownership was unclear, reporting was limited, and risk management was reactive.
 
@@ -971,6 +981,9 @@ GHC currently operates between Level 1 and Level 2. The organisation has some se
 #### Target State
 
 The proposed roadmap will move all six governance domains to Level 3 – Defined within 12–18 months.
+<img width="1090" height="390" alt="Evidence 5b" src="https://github.com/user-attachments/assets/5ae23c9a-2e25-4659-9ed2-7ac4a8463f97" />
+<img width="1128" height="423" alt="Evidence 5" src="https://github.com/user-attachments/assets/925d10f5-349c-4ab3-bca9-49c1117af0e9" />
+
 
 #### Priority Board Actions
 
