@@ -122,27 +122,7 @@ GHC aims to meet applicable healthcare and data-protection obligations proactive
 
 ---
 
-## Role and Responsibilities
-
-For this simulation, I assumed the role of Director of Information Security Governance.
-
-My responsibilities included:
-
-- Designing the information security governance framework.
-- Establishing accountability and reporting relationships.
-- Developing governance artefacts and decision structures.
-- Creating a RACI responsibility model.
-- Drafting an Information Security Charter.
-- Interpreting security metrics for executive audiences.
-- Supporting Board and executive decision-making.
-- Establishing a Security Steering Committee.
-- Evaluating a cross-functional password policy dispute.
-- Assessing governance maturity.
-- Developing a measurable 12–18 month improvement roadmap.
-
----
-
-## Project Objectives
+## Lab Objectives
 
 The laboratory focused on the ability to:
 
@@ -462,6 +442,7 @@ Recommendation: Support approval of the Information Security Charter and the pha
 
 > 🔴 **Overall Security Posture: RED – Immediate Management Attention Required
 <img width="1296" height="363" alt="Security Dashboard Evidence" src="https://github.com/user-attachments/assets/09e0cc56-1651-4114-a486-2ca9c50308c9" />
+
 <img width="1311" height="355" alt="SECURITY DASHBOARD 1" src="https://github.com/user-attachments/assets/995d8aa7-f393-43a5-b948-eeaa9d0b6790" />
 
 GHC's six-month security indicators show a deterioration in threat exposure and incident risk. Phishing increased by 113%, malware events doubled, high-risk incidents increased by 250%, and critical vulnerability patching coverage declined by 12 percentage points.
@@ -529,12 +510,12 @@ The RED rating does not mean that every security activity failed. It means that 
 
 ### 9.4 PRIORITY SECURITY RISKS
 
+<img width="1249" height="400" alt="Evidence 4" src="https://github.com/user-attachments/assets/9220f5c8-3cf2-4d7f-86ae-e6e3f95ca90f" />
+
+<img width="1247" height="508" alt="Evidence 4b" src="https://github.com/user-attachments/assets/77b061e3-c9d0-4ac4-94e1-188d27c27a5d" />
+
+
 #### Risk 1: Increasing Security Incident Exposure
-
-<img width="1313" height="506" alt="Evidendence 3 " src="https://github.com/user-attachments/assets/ef3787fb-cbac-40c1-b3b8-bf5b39a044fd" />
-
-<img width="1324" height="398" alt="Evidence 3b" src="https://github.com/user-attachments/assets/1487f08b-dc36-426f-8b19-acbd49d3e4d3" />
-
 
 - Phishing increased by 113%.
 - Malware increased by 100%.
@@ -980,8 +961,10 @@ GHC currently operates between Level 1 and Level 2. The organisation has some se
 #### Target State
 
 The proposed roadmap will move all six governance domains to Level 3 – Defined within 12–18 months.
-<img width="1090" height="390" alt="Evidence 5b" src="https://github.com/user-attachments/assets/5ae23c9a-2e25-4659-9ed2-7ac4a8463f97" />
+
 <img width="1128" height="423" alt="Evidence 5" src="https://github.com/user-attachments/assets/925d10f5-349c-4ab3-bca9-49c1117af0e9" />
+
+<img width="1090" height="390" alt="Evidence 5b" src="https://github.com/user-attachments/assets/c03b2cbb-d3ff-47c4-91e8-4b34064bad6e" />
 
 
 #### Priority Board Actions
@@ -1048,25 +1031,6 @@ Each metric should have a defined owner, data source, calculation method, report
 
 This practical laboratory strengthened my understanding of how Governance, Risk, and Compliance functions operate beyond documentation and compliance checklists.
 
-The project demonstrated the following competencies:
-
-- Information security governance.
-- Governance gap assessment.
-- Enterprise risk management.
-- Security accountability and decision rights.
-- RACI modelling.
-- Policy governance.
-- Executive and Board-level reporting.
-- Security metrics and trend analysis.
-- Risk-based decision-making.
-- Security Steering Committee design.
-- Cross-functional conflict resolution.
-- Incident-response governance.
-- Governance maturity assessment.
-- Strategic security planning.
-- Continuous improvement.
-- Business and security alignment.
-
 A central learning point was that technical activity must not be confused with risk reduction. For example, GHC patched more critical vulnerabilities in February than in September, but remediation coverage still declined because the total number of critical vulnerabilities grew faster.
 
 A second learning point was that governance must clarify who is accountable without transferring every operational responsibility to the governance function.
@@ -1120,13 +1084,6 @@ No real patient information, credentials, confidential organisational informatio
 
 This report represents an educational governance simulation. The recommendations and governance artefacts were developed for the GRC102 practical laboratory and should not be interpreted as professional legal, regulatory, or security advice for an actual healthcare organisation.
 
----
+## AI Usage Declaration
+ChatGPT (OpenAI) and Copilot was used during the brainstorming stage to generate ideas and help with correcting  grammatical errors of this assignment. I independently reviewed, verified, edited and developed the content before submission and remain responsible for the final work and its accuracy.
 
-## Project Status
-
-**✅ Completed**  
-**Course:** GRC102, Information Security Governance  
-**Assessment:** Week 1 Practical Laboratory  
-**Author:** Olubunmi Adesanmi
-
-> **Key takeaway:** Effective information security governance is not about making security the responsibility of one department. It is about ensuring that security risks are understood, owned, communicated, and managed at the right level of the organisation.
