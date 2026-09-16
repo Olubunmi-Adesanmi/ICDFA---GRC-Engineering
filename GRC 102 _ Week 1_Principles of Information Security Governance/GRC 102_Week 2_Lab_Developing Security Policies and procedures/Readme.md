@@ -1,4 +1,4 @@
-
+ 
 # NexusTech Solutions Security Policy Framework
 
 [![Course](https://img.shields.io/badge/Course-GRC102-17365D)](#project-overview)
@@ -169,4 +169,4 @@ GRC Engineering (CGRCE)
 
 ## License and Use
 
-This repository is intended for academic and professional portfolio presentation. Reuse should respect ICDFA academic-integrity requirements and applicable rights in referenced standards and course materials.
+This report is intended for academic and professional portfolio presentation.
