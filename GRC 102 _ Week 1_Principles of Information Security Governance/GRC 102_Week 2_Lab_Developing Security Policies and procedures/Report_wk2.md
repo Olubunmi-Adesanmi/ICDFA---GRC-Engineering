@@ -251,7 +251,7 @@ Approved by: Marcus Vance, CEO \| Signature: \_\_\_\_\_\_\_\_\_\_Marcus\_\_\_\_\
 | **Title** | User Access Request Procedure |
 |----|----|
 | **Procedure ID** | NTS-SEC-PRO-001 |
-| **Version** | 1.0 |
+| **Version** | 2.0 |
 | **Owner** | IT Service Manager |
 | **Control Owner** | Information Security Manager |
 | **Effective Date** | 19 September 2026 |
@@ -377,7 +377,7 @@ Users who miss the initial deadline receive an automated reminder and are copied
 | **To** | Information Security Steering Committee |
 |----|----|
 | **From** | Olubunmi Adesanmi, Information Security Manager |
-| **Date** | 19 September 2027 |
+| **Date** | 17 September 2027 |
 | **Subject** | Review of Acceptable Use Policy Following AWS Migration and Personal-Cloud Sharing Incident |
 
 The migration of NexusTech’s primary database to AWS is a material technology and service-delivery change that alters how identities, administrative privileges, data locations, logging and approved cloud services are governed. The incident involving a sensitive document shared through a personal cloud-storage account is also an early-review trigger because it demonstrates that existing acceptable-use expectations may be insufficiently explicit, insufficiently understood or inadequately reinforced. I therefore recommend an immediate, out-of-cycle review of AUP version 1.0 rather than waiting for the routine annual review.
