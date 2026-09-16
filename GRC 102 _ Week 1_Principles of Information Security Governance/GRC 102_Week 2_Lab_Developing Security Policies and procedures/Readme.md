@@ -1,14 +1,25 @@
- 
-# NexusTech Solutions Security Policy Framework
+
+# 🛡️ GRC102: Information Security Governance
+
+## NexusTech Solutions — Policy Overhaul Simulation
+
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#project-status)
+[![Course](https://img.shields.io/badge/Course-GRC102-blue?style=for-the-badge)](#project-overview)
+[![Discipline](https://img.shields.io/badge/Discipline-GRC-purple?style=for-the-badge)](#key-learning-outcomes)
+[![Focus](https://img.shields.io/badge/Focus-Security%20Governance-orange?style=for-the-badge)](#task-1-governance-blueprint)
+
+> **Full Practical Laboratory Report**  
+> **Prepared by:** Olubunmi Adesanmi  
+> **Simulation Role:** Information Security Manager  
+> **Course:** GRC102 – Information Security Governance
+> **Module** Module 2 – Developing Security Policies and Procedures 
+> **Assessment:** GRC102, Week 2 Practical Laboratory
 
 [![Course](https://img.shields.io/badge/Course-GRC102-17365D)](#project-overview)
 [![Module](https://img.shields.io/badge/Module-Developing%20Security%20Policies-1F4E78)](#project-overview)
 [![Status](https://img.shields.io/badge/Status-Completed-0F6B78)](#submission-status)
 
 
-> **Week 2 Practical Laboratory:** Developing Security Policies and Procedures  
-> **Scenario:** NexusTech Solutions Policy Overhaul Simulation  
-> **Author:** Olubunmi Adesanmi
 
 
 
