@@ -1,6 +1,6 @@
 # 🛡️ GRC102: Information Security Governance in Action
 
-## GlobalHealth Connect Executive Governance Simulation
+## NexusTech Solutions — Policy Overhaul Simulation
 
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#project-status)
 [![Course](https://img.shields.io/badge/Course-GRC102-blue?style=for-the-badge)](#project-overview)
