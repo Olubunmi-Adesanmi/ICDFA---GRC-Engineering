@@ -242,7 +242,7 @@ Users must report suspected violations, accidental disclosures, lost devices and
 
 This policy becomes effective upon approval by Marcus Vance, CEO. The Information Security Manager will review it at least annually and earlier following a material security incident, significant technology or cloud change, legal or contractual change, audit finding, sustained non-compliance or a material change in organisational risk. Revised versions must follow stakeholder consultation, risk review, formal approval, controlled publication, communication and acknowledgement.
 
-Approved by: Marcus Vance, CEO \| Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \| Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Approved by: Marcus Vance, CEO \| Signature: \_\_\_\_\_\_\_\_\_\_Marcus\_\_\_\_\vance_\_\_\_\_\_ \| Date: \_\_\_\_\_\_Sept 17 2026\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 # 3. Evidence Bundle 3: User Access Request Procedure
 
