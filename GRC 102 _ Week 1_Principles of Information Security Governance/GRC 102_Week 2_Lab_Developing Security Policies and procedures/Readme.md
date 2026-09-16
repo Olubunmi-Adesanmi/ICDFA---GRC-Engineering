@@ -136,20 +136,10 @@ The project is conceptually informed by:
 
 This academic simulation does not claim certification or reproduce proprietary standards text.
 
-## Submission Status
-
-- [x] Evidence Bundle 1 completed
-- [x] Evidence Bundle 2 completed
-- [x] Evidence Bundle 3 completed
-- [x] Evidence Bundle 4 completed
-- [x] Evidence Bundle 5 completed
-- [x] References included
-- [x] AI assistance declaration included
-- [x] Real credentials and production evidence excluded
 
 ## Academic Integrity and Responsible AI
 
-AI assistance supported structure, drafting and language refinement. The student remains responsible for validating the governance decisions, understanding every artefact, checking source claims and making any disclosure required by the E-Campus. NexusTech Solutions and the operational details in this repository are part of a fictional academic scenario.
+Microsoft Copilot and CHATGPT(Open aI) was used for brainstorming to support structuring, drafting and language refinement. I remains responsible for validating the governance decisions, understanding every artefact, checking source claims and making any disclosure required. NexusTech Solutions and the operational details in this report are part of a fictional academic scenario.
 
 ## Author
 
