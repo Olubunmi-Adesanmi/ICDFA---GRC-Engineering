@@ -128,7 +128,7 @@ Recommended practices that support informed judgement</strong></td>
 | **Title** | Acceptable Use Policy |
 |----|----|
 | **Policy ID** | NTS-SEC-POL-001 |
-| **Version** | 1.0 |
+| **Version** | 2.0 |
 | **Policy Owner** | Information Security Manager |
 | **Approval Authority** | Marcus Vance, CEO |
 | **Effective Date** | 17 September 2026 |
