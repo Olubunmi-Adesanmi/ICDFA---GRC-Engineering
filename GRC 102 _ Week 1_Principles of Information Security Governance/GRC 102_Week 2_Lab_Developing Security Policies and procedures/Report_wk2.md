@@ -7,12 +7,18 @@
 [![Discipline](https://img.shields.io/badge/Discipline-GRC-purple?style=for-the-badge)](#key-learning-outcomes)
 [![Focus](https://img.shields.io/badge/Focus-Security%20Governance-orange?style=for-the-badge)](#task-1-governance-blueprint)
 
-> **Full Practical Laboratory Report**  
-> **Prepared by:** Olubunmi Adesanmi  
-> **Simulation Role:** Information Security Manager 
+> **Full Practical Laboratory Report**
+ 
+> **Prepared by:** Olubunmi Adesanmi
+ 
+> **Simulation Role:** Information Security Manager
+
 > **Course:** GRC102 – Information Security Governance
-> **Module**  Module 2 – Developing Security Policies and Procedures  
+
+> **Module**  Module 2 – Developing Security Policies and Procedures
+  
 > **Assessment:** GRC102, Week 2 Practical Laboratory
+
 > **Scenario role:**  Information Security Manager
 
 
