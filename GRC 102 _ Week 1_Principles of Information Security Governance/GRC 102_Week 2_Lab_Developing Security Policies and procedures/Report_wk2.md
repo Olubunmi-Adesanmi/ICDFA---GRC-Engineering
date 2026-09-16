@@ -26,33 +26,20 @@
 - [Executive Summary](#executive-summary)
 - [Project Overview](#project-overview)
 - [Methodology](#methodology)
-- [Strategic Business Drivers](#strategic-business-drivers)
-- [Role and Responsibilities](#role-and-responsibilities)
 - [Project Objectives](#project-objectives)
-- [Governance Performance Measures](#governance-performance-measures)
+- [Evidence Bundle 1: Security Policy Hierarchy](#evidence-bundle-1-security-policy-hierarchy)
+- [Evidence Bundle 2: Acceptable Use Policy](#evidence-bundle-2-acceptable-use-policy)
+- [Evidence Bundle 3: User Access Request Procedure](#evidence-bundle-3-user-access-request-procedure)
+- [Evidence Bundle 4: Communication and Training Plan](#evidence-bundle-4-communication-and-training-plan)
+- [Evidence Bundle 5: Policy Review and Maintenance Memo](#evidence-bundle-5-policy-review-and-maintenance-memo)
 - [Key Learning Outcomes](#key-learning-outcomes)
 - [Conclusion](#conclusion)
 - [Frameworks and References](#frameworks-and-references)
 - [Security and Privacy Notice](#security-and-privacy-notice)
 - [Disclaimer](#disclaimer)
 - [Project Status](#project-status)
-
-- 1\. Evidence Bundle 1: Security Policy Hierarchy
-
-2\. Evidence Bundle 2: Acceptable Use Policy
-
-3\. Evidence Bundle 3: User Access Request Procedure
-
-4\. Evidence Bundle 4: Communication and Training Plan
-
-5\. Evidence Bundle 5: Policy Review and Maintenance Memo
-
-Conclusion
-
-References
-
-Appendix A: Student Completion Checklist
-
+- [References](#references)
+- [Appendix A: Student Completion Checklist](#appendix-a-student-completion-checklist)
 
 # Executive Summary
 
