@@ -15,13 +15,6 @@
 > **Module** Module 2 – Developing Security Policies and Procedures 
 > **Assessment:** GRC102, Week 2 Practical Laboratory
 
-[![Course](https://img.shields.io/badge/Course-GRC102-17365D)](#project-overview)
-[![Module](https://img.shields.io/badge/Module-Developing%20Security%20Policies-1F4E78)](#project-overview)
-[![Status](https://img.shields.io/badge/Status-Completed-0F6B78)](#submission-status)
-
-
-
-
 
 ## Lab Overview
 
