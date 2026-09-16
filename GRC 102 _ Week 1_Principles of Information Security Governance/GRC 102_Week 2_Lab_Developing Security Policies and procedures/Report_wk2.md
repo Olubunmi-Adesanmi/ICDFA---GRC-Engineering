@@ -131,8 +131,8 @@ Recommended practices that support informed judgement</strong></td>
 | **Version** | 1.0 |
 | **Policy Owner** | Information Security Manager |
 | **Approval Authority** | Marcus Vance, CEO |
-| **Effective Date** | 19 September 2026 |
-| **Review Date** | 19 September 2027 |
+| **Effective Date** | 17 September 2026 |
+| **Review Date** | 17 September 2027 |
 | **Classification** | Internal |
 | **Related Documents** | Information Security Policy; Access Control Standard; Incident Reporting Procedure; User Access Request Procedure |
 
