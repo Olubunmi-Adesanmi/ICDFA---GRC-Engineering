@@ -11,8 +11,6 @@
  
 > **Prepared by:** Olubunmi Adesanmi
  
-> **Simulation Role:** Information Security Manager
-
 > **Course:** GRC102 – Information Security Governance
 
 > **Module**  Module 2 – Developing Security Policies and Procedures
