@@ -13,7 +13,7 @@
 
 ## Lab Overview
 
-This report presents a professional information security governance practical laboratory completed for **GRC102 – Information Security Governance**, Module 2. The scenario places the student in the role of **Information Security Manager** at NexusTech Solutions, a growing software company that requires a formal, structured and maintainable policy framework.
+This stimulation presents a professional information security governance practical laboratory completed for **GRC102 – Information Security Governance**, Module 2. The scenario places me in the role of **Information Security Manager** at NexusTech Solutions, a growing software company that requires a formal, structured and maintainable policy framework.
 
 The project replaces an outdated and poorly structured “IT Rules” document with an integrated set of governance artefacts. The deliverables distinguish high-level policy intent from mandatory standards, operational procedures and recommended guidelines. They also address acceptable use, access provisioning, policy communication, training, exception management, enforcement and lifecycle maintenance.
 
@@ -39,18 +39,8 @@ NexusTech Solutions has grown from 50 to 250 employees and serves clients in fin
 - Establish exception, enforcement, review and maintenance arrangements.
 - Produce management-ready artefacts suitable for a professional GRC portfolio.
 
-## Evidence Bundles
 
-| Bundle | Deliverable | Key Output | Marks |
-|---|---|---|---:|
-| 1 | Security Policy Hierarchy | Definition table, eight-statement classification and hierarchy diagram | 20 |
-| 2 | Acceptable Use Policy | Complete, controlled and enforceable NexusTech AUP | 25 |
-| 3 | User Access Request Procedure | Sequential approval, provisioning, evidence and closure workflow | 20 |
-| 4 | Communication and Training Plan | Audience matrix, rollout schedule, attestation, metrics and escalation | 20 |
-| 5 | Policy Review and Maintenance Memo | AWS and personal-cloud incident review triggers and proposed updates | 15 |
-|  | **Total** | **Five completed evidence bundles** | **100** |
-
-## Repository Contents
+## File Contents
 
 ```text
 .
