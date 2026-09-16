@@ -11,8 +11,9 @@
 > **Prepared by:** Olubunmi Adesanmi  
 > **Simulation Role:** Director of Information Security Governance  
 > **Course:** GRC102 – Information Security Governance
-> **Module** Module 1 – Principles of Information Security Governance  
-> **Assessment:** GRC102, Week 1 Practical Laboratory  
+> **Module**  Module 2 – Developing Security Policies and Procedures  
+> **Assessment:** GRC102, Week 2 Practical Laboratory
+> **Scenario role:**  Information Security Manager
 
 
 ---
@@ -24,36 +25,15 @@
 - [Strategic Business Drivers](#strategic-business-drivers)
 - [Role and Responsibilities](#role-and-responsibilities)
 - [Project Objectives](#project-objectives)
-- [Task 1: Governance Blueprint](#task-1-governance-blueprint)
-- [Task 2: Information Security Charter](#task-2-information-security-charter)
-- [Task 3: Board Reporting and Security Metrics](#task-3-board-reporting-and-security-metrics)
-- [Task 4: Security Steering Committee](#task-4-security-steering-committee)
-- [Task 5: Governance Maturity](#task-5-governance-maturity)
+- [Governance Performance Measures](#governance-performance-measures)
+- [Key Learning Outcomes](#key-learning-outcomes)
+- [Conclusion](#conclusion)
+- [Frameworks and References](#frameworks-and-references)
+- [Security and Privacy Notice](#security-and-privacy-notice)
+- [Disclaimer](#disclaimer)
+- [Project Status](#project-status)
 
-
-> **GRC102 – Information Security Governance**  
-> **Week 2 Practical Laboratory: Developing Security Policies and Procedures**  
-> **Student:** Olubunmi Adesanmi  
-> **Scenario Role:** Information Security Manager  
-
-
----
-
-**GRC102 – Information Security Governance**
-
-**WEEK 2 PRACTICAL LABORATORY**
-
-**Developing Security Policies and Procedures**
-
-
-
-
-
-# Table of Contents
-
-Executive Summary
-
-1\. Evidence Bundle 1: Security Policy Hierarchy
+- 1\. Evidence Bundle 1: Security Policy Hierarchy
 
 2\. Evidence Bundle 2: Acceptable Use Policy
 
