@@ -9,11 +9,11 @@
 > **Week 2 Practical Laboratory:** Developing Security Policies and Procedures  
 > **Scenario:** NexusTech Solutions Policy Overhaul Simulation  
 > **Student:** Olubunmi Adesanmi  
-> **Programme:** ICDFA Cohort 11
+
 
 ## Lab Overview
 
-This report presents a professional information security governance portfolio project completed for **GRC102 – Information Security Governance**, Module 2. The scenario places the student in the role of **Information Security Manager** at NexusTech Solutions, a growing software company that requires a formal, structured and maintainable policy framework.
+This report presents a professional information security governance practical laboratory completed for **GRC102 – Information Security Governance**, Module 2. The scenario places the student in the role of **Information Security Manager** at NexusTech Solutions, a growing software company that requires a formal, structured and maintainable policy framework.
 
 The project replaces an outdated and poorly structured “IT Rules” document with an integrated set of governance artefacts. The deliverables distinguish high-level policy intent from mandatory standards, operational procedures and recommended guidelines. They also address acceptable use, access provisioning, policy communication, training, exception management, enforcement and lifecycle maintenance.
 
