@@ -18,6 +18,17 @@
 ---
 
 ## 📑 Table of Contents
+- [Executive Summary](#executive-summary)
+- [Project Overview](#project-overview)
+- [Methodology](#methodology)
+- [Strategic Business Drivers](#strategic-business-drivers)
+- [Role and Responsibilities](#role-and-responsibilities)
+- [Project Objectives](#project-objectives)
+- [Task 1: Governance Blueprint](#task-1-governance-blueprint)
+- [Task 2: Information Security Charter](#task-2-information-security-charter)
+- [Task 3: Board Reporting and Security Metrics](#task-3-board-reporting-and-security-metrics)
+- [Task 4: Security Steering Committee](#task-4-security-steering-committee)
+- [Task 5: Governance Maturity](#task-5-governance-maturity)
 
 
 > **GRC102 – Information Security Governance**  
