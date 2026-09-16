@@ -8,7 +8,8 @@
 
 > **Week 2 Practical Laboratory:** Developing Security Policies and Procedures  
 > **Scenario:** NexusTech Solutions Policy Overhaul Simulation  
-> **Student:** Olubunmi Adesanmi  
+> **Author:** Olubunmi Adesanmi
+
 
 
 ## Lab Overview
@@ -29,7 +30,7 @@ NexusTech Solutions has grown from 50 to 250 employees and serves clients in fin
 - policy communication and adoption gaps; and
 - readiness challenges for ISO/IEC 27001 and SOC 2.
 
-## Project Objectives
+## Lab Objectives
 
 - Establish a policy hierarchy covering **Policies, Standards, Procedures and Guidelines**.
 - Apply the Security Policy Development Lifecycle to a realistic organisation.
@@ -47,9 +48,6 @@ NexusTech Solutions has grown from 50 to 250 employees and serves clients in fin
 ├── README.md
 └── FINAL_REPORT.md
 ```
-
-- **[README.md](README.md):** Project summary, evidence overview, methodology and portfolio presentation.
-- **[FINAL_REPORT.md](FINAL_REPORT.md):** Complete professional report containing all five evidence bundles.
 
 ## Methodology
 
@@ -141,11 +139,6 @@ This academic simulation does not claim certification or reproduce proprietary s
 
 Microsoft Copilot and CHATGPT(Open aI) was used for brainstorming to support structuring, drafting and language refinement. I remains responsible for validating the governance decisions, understanding every artefact, checking source claims and making any disclosure required. NexusTech Solutions and the operational details in this report are part of a fictional academic scenario.
 
-## Author
-
-**Olubunmi Adesanmi**  
-ICDFA Trainee, Cohort 11  
-GRC Engineering (CGRCE)
 
 ## License and Use
 
