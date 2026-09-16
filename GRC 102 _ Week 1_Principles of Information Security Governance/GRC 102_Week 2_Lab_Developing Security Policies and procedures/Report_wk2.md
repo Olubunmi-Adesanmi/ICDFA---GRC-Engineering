@@ -38,7 +38,6 @@ References
 
 Appendix A: Student Completion Checklist
 
-*Note: Page numbers can be refreshed in Microsoft Word by selecting the table and updating fields.*
 
 # Executive Summary
 
