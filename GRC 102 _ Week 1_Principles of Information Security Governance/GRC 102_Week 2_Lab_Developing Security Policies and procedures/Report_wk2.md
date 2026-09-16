@@ -4,14 +4,9 @@
 > **Week 2 Practical Laboratory: Developing Security Policies and Procedures**  
 > **Student:** Olubunmi Adesanmi  
 > **Scenario Role:** Information Security Manager  
-> **Document Version:** 1.0
 
-[Return to Project README](README.md)
 
 ---
-
-**INTERNATIONAL CYBERSECURITY AND  
-DIGITAL FORENSICS ACADEMY**
 
 **GRC102 – Information Security Governance**
 
@@ -19,37 +14,9 @@ DIGITAL FORENSICS ACADEMY**
 
 **Developing Security Policies and Procedures**
 
-*NexusTech Solutions — Policy Overhaul Simulation*
 
-| **Student** | Olubunmi Adesanmi |
-|----|----|
-| **Role in Scenario** | Information Security Manager |
-| **Cohort** | ICDFA Cohort 11 |
-| **Module** | Module 2 – Developing Security Policies and Procedures |
-| **Lab Period** | 12–18 September 2026 |
-| **Submission Due** | 18 September 2026, 11:59 PM WAT |
-| **Document Version** | 1.0 |
-| **Classification** | Academic Submission / Simulation |
 
-**Submission Package: Written report with five evidence bundles**
 
-*Prepared for management review and realistic organisational use*
-
-# Academic Integrity and Responsible AI Declaration
-
-This report was prepared by Olubunmi Adesanmi for the GRC102 Week 2 Practical Laboratory. AI assistance was used to support structure, drafting and language refinement. The student remains responsible for reviewing the work, validating governance decisions, understanding all recommendations and disclosing assistance in accordance with E-Campus requirements. All organisations, systems, contacts and evidence in this report are fictional and used only for the NexusTech Solutions simulation.
-
-# Document Control
-
-| **Document Title** | NexusTech Solutions Security Policy Framework Report |
-|----|----|
-| **Owner** | Information Security Manager |
-| **Approval Authority** | Marcus Vance, Chief Executive Officer |
-| **Version** | 1.0 |
-| **Status** | Proposed for Management Review |
-| **Effective Date** | 19 September 2026 |
-| **Next Scheduled Review** | 19 September 2027 |
-| **Distribution** | Executive Management, IT/Security, HR, Managers and Employees |
 
 # Table of Contents
 
