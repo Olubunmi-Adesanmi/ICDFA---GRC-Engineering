@@ -1,4 +1,24 @@
-# NexusTech Solutions Security Policy Framework Report
+# 🛡️ GRC102: Information Security Governance in Action
+
+## GlobalHealth Connect Executive Governance Simulation
+
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#project-status)
+[![Course](https://img.shields.io/badge/Course-GRC102-blue?style=for-the-badge)](#project-overview)
+[![Discipline](https://img.shields.io/badge/Discipline-GRC-purple?style=for-the-badge)](#key-learning-outcomes)
+[![Focus](https://img.shields.io/badge/Focus-Security%20Governance-orange?style=for-the-badge)](#task-1-governance-blueprint)
+
+> **Full Practical Laboratory Report**  
+> **Prepared by:** Olubunmi Adesanmi  
+> **Simulation Role:** Director of Information Security Governance  
+> **Course:** GRC102 – Information Security Governance
+> **Module** Module 1 – Principles of Information Security Governance  
+> **Assessment:** GRC102, Week 1 Practical Laboratory  
+
+
+---
+
+## 📑 Table of Contents
+
 
 > **GRC102 – Information Security Governance**  
 > **Week 2 Practical Laboratory: Developing Security Policies and Procedures**  
