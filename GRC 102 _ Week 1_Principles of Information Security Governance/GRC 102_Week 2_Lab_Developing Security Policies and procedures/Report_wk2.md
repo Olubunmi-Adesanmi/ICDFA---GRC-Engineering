@@ -9,7 +9,7 @@
 
 > **Full Practical Laboratory Report**  
 > **Prepared by:** Olubunmi Adesanmi  
-> **Simulation Role:** Director of Information Security Governance  
+> **Simulation Role:** Information Security Manager 
 > **Course:** GRC102 – Information Security Governance
 > **Module**  Module 2 – Developing Security Policies and Procedures  
 > **Assessment:** GRC102, Week 2 Practical Laboratory
