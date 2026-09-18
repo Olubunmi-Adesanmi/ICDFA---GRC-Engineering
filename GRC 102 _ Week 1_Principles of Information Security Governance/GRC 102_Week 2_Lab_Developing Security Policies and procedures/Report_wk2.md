@@ -376,7 +376,7 @@ Users who miss the initial deadline receive an automated reminder and are copied
 
 | **To** | Information Security Steering Committee |
 |----|----|
-| **From** | Olubunmi Adesanmi, Information Security Manager |
+| **From** | Information Security Manager |
 | **Date** | 17 September 2027 |
 | **Subject** | Review of Acceptable Use Policy Following AWS Migration and Personal-Cloud Sharing Incident |
 
