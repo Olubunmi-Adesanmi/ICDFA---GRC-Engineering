@@ -128,11 +128,11 @@ Recommended practices that support informed judgement</strong></td>
 | **Title** | Acceptable Use Policy |
 |----|----|
 | **Policy ID** | NTS-SEC-POL-001 |
-| **Version** | 2.0 |
+| **Version** | 1.0 |
 | **Policy Owner** | Information Security Manager |
 | **Approval Authority** | Marcus Vance, CEO |
-| **Effective Date** | 17 September 2026 |
-| **Review Date** | 17 September 2027 |
+| **Effective Date** | 19 September 2026 |
+| **Review Date** | 19 September 2027 |
 | **Classification** | Internal |
 | **Related Documents** | Information Security Policy; Access Control Standard; Incident Reporting Procedure; User Access Request Procedure |
 
@@ -251,7 +251,7 @@ Approved by: Marcus Vance, CEO \| Signature: \_\_\_\_\_\_\_\_\_\_Marcus\_\_\_\_\
 | **Title** | User Access Request Procedure |
 |----|----|
 | **Procedure ID** | NTS-SEC-PRO-001 |
-| **Version** | 2.0 |
+| **Version** | 1.0 |
 | **Owner** | IT Service Manager |
 | **Control Owner** | Information Security Manager |
 | **Effective Date** | 19 September 2026 |
