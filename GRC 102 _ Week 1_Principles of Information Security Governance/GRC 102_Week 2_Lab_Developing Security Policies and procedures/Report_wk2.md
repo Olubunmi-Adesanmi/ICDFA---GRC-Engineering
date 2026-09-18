@@ -7,7 +7,7 @@
 [![Discipline](https://img.shields.io/badge/Discipline-GRC-purple?style=for-the-badge)](#key-learning-outcomes)
 [![Focus](https://img.shields.io/badge/Focus-Security%20Governance-orange?style=for-the-badge)](#task-1-governance-blueprint)
 
-> **Full Practical Laboratory Report**
+> **Practical Laboratory Report**
  
 > **Prepared by:** Olubunmi Adesanmi
  
@@ -32,7 +32,6 @@
 - [Evidence Bundle 3: User Access Request Procedure](#evidence-bundle-3-user-access-request-procedure)
 - [Evidence Bundle 4: Communication and Training Plan](#evidence-bundle-4-communication-and-training-plan)
 - [Evidence Bundle 5: Policy Review and Maintenance Memo](#evidence-bundle-5-policy-review-and-maintenance-memo)
-- [Key Learning Outcomes](#key-learning-outcomes)
 - [Conclusion](#conclusion)
 - [Frameworks and References](#frameworks-and-references)
 - [Security and Privacy Notice](#security-and-privacy-notice)
@@ -404,5 +403,18 @@ National Institute of Standards and Technology. (2024). The NIST Cybersecurity F
 
 AICPA. Trust Services Criteria for Security, Availability, Processing Integrity, Confidentiality, and Privacy. Referenced conceptually for governance and control readiness.
 
-*Note: Standards are cited at a high level. The report does not reproduce proprietary standards text or claim certification. NexusTech should confirm applicable legal, contractual and regulatory requirements before implementation.*
+# AI Usage Declaration
+ChatGPT (OpenAI) and Microsoft Copilot were used during the brainstorming stage to generate ideas, and identify and correct grammatical errors. I independently reviewed, edited, and developed the report  before submission. I remain responsible for the final work, including its accuracy, analysis, and conclusions
 
+
+# Appendix A: Student Completion Checklist
+☒  Defined Policy, Standard, Guideline and Procedure correctly.
+☒  Classified all eight draft statements with one-sentence justifications.
+☒  Created a clear hierarchy diagram.
+☒  Completed a full Acceptable Use Policy.
+☒  Completed a sequential User Access Request Procedure.
+☒  Completed a Communication and Training Plan.
+☒  Completed a 2–3 paragraph Policy Review Memo.
+☒  Clearly labelled all five evidence bundles.
+☒  Included professional document control, references and an AI declaration.
+☒  Checked the work for internal consistency and fictional-data safety.
