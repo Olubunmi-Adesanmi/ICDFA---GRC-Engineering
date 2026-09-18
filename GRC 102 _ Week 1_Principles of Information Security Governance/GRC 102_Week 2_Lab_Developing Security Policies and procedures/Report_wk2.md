@@ -31,11 +31,8 @@
 - [Evidence Bundle 5: Policy Review and Maintenance Memo](#evidence-bundle-5-policy-review-and-maintenance-memo)
 - [Conclusion](#conclusion)
 - [Frameworks and References](#frameworks-and-references)
-- [Security and Privacy Notice](#security-and-privacy-notice)
-- [Disclaimer](#disclaimer)
-- [Project Status](#project-status)
 - [References](#references)
-- [Appendix A: Student Completion Checklist](#appendix-a-student-completion-checklist)
+  
 
 # Executive Summary
 
