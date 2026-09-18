@@ -408,6 +408,7 @@ ChatGPT (OpenAI) and Microsoft Copilot were used during the brainstorming stage 
 
 
 # Appendix A: Student Completion Checklist
+
 ☒  Defined Policy, Standard, Guideline and Procedure correctly.
 ☒  Classified all eight draft statements with one-sentence justifications.
 ☒  Created a clear hierarchy diagram.
