@@ -24,9 +24,6 @@
 
 ## 📑 Table of Contents
 - [Executive Summary](#executive-summary)
-- [Project Overview](#project-overview)
-- [Methodology](#methodology)
-- [Project Objectives](#project-objectives)
 - [Evidence Bundle 1: Security Policy Hierarchy](#evidence-bundle-1-security-policy-hierarchy)
 - [Evidence Bundle 2: Acceptable Use Policy](#evidence-bundle-2-acceptable-use-policy)
 - [Evidence Bundle 3: User Access Request Procedure](#evidence-bundle-3-user-access-request-procedure)
