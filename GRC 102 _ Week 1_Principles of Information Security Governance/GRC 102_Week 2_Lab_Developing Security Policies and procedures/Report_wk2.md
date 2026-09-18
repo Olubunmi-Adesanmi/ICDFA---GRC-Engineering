@@ -407,15 +407,3 @@ AICPA. Trust Services Criteria for Security, Availability, Processing Integrity,
 ChatGPT (OpenAI) and Microsoft Copilot were used during the brainstorming stage to generate ideas, and identify and correct grammatical errors. I independently reviewed, edited, and developed the report  before submission. I remain responsible for the final work, including its accuracy, analysis, and conclusions
 
 
-# Appendix A: Student Completion Checklist
-
-☒  Defined Policy, Standard, Guideline and Procedure correctly.
-☒  Classified all eight draft statements with one-sentence justifications.
-☒  Created a clear hierarchy diagram.
-☒  Completed a full Acceptable Use Policy.
-☒  Completed a sequential User Access Request Procedure.
-☒  Completed a Communication and Training Plan.
-☒  Completed a 2–3 paragraph Policy Review Memo.
-☒  Clearly labelled all five evidence bundles.
-☒  Included professional document control, references and an AI declaration.
-☒  Checked the work for internal consistency and fictional-data safety.
