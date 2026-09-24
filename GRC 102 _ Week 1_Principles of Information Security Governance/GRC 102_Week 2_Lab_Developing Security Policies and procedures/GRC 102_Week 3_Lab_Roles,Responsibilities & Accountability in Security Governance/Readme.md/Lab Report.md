@@ -336,4 +336,43 @@ R = Responsible
 A = Accountable
 C = Consulted
 I = Informed
-7.2 TechGlobal RACI Matrix
+
+### 7.2 TechGlobal RACI Matrix
+
+| Activity | Board | CEO | CISO | CRO / Risk | Legal | Finance | HR | IT | BU Leader |
+|---|---|---|---|---|---|---|---|---|---|
+| Cybersecurity strategy approval | I | A | R | C | C | C | I | C | C |
+| Security policy approval | I | A | R | C | C | I | C | C | C |
+| Enterprise cyber-risk assessment | I | A | R | R | C | C | I | C | C |
+| Risk acceptance | I | A* | C | R | C | I | I | C | R |
+| Security budget approval | I | A | R | C | I | R | I | C | C |
+| Security architecture approval | I | I | A | C | I | I | I | R | C |
+| Third-party security review | I | I | A | C | C | I | I | R | R |
+| Access governance | I | I | A | C | I | I | I | R | R |
+| Incident response governance | I | A | A* | C | C | I | I | C | R |
+| Material incident escalation | A / I | A | R | C | C | I | I | C | R |
+| Regulatory notification decision | I | A | C | C | R | I | I | C | I |
+| Security awareness programme | I | I | A | C | I | C | R | C | C |
+| Vulnerability remediation oversight | I | I | A | C | I | I | I | R | C |
+| Business continuity / recovery governance | I | A | C | C | C | C | I | R | R |
+| Board cyber-risk reporting | A | R | R | C | C | I | I | C | C |
+
+
+The specific risk or incident threshold determines whether CEO, CISO or another authorised executive is the final accountable authority. The governance framework should document delegated thresholds.
+
+### 7.3 Problematic Assignments and Corrective Actions
+Risk acceptance by IT: separate risk ownership/acceptance from technical implementation.
+Security operations and assurance by the same team: introduce independent assurance or CRO/Risk challenge.
+IT independently approves architecture and implementation: CISO security architecture approval with IT implementation.
+Technical teams determine regulatory notification: Legal/Compliance assessment required.
+
+### 7.4 RACI Implementation Guide
+During planning, identify the activity, Responsible role, Accountable decision-maker, consulted parties and informed stakeholders. During approval, confirm authority, evidence and exceptions. During incidents, activate roles, determine severity, confirm escalation and document decisions.
+
+## 8. Task 5 – Cyber-Risk Escalation and Segregation of Duties
+### 8.1 Cyber-Risk Escalation Model
+Level 1 – Operational: issue remains within approved risk tolerance and is managed by operational teams.
+Level 2 – Executive: significant business, customer, legal, financial, operational or security impact.
+Level 3 – Material/Board: material enterprise risk or issue exceeding executive authority.
+### 8.2 Major Cyber-Risk Escalation Workflow
+Detection / Identification → Initial Validation → Record Issue → Assess Impact and Likelihood → Determine Escalation Level → Level 1 Operational / Level 2 Executive / Level 3 Material-Board → Determine Treatment / Decision → Assign Owner and Due Date → Monitor Remediation → Validate Closure → Record Decision and Lessons Learned
