@@ -265,3 +265,43 @@ Purpose: Coordinate operational incident readiness, response, evidence preservat
 Business Units nominate Security/Risk Representatives to communicate enterprise requirements, identify local risks, track remediation, escalate issues and participate in exercises.
 
 ### 6.6 Terms of Reference
+
+Purpose: Cross-functional governance over cybersecurity risk, policy, controls, compliance and security-related business decisions.
+
+Authority: Review, recommend, challenge and coordinate decisions within delegated authority.
+
+Responsibilities: Monitor risk, review policies, incidents, third parties, architecture and compliance, and prepare executive reports.
+
+Quorum: CISO/delegate, CRO/Risk/delegate, IT representative and one business representative; Legal/Compliance when relevant.
+
+Frequency: Monthly.
+
+Records: Agenda, minutes, decisions, actions, risk extracts and approval evidence.
+
+### 6.7 Sample Committee Agenda
+
+1.Opening and approval of previous minutes
+2.Outstanding actions
+3.Current cyber-risk profile
+4.High and critical vulnerabilities
+5.Security incidents and lessons learned
+6.Third-party security risks
+7.Policy exceptions
+8.Security architecture matters
+9.Compliance and regulatory issues
+10.Security awareness performance
+11.Business continuity and recovery readiness
+12.Decisions required
+13.Escalations
+14.Board reporting items
+15.Any other business
+16.Action confirmation and close
+
+6.8 Sample Decision Log
+
+Date	Decision / Issue	Decision Owner	Decision	Rationale	Actions / Owner	Review Date
+05/10/2026	Critical vulnerability affecting externally exposed service	CISO / IT	Emergency remediation approved	Risk exceeded operational tolerance	IT to remediate and validate	12/10/2026
+05/10/2026	Third-party security exception	BU Leader / CRO	Temporary exception approved with conditions	Business need justified short-term exposure	BU to implement compensating controls	05/11/2026
+05/10/2026	Security awareness gap	HR / CISO	Mandatory targeted training approved	Completion below expected level	HR to implement programme	05/11/2026
+6.9 Twelve-Month Governance Calendar
+
