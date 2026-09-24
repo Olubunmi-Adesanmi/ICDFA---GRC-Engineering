@@ -376,3 +376,82 @@ Level 2 – Executive: significant business, customer, legal, financial, operati
 Level 3 – Material/Board: material enterprise risk or issue exceeding executive authority.
 ### 8.2 Major Cyber-Risk Escalation Workflow
 Detection / Identification → Initial Validation → Record Issue → Assess Impact and Likelihood → Determine Escalation Level → Level 1 Operational / Level 2 Executive / Level 3 Material-Board → Determine Treatment / Decision → Assign Owner and Due Date → Monitor Remediation → Validate Closure → Record Decision and Lessons Learned
+
+### 8.3 Risk Escalation Thresholds
+
+| Level | Example Trigger | Decision Authority | Required Notification | Target Response Time |
+|---|---|---|---|---|
+| Level 1 – Operational | Limited weakness within approved tolerance | Operational Owner / IT / Security | Relevant Manager and CISO Function | Same business day or agreed SLA |
+| Level 2 – Executive | Significant customer, operational, financial, legal, or security impact | Executive Security Council / CEO Delegate | CEO, CISO, CRO / Risk, and Relevant Functions | Immediate / Defined Incident Threshold |
+| Level 3 – Material / Board | Material enterprise risk, major disruption, significant data exposure, major regulatory implications, or risk beyond executive authority | CEO and Board according to Authority Framework | CEO, Board, CISO, CRO / Risk, Legal, and Relevant Executives | Immediate Escalation |
+
+### 8.4 Segregation-of-Duties / Accountability Weakness Register
+
+| ID | Weakness / Conflict | Risk Created | Roles Involved | Recommended Control / Mitigation | Residual Risk / Review |
+|---:|---|---|---|---|---|
+| 1 | IT controls implementation and risk acceptance | Risk may be accepted without independent challenge | IT / CISO / BU Leader | Separate risk ownership and risk acceptance from technical implementation | Quarterly review |
+| 2 | IT owns security operations and assurance | Lack of independent assessment | IT / Security / Risk | Establish independent assurance or CRO / Risk challenge | Annual assurance review |
+| 3 | One IT authority approves architecture and implementation | Security requirements may be bypassed | IT / CISO | Require CISO security architecture approval, with IT responsible for implementation | Review exceptions |
+| 4 | Security team manages incidents and determines final severity without challenge | Potential under-escalation | CISO / IT / CRO | Conduct cross-functional incident severity review | Post-incident review |
+| 5 | Business Unit approves its own security exception without independent review | Local priorities may override enterprise risk | BU / CISO / CRO | Establish a formal exception process with defined approval thresholds | Quarterly exception review |
+| 6 | Technical team determines regulatory notification | Legal obligations may be misunderstood | IT / Legal | Require Legal / Compliance assessment before regulatory notification decisions | Review material incidents |
+| 7 | Security budget prioritised solely by technical teams | Investments may not align with business risk | CISO / Finance / CEO | Use cross-functional security investment prioritisation | Quarterly investment review |
+
+
+### 8.5 Decision Recording and Assurance
+Every material governance decision should contain decision ID, date, issue, risk, affected business area, options considered, recommendation, decision, decision authority, rationale, consulted stakeholders, actions, owner, completion date, review date, supporting evidence and closure status.
+
+Decision lifecycle: Identify → Assess → Recommend → Approve → Record → Implement → Monitor → Review → Close.
+
+## 9. Implementation Roadmap
+Phase 1 – Governance Foundation (Months 1–2)
+1.Appoint CISO governance owner.
+2.Establish Executive Security Council.
+3.Establish Security Governance Steering Committee.
+4.Approve Terms of Reference.
+5.Define risk authority framework.
+6.Define reporting relationships.
+7.Approve RACI.
+
+Phase 2 – Risk and Accountability (Months 3–4)
+1.Establish enterprise cyber-risk register.
+2.Define escalation thresholds.
+3.Implement risk acceptance process.
+4.Establish decision log.
+5.Identify segregation-of-duties conflicts.
+6.Define business-unit security representatives.
+
+Phase 3 – Operational Governance (Months 5–7)
+1.Integrate vulnerability management.
+2.Formalise access governance.
+3.Integrate third-party security reviews.
+4.Improve incident response governance.
+5.Establish business continuity governance.
+6.Begin regular metrics reporting.
+
+Phase 4 – Assurance and Optimisation (Months 8–12)
+1.Perform governance effectiveness assessment.
+2.Conduct incident exercise.
+3.Assess committee effectiveness.
+4.Review RACI.
+5.Assess risk acceptance.
+6.Perform assurance review.
+7.Report outcomes to executive management and Board.
+
+## 10. Expected Governance Outcomes
+Improved accountability
+Better risk visibility
+Stronger Board oversight
+Reduced conflict
+Faster escalation
+Consistent business-unit governance
+Better auditability
+Better alignment between security and business
+
+
+## 11. Conclusion
+TechGlobal’s current security governance model is heavily dependent on informal decision-making and concentrated IT authority. For an organisation of approximately 2,500 employees operating across five offices, this approach creates significant governance challenges because responsibility, accountability, risk ownership and oversight are not sufficiently separated.
+
+The proposed governance model establishes a structured relationship between the Board, CEO, CISO, CRO/Risk, Legal, Finance, HR, IT and Business Unit Leaders. It introduces clear governance reporting lines, an Executive Security Council, a Security Governance Steering Committee, a Cyber Incident and Response Working Group, a formal RACI model, defined risk escalation levels, risk acceptance authority, segregation-of-duties controls, formal decision recording and a twelve-month governance calendar.
+
+The most important change is that cybersecurity is no longer treated as an IT-only responsibility. IT remains responsible for secure technology delivery, while business leaders own their business risks, the CISO leads security governance, CRO/Risk provides enterprise risk challenge, Legal provides regulatory advice, Finance governs financial considerations, HR governs workforce-related security controls, executive management resolves major business decisions and the Board provides oversight of material enterprise risk.
