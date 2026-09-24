@@ -1,7 +1,7 @@
 
 # GRC102 – Information Security Governance
 ## Week 3 Laboratory Report
-### TechGlobal Security Governance Redesign
+### TechGlobal Governance Transformation Simulation
 
 Prepared by: Olubunmi Adesanmi
 
