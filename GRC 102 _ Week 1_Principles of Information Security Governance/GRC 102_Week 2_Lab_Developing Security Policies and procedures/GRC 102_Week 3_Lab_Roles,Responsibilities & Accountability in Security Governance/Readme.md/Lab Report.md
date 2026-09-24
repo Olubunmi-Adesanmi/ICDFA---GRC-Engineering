@@ -189,6 +189,32 @@ The proposed structure is appropriate for a 2,500-employee organisation because 
 | **IT** | Technology delivery | Technical controls, architecture implementation and operations | Technical implementation within approved governance | Executive management / Governance | Patch performance and control implementation |
 | **Business Unit Leaders** | Business ownership | Business risk, local controls and operational continuity | Business decisions within risk appetite | Executive management | Risk remediation and control compliance |
 
+### 5.3 Role Profiles
+Board of Directors: Provides oversight of material cyber risk and challenges management reporting.
+CEO: Provides executive accountability for integrating cybersecurity with business strategy.
+CISO: Leads enterprise security governance, strategy, policy, security risk oversight and reporting.
+CRO/Risk: Ensures cybersecurity risk is integrated into enterprise risk management and provides independent challenge.
+Legal/Compliance: Ensures security decisions consider legal, regulatory and contractual obligations.
+Finance: Ensures security investments and losses are financially governed.
+HR: Manages workforce-related security governance including awareness and joiner/mover/leaver controls.
+IT/Technology: Implements and operates secure technology services.
+
+### 5.4 Authority Boundaries
+
+Enterprise security strategy – CEO / Executive Security Council.
+Security standards – CISO.
+Enterprise risk methodology – CRO/Risk.
+Business risk ownership – Business Unit Leader.
+Material risk acceptance – appropriate executive/Board authority based on threshold.
+Technical implementation – IT.Enterprise security strategy – CEO / Executive Security Council.
+Regulatory interpretation – Legal/Compliance.
+Security budget – CEO/Finance within delegated authority.
+Material incident governance – Executive Security Council / CEO.
+Board cyber-risk oversight – Board.
+
+### 5.5 Conflict Resolution
+Three major conflicts are addressed: CISO vs Business Unit Leader on risk acceptance; CISO vs IT on security requirements versus technical feasibility; and CEO vs Legal on incident communications and regulatory considerations. The solution is documented authority, cross-functional review and formal decision records.
+
 ---
 
 # 6.Task 3 – Security Governance Committee Ecosystem
@@ -213,3 +239,29 @@ flowchart TD
     CIRWG --> BU
     RC --> BU
     TA --> BU
+
+```
+
+### 6.2 Executive Security Council
+Purpose: Provide executive-level strategic oversight and resolve matters exceeding operational authority.
+
+Membership: CEO (Chair), CISO, CRO/Risk, IT, Legal/Compliance, Finance, HR where relevant, and selected Business Unit Leaders.
+
+Responsibilities: Review material cyber risks, significant incidents, strategic priorities, major investments, risk treatment and Board escalation.
+
+Frequency: Monthly, plus emergency meetings for material incidents.
+
+### 6.3 Security Governance Steering Committee
+Purpose: Cross-functional governance over security policies, risk, controls, compliance, architecture and operational priorities.
+
+Membership: CISO (Chair), CRO/Risk, IT, Legal/Compliance, Finance, HR, Business Unit representatives and security specialists.
+
+Frequency: Monthly.
+
+### 6.4 Cyber Incident and Response Working Group
+Purpose: Coordinate operational incident readiness, response, evidence preservation, recovery and lessons learned.
+
+### 6.5 Business Unit Participation
+Business Units nominate Security/Risk Representatives to communicate enterprise requirements, identify local risks, track remediation, escalate issues and participate in exercises.
+
+### 6.6 Terms of Reference
