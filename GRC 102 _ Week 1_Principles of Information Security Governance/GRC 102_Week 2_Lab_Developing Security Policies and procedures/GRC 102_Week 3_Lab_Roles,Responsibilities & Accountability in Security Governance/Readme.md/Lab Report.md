@@ -3,10 +3,11 @@
 ## Week 3 Laboratory Report
 ### TechGlobal Security Governance Redesign
 
-Prepared by: [Student Name]  
+Prepared by: Olubunmi Adesanmi
 Registration Number: [Registration Number]  
 Programme: GRC Engineering  
-Course: GRC102 – Information Security Governance  
+Course: GRC102 – Information Security Governance
+Module - Module 3 – Roles and Responsibilities in Security Governance
 Role: Lead Security Governance Consultant  
 Submission Date: 25 September 2026  
 
@@ -150,3 +151,22 @@ Cyber Incident & Response Working Group
     |
     v
 Business and Technology Owners
+
+
+---
+
+
+### 4.5 Communication and Reporting Paths
+Operational teams → Business/Technology Owners → Security Governance Steering Committee → Executive Security Council → CEO → Board where material.
+
+### 4.6 Consultant Justification
+The proposed structure is appropriate for a 2,500-employee organisation because it creates enterprise consistency while allowing local operational teams to manage day-to-day activities. It separates governance from operational delivery and provides defined channels for risk escalation and Board visibility.
+
+## 5. Task 2 – Governance Responsibility and Authority Matrix
+### 5.1 Responsibility and Authority Model
+R = Responsible: performs or coordinates the work.
+A = Accountable: owns the final outcome.
+C = Consulted: provides specialist advice.
+I = Informed: receives information.
+
+### 5.2 Governance Responsibility Matrix
