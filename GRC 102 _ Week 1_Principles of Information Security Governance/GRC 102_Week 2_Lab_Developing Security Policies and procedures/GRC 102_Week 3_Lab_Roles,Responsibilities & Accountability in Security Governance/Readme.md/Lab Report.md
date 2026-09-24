@@ -4,10 +4,15 @@
 ### TechGlobal Security Governance Redesign
 
 Prepared by: Olubunmi Adesanmi
+
 Programme: GRC Engineering  
+
 Course: GRC102 – Information Security Governance
+
 Module - Module 3 – Roles and Responsibilities in Security Governance
+
 Role: Lead Security Governance Consultant  
+
 Submission Date: 25 September 2026  
 
 ---
@@ -152,17 +157,59 @@ Cyber Incident & Response Working Group
 Business and Technology Owners
 
 
+```
+
 ### 4.5 Communication and Reporting Paths
-Operational teams → Business/Technology Owners → Security Governance Steering Committee → Executive Security Council → CEO → Board where material.
+Operational teams → Business/Technology Owners → Security Governance Steering Committee → Executive Security Council → CEO 
 
 ### 4.6 Consultant Justification
 The proposed structure is appropriate for a 2,500-employee organisation because it creates enterprise consistency while allowing local operational teams to manage day-to-day activities. It separates governance from operational delivery and provides defined channels for risk escalation and Board visibility.
 
 ## 5. Task 2 – Governance Responsibility and Authority Matrix
 ### 5.1 Responsibility and Authority Model
-R = Responsible: performs or coordinates the work.
-A = Accountable: owns the final outcome.
-C = Consulted: provides specialist advice.
-I = Informed: receives information.
+
+| Code | Meaning | Description |
+|---|---|---|
+| **R** | Responsible | Performs or coordinates the work. |
+| **A** | Accountable | Owns the final outcome or decision. |
+| **C** | Consulted | Provides specialist advice or input. |
+| **I** | Informed | Receives information. |
 
 ### 5.2 Governance Responsibility Matrix
+
+| Role | Purpose | Core Responsibilities | Decision Authority | Reports / Escalates To | KPIs / Evidence |
+|---|---|---|---|---|---|
+| **Board** | Enterprise oversight | Cyber-risk oversight, risk appetite, material incidents and assurance | Oversight of material enterprise risk | CEO / Board committees | Board reports, material risk register |
+| **CEO** | Executive accountability | Strategy, business alignment and major risk decisions | Executive decisions and strategic investment | Board | Risk treatment progress, major incident decisions |
+| **CISO** | Security leadership | Security strategy, policy, risk oversight and programme effectiveness | Security governance recommendations and security standards | CEO / Executive Security Council | Control effectiveness, risk remediation, incident metrics |
+| **CRO / Risk** | Enterprise risk integration | Risk methodology, aggregation and risk acceptance framework | Risk methodology and independent challenge | CEO / Board risk oversight | Risk register quality, overdue risks and accepted-risk monitoring |
+| **Legal / Compliance** | Legal and regulatory advice | Regulatory obligations, contracts, privacy and notification | Regulatory interpretation and legal advice | CEO / Relevant Executive | Regulatory assessments and notification decisions |
+| **Finance** | Financial governance | Budget, investment and financial exposure | Budget and financial control decisions within authority | CEO / Board | Budget variance and investment tracking |
+| **HR** | People governance | Awareness, conduct, JML controls and disciplinary processes | People-related governance decisions | CEO | Training completion and JML compliance |
+| **IT** | Technology delivery | Technical controls, architecture implementation and operations | Technical implementation within approved governance | Executive management / Governance | Patch performance and control implementation |
+| **Business Unit Leaders** | Business ownership | Business risk, local controls and operational continuity | Business decisions within risk appetite | Executive management | Risk remediation and control compliance |
+
+---
+
+# 6.Task 3 – Security Governance Committee Ecosystem
+
+## 6.1 Committee Architecture
+
+```mermaid
+flowchart TD
+    B[Board]
+    ESC[Executive Security Council]
+    SGSC[Security Governance Steering Committee]
+    CIRWG[Cyber Incident & Response Working Group]
+    RC[Risk & Compliance Issues]
+    TA[Technology & Architecture Issues]
+    BU[Business Units / Security / IT]
+
+    B --> ESC
+    ESC --> SGSC
+    SGSC --> CIRWG
+    SGSC --> RC
+    SGSC --> TA
+    CIRWG --> BU
+    RC --> BU
+    TA --> BU
