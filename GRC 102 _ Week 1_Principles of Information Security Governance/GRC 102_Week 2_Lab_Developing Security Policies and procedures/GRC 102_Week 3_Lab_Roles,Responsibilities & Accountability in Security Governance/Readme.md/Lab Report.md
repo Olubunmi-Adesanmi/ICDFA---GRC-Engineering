@@ -297,11 +297,43 @@ Records: Agenda, minutes, decisions, actions, risk extracts and approval evidenc
 15.Any other business
 16.Action confirmation and close
 
-6.8 Sample Decision Log
+## 6.8 Sample Decision Log
 
-Date	Decision / Issue	Decision Owner	Decision	Rationale	Actions / Owner	Review Date
-05/10/2026	Critical vulnerability affecting externally exposed service	CISO / IT	Emergency remediation approved	Risk exceeded operational tolerance	IT to remediate and validate	12/10/2026
-05/10/2026	Third-party security exception	BU Leader / CRO	Temporary exception approved with conditions	Business need justified short-term exposure	BU to implement compensating controls	05/11/2026
-05/10/2026	Security awareness gap	HR / CISO	Mandatory targeted training approved	Completion below expected level	HR to implement programme	05/11/2026
-6.9 Twelve-Month Governance Calendar
+| Date | Decision / Issue | Decision Owner | Decision | Rationale | Actions / Owner | Review Date |
+|---|---|---|---|---|---|---|
+| 05/10/2026 | Critical vulnerability affecting externally exposed service | CISO / IT | Emergency remediation approved | Risk exceeded operational tolerance | IT to remediate and validate | 12/10/2026 |
+| 05/10/2026 | Third-party security exception | BU Leader / CRO | Temporary exception approved with conditions | Business need justified short-term exposure | BU to implement compensating controls | 05/11/2026 |
+| 05/10/2026 | Security awareness gap | HR / CISO | Mandatory targeted training approved | Completion below expected level | HR to implement programme | 05/11/2026 |
 
+## 6.9 Twelve-Month Governance Calendar
+
+| Month | Major Governance Activities |
+|---|---|
+| January | Annual cyber-risk assessment and strategy review |
+| February | Security policy review and awareness planning |
+| March | Third-party security review |
+| April | Incident response exercise |
+| May | Access governance review |
+| June | Mid-year cyber-risk review |
+| July | Business continuity and recovery governance review |
+| August | Security architecture and vulnerability review |
+| September | Board cyber-risk reporting deep dive |
+| October | Third-party and supplier risk review |
+| November | Annual incident lessons-learned review |
+| December | Annual governance effectiveness review and next-year planning |
+
+### Recurring Governance Activities
+
+**Monthly:** Security governance committee, risk review, vulnerability review, incident trend review and remediation tracking.
+
+**Quarterly:** Executive Security Council review, Board reporting, security metrics review and risk acceptance review.
+
+**Annual:** Governance effectiveness assessment, strategy review, policy review, enterprise cyber-risk assessment and committee Terms of Reference review.
+
+## 7. Task 4 – RACI Accountability Matrix
+### 7.1 RACI Principles
+R = Responsible
+A = Accountable
+C = Consulted
+I = Informed
+7.2 TechGlobal RACI Matrix
