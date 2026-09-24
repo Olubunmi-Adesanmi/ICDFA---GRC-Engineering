@@ -4,7 +4,6 @@
 ### TechGlobal Security Governance Redesign
 
 Prepared by: Olubunmi Adesanmi
-Registration Number: [Registration Number]  
 Programme: GRC Engineering  
 Course: GRC102 – Information Security Governance
 Module - Module 3 – Roles and Responsibilities in Security Governance
@@ -151,9 +150,6 @@ Cyber Incident & Response Working Group
     |
     v
 Business and Technology Owners
-
-
----
 
 
 ### 4.5 Communication and Reporting Paths
