@@ -5,7 +5,7 @@
 
 Prepared by: Olubunmi Adesanmi
 
-Programme: GRC Engineering  
+Programme: GRC Engineering 
 
 Course: GRC102 – Information Security Governance
 
