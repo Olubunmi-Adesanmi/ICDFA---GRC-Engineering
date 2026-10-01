@@ -1,1 +1,622 @@
 
+# Linux Security Monitoring, Auditing and Continuous Control Assurance
+
+![Course](https://img.shields.io/badge/Course-GRC102-0A66C2)
+![Domain](https://img.shields.io/badge/Domain-Security%20Governance-2E8B57)
+![Platform](https://img.shields.io/badge/Platform-Ubuntu-E95420)
+![Tools](https://img.shields.io/badge/Tools-auditd%20%7C%20journalctl%20%7C%20Lynis-6F42C1)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+##  Report
+
+This repository documents a practical **Linux security monitoring, auditing, and continuous control assurance assessment** completed for **GRC102: Information Security Governance** at the **International Cybersecurity and Digital Forensics Academy (ICDFA)**.
+
+The project demonstrates how host-level technical evidence can be translated into control assessments, risk significance, ownership, remediation, retesting, and governance assurance.
+
+---
+
+## Student and Assessment Information
+
+| Field | Details |
+|---|---|
+| **Student** | Olubunmi Adesanmi |
+| **Course** | GRC102: Information Security Governance |
+| **Laboratory** | Linux Security Monitoring, Auditing and Continuous Control Assurance |
+| **Assessment Type** | Practical Evidence and Governance Assurance Report |
+| **Environment** | ICDFA Ubuntu Practice Hub / Authorised Training Environment |
+| **Assessment Date** | 1 October 2026 |
+
+> **Portfolio note:** The registration-number field was blank in the source report and has therefore not been populated here.
+
+---
+
+## Table of Contents
+
+- [Executive Summary](#executive-summary)
+- [Laboratory Overview](#laboratory-overview)
+- [Objectives](#objectives)
+- [Scope and Authorisation](#scope-and-authorisation)
+- [Environment and Limitations](#environment-and-limitations)
+- [Methodology](#methodology)
+- [Module 1: Linux Auditing with auditd](#module-1-linux-auditing-with-auditd)
+- [Module 2: Log Management and Analysis](#module-2-log-management-and-analysis)
+- [Module 3: Linux Security Assessment with Lynis](#module-3-linux-security-assessment-with-lynis)
+- [Consolidated Findings](#consolidated-findings)
+- [Control Monitoring and Assurance](#control-monitoring-and-assurance)
+- [Governance Escalation](#governance-escalation)
+- [SIEM and Continuous Monitoring](#siem-and-continuous-monitoring)
+- [Continuous Control Monitoring Design](#continuous-control-monitoring-design)
+- [Remediation and Retest Plan](#remediation-and-retest-plan)
+- [Evidence Register](#evidence-register)
+- [Assurance Maturity Model](#assurance-maturity-model)
+- [Conclusion](#conclusion)
+
+---
+
+## Executive Summary
+
+This laboratory assessed three principal technical areas:
+
+1. Linux audit capability using `auditd`.
+2. System and authentication log analysis using `journalctl` and traditional log sources.
+3. Security configuration assessment using Lynis.
+
+The assessment was completed in an authorised ICDFA Ubuntu Practice Hub. The environment was restricted and did not operate as a conventional Ubuntu host using `systemd` as process ID 1. Instead, PID 1 was observed as:
+
+```text
+1  sleep  sleep infinity
+```
+
+This environmental condition materially affected the availability of audit and logging evidence.
+
+### Key Results
+
+| Area | Result | Assurance Status |
+|---|---|---|
+| `auditd` software | Installed | Partially verified |
+| Active `auditd` process | Not identified | Needs Review |
+| Kernel audit subsystem | Access denied or not permitted | Needs Review |
+| `/var/log/auth.log` | Not available | Needs Review |
+| `journalctl` evidence | No usable journal files or entries | Needs Review |
+| Lynis version | 3.0.9 | Verified |
+| Lynis executable | `/usr/sbin/lynis` | Verified |
+| Hardening Index | 62 | Observed assessment indicator |
+| Tests performed | 232 | Verified from scan output |
+| Warnings | 3 | Needs Review |
+| Suggestions | 43 | Improvement opportunities |
+
+The principal governance lesson is that a security control cannot be confidently assessed when sufficient evidence of its operation cannot be obtained. The report therefore distinguishes a **confirmed control failure** from a **control verification limitation**.
+
+---
+
+## Laboratory Overview
+
+The laboratory combined technical investigation with governance analysis. Its assurance cycle was:
+
+```text
+Technical Evidence
+        ↓
+Control Assessment
+        ↓
+Risk Significance
+        ↓
+Ownership
+        ↓
+Remediation
+        ↓
+Retesting
+        ↓
+Governance Assurance
+```
+
+Linux security evidence can be generated through audit frameworks, authentication records, system journals, kernel messages, and security configuration assessment tools. Governance teams depend on this evidence to assess whether controls are properly designed, implemented, operating effectively, monitored, and auditable.
+
+## Objectives
+
+- Understand the purpose and role of `auditd`.
+- Verify audit software, processes, rules, and evidence where permitted.
+- Use `ausearch` and `aureport` conceptually for audit investigation.
+- Use `journalctl`, `grep`, and traditional Linux logs to investigate events.
+- Analyse authentication and privilege-use evidence.
+- Perform a Linux security assessment using Lynis.
+- Interpret warnings, suggestions, and hardening indicators.
+- Translate technical observations into control-assurance findings.
+- Assign ownership and remediation responsibilities.
+- Define monitoring thresholds and retesting requirements.
+- Explain how SIEM and automation support continuous control monitoring.
+
+## Scope and Authorisation
+
+### Scope
+
+The assessment covered:
+
+- Audit software availability and accessibility
+- Authentication logging
+- System journal and logging visibility
+- Lynis security assessment
+- Vulnerability-related findings
+- Kernel logging
+- Security hardening observations
+- Governance and control-assurance implications
+
+### Authorisation
+
+All activity was confined to the authorised ICDFA training environment. No production infrastructure, external systems, or unauthorised devices were targeted. Testing was limited to inspection, audit commands, log review, configuration assessment, and benign monitoring.
+
+---
+
+## Environment and Limitations
+
+The following command was used to identify the init process:
+
+```bash
+ps -p 1 -o pid,comm,args
+```
+
+Observed result:
+
+```text
+1  sleep  sleep infinity
+```
+
+The Practice Hub was therefore treated as a restricted training environment rather than a production-equivalent Ubuntu system.
+
+### Limitations
+
+1. The environment did not operate with `systemd` as PID 1.
+2. The kernel audit subsystem could not be queried successfully.
+3. No active `auditd` process was identified.
+4. `/var/log/auth.log` was unavailable.
+5. Journal files and entries were unavailable.
+6. Live journal monitoring produced no events.
+7. Complete audit and authentication evidence could not be established.
+
+### Assurance Interpretation
+
+The following results do not automatically prove equivalent production controls are ineffective:
+
+- Failure to retrieve journal records
+- Inability to query `auditctl`
+- Absence of `/var/log/auth.log`
+- Individual Lynis findings without validation
+
+For this reason, affected controls are generally classified as **Needs Review**, rather than automatically declared non-compliant.
+
+---
+
+## Methodology
+
+### Stage 1: Technical Verification
+
+```bash
+which auditd
+auditd -v
+dpkg -l | grep auditd
+ps aux | grep '[a]uditd'
+
+lynis --version
+which lynis
+```
+
+### Stage 2: Evidence Collection
+
+Available evidence was assessed using:
+
+```bash
+auditctl
+journalctl
+grep
+ls
+```
+
+### Stage 3: Security Assessment
+
+Lynis was used to identify warnings, suggestions, hardening indicators, vulnerability-related conditions, and logging weaknesses.
+
+### Stage 4: Governance Translation
+
+```text
+Evidence → Control → Status → Risk → Owner → Remediation → Retest
+```
+
+---
+
+# Module 1: Linux Auditing with auditd
+
+## Installation Verification
+
+The following checks established that audit software was installed:
+
+```bash
+which auditd
+auditd -v
+dpkg -l | grep auditd
+```
+
+Installation alone does not prove that auditing is operational.
+
+## Process Verification
+
+```bash
+ps aux | grep '[a]uditd'
+```
+
+No output was returned, so no running `auditd` process was identified in the session.
+
+## Kernel Audit Subsystem Verification
+
+```bash
+sudo auditctl -s
+```
+
+Observed result:
+
+```text
+you must be root to run this program
+```
+
+```bash
+sudo auditctl -l
+```
+
+Observed result:
+
+```text
+Error sending rule data request (Operation not permitted)
+There was an error while processing parameters.
+```
+
+## Audit Rules
+
+The laboratory referenced example rules such as:
+
+```bash
+-w /etc/passwd -p rwxa -k passwd_changes
+-w /etc/shadow -p rwxa -k shadow_changes
+-a always,exit -F arch=b64 -S execve -k program_execution
+-a always,exit -F arch=b32 -S execve -k program_execution
+```
+
+Where `/var/log/auth.log` exists:
+
+```bash
+-w /var/log/auth.log -p wa -k auth_failures
+```
+
+The available evidence did not prove that these rules were loaded successfully. They are therefore not presented as configured controls.
+
+## Module Assessment
+
+| Item | Assessment |
+|---|---|
+| **Control objective** | Record security-relevant activity for accountability, monitoring, investigation, and assurance |
+| **Observed condition** | Software installed; active process not identified; subsystem inaccessible; rules unverified |
+| **Status** | **Needs Review** |
+| **Governance significance** | Insufficient evidence to show that required audit records and rules operate effectively |
+
+### Required Follow-up in a Supported Environment
+
+```bash
+sudo systemctl status auditd
+sudo auditctl -s
+sudo auditctl -l
+sudo ausearch -k passwd_changes
+sudo ausearch -k program_execution
+sudo ausearch -k auth_failures
+sudo aureport
+sudo aureport --failed
+sudo aureport --login
+```
+
+---
+
+# Module 2: Log Management and Analysis
+
+## Journal Review
+
+```bash
+sudo journalctl
+sudo journalctl -u ssh
+sudo journalctl --since "today"
+sudo journalctl -p err
+```
+
+The environment returned no usable journal files or entries. This limited the assessment of recent activity, SSH events, errors, authentication events, services, and live monitoring.
+
+## Authentication Log Review
+
+```bash
+ls -l /var/log/auth.log
+```
+
+Observed result:
+
+```text
+cannot access '/var/log/auth.log': No such file or directory
+```
+
+The correct assurance conclusion is not that authentication logging was definitely disabled. Instead, the expected evidence source was unavailable and an alternative logging mechanism would need to be identified.
+
+## Module Assessment
+
+| Item | Assessment |
+|---|---|
+| **Control objective** | Ensure authentication, system, service, and security events are recorded and reviewable |
+| **Observed condition** | No usable journal entries; traditional authentication log absent |
+| **Status** | **Needs Review** |
+| **Governance significance** | Limited ability to investigate activity, establish timelines, review privilege use, and demonstrate control operation |
+
+---
+
+# Module 3: Linux Security Assessment with Lynis
+
+## Installation Verification
+
+```bash
+lynis --version
+which lynis
+```
+
+Observed results:
+
+```text
+Lynis version 3.0.9
+/usr/sbin/lynis
+```
+
+## Audit Summary
+
+| Assessment Item | Observed Result |
+|---|---:|
+| Lynis version | 3.0.9 |
+| Executable location | `/usr/sbin/lynis` |
+| Hardening Index | 62 |
+| Tests performed | 232 |
+| Plug-ins enabled | 1 |
+| Firewall scan | Enabled |
+| Malware scanner | Not found |
+| Compliance status | Not available |
+| Security audit | Enabled |
+| Vulnerability scan | Enabled |
+| Warnings | 3 |
+| Suggestions | 43 |
+
+> The Hardening Index of **62** is a Lynis assessment indicator. It must not be represented as **62% compliant**. Formal compliance requires assessment against defined policies, standards, regulatory requirements, and documented control criteria.
+
+## Finding 1: Vulnerable Packages
+
+- **Condition:** One or more vulnerable packages were found.
+- **Risk:** Potential exposure to known software vulnerabilities.
+- **Proposed owner:** System Administrator / Vulnerability Management Owner.
+- **Recommended action:** Identify affected packages, determine relevant vulnerabilities, assess exposure, apply approved updates, document exceptions, and rescan.
+- **Status:** **Needs Review**.
+
+## Finding 2: Name Server Configuration
+
+- **Condition:** Two responsive name servers could not be found.
+- **Risk:** Possible impact on resolution, connectivity, updates, monitoring, service availability, and dependencies.
+- **Proposed owner:** System Administrator / Network Administrator.
+- **Recommended action:** Review configured resolvers, connectivity, intended DNS architecture, and redundancy requirements.
+- **Status:** **Needs Review**.
+
+## Finding 3: Kernel Logging
+
+- **Condition:** `klog` was not running, which could lead to missing kernel messages.
+- **Risk:** Missing evidence for incident investigation, troubleshooting, monitoring, forensics, and control testing.
+- **Proposed owner:** System Administrator / Linux Security Administrator.
+- **Recommended action:** Identify the supported logging architecture, configure the appropriate mechanism, verify generation and retention, confirm retrieval, and rescan.
+- **Status:** **Needs Review**.
+
+## Notable Suggestions
+
+1. Review whether an approved newer Lynis release is available.
+2. Determine the runlevel and services enabled at startup.
+3. Assess and harden applicable system services according to least functionality and approved standards.
+
+---
+
+# Consolidated Findings
+
+| ID | Control Area | Observed Condition | Risk | Status |
+|---|---|---|---|---|
+| F-01 | Audit evidence availability | `auditd` installed, but process and rules unverified | Reduced accountability and investigation capability | Needs Review |
+| F-02 | Authentication evidence | `/var/log/auth.log` unavailable | Authentication activity unverified through expected source | Needs Review |
+| F-03 | System journal | No usable journal records | Reduced system and service visibility | Needs Review |
+| F-04 | Vulnerability management | Vulnerable packages reported | Potential exposure to known vulnerabilities | Needs Review |
+| F-05 | Kernel event logging | `klog` not running | Kernel messages may be absent from evidence | Needs Review |
+
+---
+
+# Control Monitoring and Assurance
+
+| Control Area | Evidence | Proposed Owner | Monitoring Expectation | Remediation | Retest |
+|---|---|---|---|---|---|
+| Audit logging | Software installed; process and rules unverified | Linux/System Administrator | Required service and rules active and queryable | Configure in supported environment | Verify service, rules, and test events |
+| Authentication monitoring | Expected log absent | System Administrator / Security Operations | Authentication events captured and reviewable | Identify supported log source | Perform controlled authentication test |
+| System logging | Journal unavailable | System Administrator / Security Operations | Required logs generated, retained, and accessible | Confirm logging architecture | Repeat journal queries |
+| Vulnerability management | Lynis vulnerable-package warning | Vulnerability Management / System Administrator | Remediate according to approved timelines | Identify, assess, and patch packages | Re-run Lynis |
+| Kernel logging | Lynis reported `klog` not running | Linux/System Administrator | Kernel messages operational and retrievable | Configure supported mechanism | Verify logs and re-run Lynis |
+
+---
+
+# Governance Escalation
+
+## Ownership Model
+
+| Control Area | Primary Owner | Supporting Functions |
+|---|---|---|
+| Audit logging | Linux/System Administrator | Security Operations, GRC |
+| Authentication monitoring | System Administrator | Security Operations, IAM |
+| System logging | System Administrator | Security Operations |
+| Vulnerability management | Vulnerability Management / Infrastructure | Security, GRC |
+| Kernel logging | Linux/System Administrator | Security Operations |
+| Governance oversight | Security Governance / GRC | CISO, Risk Management |
+
+Ownership must be aligned with the organisation's actual operating model.
+
+## Escalation Conditions
+
+- Audit logging remains unavailable after remediation.
+- Required audit rules cannot be verified.
+- Security logs cannot be retrieved.
+- Vulnerable packages remain unresolved beyond an approved period.
+- Critical vulnerabilities are identified.
+- Kernel or system logging remains unavailable.
+- Monitoring failures recur.
+- A control cannot produce sufficient assurance evidence.
+- Remediation deadlines are exceeded.
+
+---
+
+# SIEM and Continuous Monitoring
+
+```mermaid
+flowchart TD
+    A[Linux Workload] --> B[Log Collection or Agent]
+    A1[auditd] --> A
+    A2[Authentication Logs] --> A
+    A3[System Logs or Journal] --> A
+    A4[Kernel Events] --> A
+    A5[Lynis Assessment] --> A
+    B --> C[SIEM and Monitoring Layer]
+    C --> D[Security Operations]
+    C --> E[GRC and Risk Assurance]
+    D --> F[Remediation and Governance]
+    E --> F
+    F --> G[Owner Assignment]
+    G --> H[Risk Assessment]
+    H --> I[Corrective Action]
+    I --> J[Retesting]
+    J --> K[Closure]
+```
+
+Operational alerts may include repeated authentication failures, suspicious privileged commands, unusual process execution, system errors, service failures, and abnormal configuration changes.
+
+Governance issues arise when control weaknesses become systemic, such as recurring audit failures, missing required logs, recurring vulnerabilities, unresolved high-risk findings, failed verification, impaired auditability, or repeatedly missed deadlines.
+
+---
+
+# Continuous Control Monitoring Design
+
+```mermaid
+flowchart TD
+    A[Control Requirement] --> B[Automated Check]
+    B --> C[Evidence Collected]
+    C --> D{Expected State?}
+    D -->|Yes| E[Record Pass]
+    D -->|No| F[Alert or Exception]
+    F --> G[Risk Assessment]
+    G --> H[Owner Assigned]
+    H --> I[Remediation]
+    I --> J[Retest]
+    E --> J
+    J --> K[Control Closure]
+```
+
+### Audit Logging Example
+
+- **Expected state:** `auditd` is running and approved rules are active.
+- **Monitoring event:** The service stops or required rules disappear.
+- **Automated response:** Generate an alert.
+- **Governance response:** Create a control exception or security finding.
+- **Remediation:** The System Administrator restores the approved configuration.
+- **Verification:** Security or GRC reviews the evidence.
+- **Closure:** Close only after successful retesting.
+
+---
+
+# Remediation and Retest Plan
+
+| Finding | Remediation | Proposed Owner | Verification Evidence | Retest |
+|---|---|---|---|---|
+| Audit subsystem unavailable | Use supported environment; enable service and approved rules | System Administrator | Service status and rule output | `auditctl`, `ausearch` |
+| Authentication evidence unavailable | Identify supported authentication source | System Administrator / Security Operations | Authentication event record | Controlled authentication test |
+| Journal unavailable | Validate logging configuration and retention | System Administrator | Journal or log records | `journalctl` review |
+| Vulnerable packages | Identify, assess, and patch affected packages | Vulnerability Management / System Administrator | Package and scan evidence | Lynis rescan |
+| Name-server issue | Review DNS and resolver availability | Network/System Administrator | Configuration and resolution tests | Lynis rescan |
+| Kernel logging | Configure supported kernel logging | Linux System Administrator | Kernel log evidence | Lynis rescan |
+| Lynis release age | Review an approved update | Security/System Administrator | Version evidence | Repeat audit |
+| Startup services | Review enabled services and justify need | System Administrator | Service inventory | Configuration review |
+| Service hardening | Assess and harden applicable services | System Administrator | Before-and-after evidence | Lynis rescan |
+
+---
+
+# Evidence Register
+
+| Evidence ID | Command or Check | Observed Result | Assurance Relevance |
+|---|---|---|---|
+| E-01 | `which auditd` | Executable path returned | Confirms installation |
+| E-02 | `auditd -v` | Version information returned | Confirms software availability |
+| E-03 | `dpkg -l \| grep auditd` | Package information returned | Confirms package installation |
+| E-04 | `ps aux \| grep '[a]uditd'` | No output | No active process identified |
+| E-05 | `sudo auditctl -s` | Root-related error | Subsystem not verified |
+| E-06 | `sudo auditctl -l` | Operation not permitted | Rules not queryable |
+| E-07 | `ps -p 1 -o pid,comm,args` | `1 sleep sleep infinity` | Confirms restricted environment |
+| E-08 | `/var/log/auth.log` check | File not found | Authentication source unavailable |
+| E-09 | `sudo journalctl` | No journal files or entries | Journal unavailable |
+| E-10 | `sudo journalctl -u ssh` | No journal files or entries | SSH evidence unavailable |
+| E-11 | `sudo journalctl --since "today"` | No journal files or entries | Current activity unavailable |
+| E-12 | `sudo journalctl -p err` | No journal files or entries | Error evidence unavailable |
+| E-13 | `lynis --version` | Lynis 3.0.9 | Confirms version |
+| E-14 | `which lynis` | `/usr/sbin/lynis` | Confirms executable location |
+| E-15 | Lynis audit | Hardening Index 62 | Security assessment indicator |
+| E-16 | Lynis audit | 232 tests | Assessment scope |
+| E-17 | Lynis audit | 3 warnings | Findings requiring review |
+| E-18 | Lynis audit | 43 suggestions | Improvement opportunities |
+
+## Suggested Screenshot Register
+
+| Screenshot | Evidence to Capture |
+|---:|---|
+| 1 | `which auditd` and version |
+| 2 | `dpkg -l \| grep auditd` |
+| 3 | `ps aux \| grep '[a]uditd'` |
+| 4 | `auditctl` errors |
+| 5 | PID 1 result |
+| 6 | Unavailable `/var/log/auth.log` |
+| 7 | `journalctl` result |
+| 8 | Lynis version |
+| 9 | Lynis audit summary |
+| 10 | Lynis warnings |
+| 11 | Lynis suggestions |
+| 12 | Final control-monitoring table |
+
+---
+
+# Assurance Maturity Model
+
+| Stage | Assurance Question | Laboratory Observation |
+|---|---|---|
+| **1. Control Existence** | Does the tool or control exist? | `auditd` and Lynis were installed |
+| **2. Control Operation** | Is the control operating? | `auditd` operation could not be verified |
+| **3. Evidence Availability** | Can operation be demonstrated? | Several sources were unavailable |
+| **4. Continuous Assurance** | Can the control be monitored continuously? | Requires supported collection and monitoring architecture |
+
+A control is not fully assured merely because supporting software exists. Assurance requires evidence that it is appropriately configured, operating as intended, producing reliable evidence, monitored over time, and subject to remediation and retesting.
+
+---
+
+# Conclusion
+
+The laboratory demonstrated how Linux technical evidence can be translated into governance and control assurance. Lynis was available and produced meaningful assessment results: version 3.0.9, 232 tests, a Hardening Index of 62, three warnings, and 43 suggestions.
+
+The three key Lynis warnings concerned vulnerable packages, insufficient responsive name servers, and unavailable `klog` operation. The audit and logging assessment also found that an active `auditd` process could not be identified, the kernel audit subsystem could not be queried, `/var/log/auth.log` was unavailable, and `journalctl` produced no usable records.
+
+These observations do not automatically prove that equivalent production controls are disabled. They demonstrate that the restricted training environment did not provide sufficient evidence to verify those controls fully. The affected controls should therefore be retested in an authorised, fully supported Ubuntu environment before definitive operational-effectiveness conclusions are made.
+
+## Overall Assurance Conclusion
+
+> The laboratory produced useful security-assessment evidence and identified significant limitations in audit and logging visibility. Further verification in a supported Ubuntu environment is required before definitive conclusions can be reached about the operational effectiveness of the affected production-style controls.
+
+---
+
+## Author
+
+**Olubunmi Adesanmi**  
+ICDFA Trainee, Cohort 11  
+GRC Engineering
+
+## Disclaimer
+
+This project was completed in an authorised training environment for educational and portfolio purposes. The findings relate to the assessed laboratory environment and must not be generalised to production systems without additional evidence and validation.
