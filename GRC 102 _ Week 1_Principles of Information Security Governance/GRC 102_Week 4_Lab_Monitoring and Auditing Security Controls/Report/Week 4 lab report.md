@@ -598,9 +598,8 @@ The three key Lynis warnings concerned vulnerable packages, insufficient respons
 
 These observations do not automatically prove that equivalent production controls are disabled. They demonstrate that the restricted training environment did not provide sufficient evidence to verify those controls fully. The affected controls should therefore be retested in an authorised, fully supported Ubuntu environment before definitive operational-effectiveness conclusions are made.
 
-## Overall Assurance Conclusion
-
-> The laboratory produced useful security-assessment evidence and identified significant limitations in audit and logging visibility. Further verification in a supported Ubuntu environment is required before definitive conclusions can be reached about the operational effectiveness of the affected production-style controls.
+## Academic Integrity, AI Use and Evidence Authenticity
+The commands, screenshots and log evidence submitted must come from your authorised lab work. Do not fabricate command output, security events, Lynis findings or timestamps. External references must be cited where used.
 
 ---
 
