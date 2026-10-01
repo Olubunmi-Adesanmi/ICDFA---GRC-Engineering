@@ -7,7 +7,7 @@
 ![Tools](https://img.shields.io/badge/Tools-auditd%20%7C%20journalctl%20%7C%20Lynis-6F42C1)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## Professional Portfolio Report
+## Linux Security Monitoring and Auditing Report
 
 This repository documents a practical **Linux security monitoring, auditing, and continuous control assurance assessment** completed for **GRC102: Information Security Governance** at the **International Cybersecurity and Digital Forensics Academy (ICDFA)**.
 
@@ -24,9 +24,8 @@ The project demonstrates how host-level technical evidence can be translated int
 | **Laboratory** | Linux Security Monitoring, Auditing and Continuous Control Assurance |
 | **Assessment Type** | Practical Evidence and Governance Assurance Report |
 | **Environment** | ICDFA Ubuntu Practice Hub / Authorised Training Environment |
-| **Assessment Date** | 1 October 2026 |
+| **Submission Date** | 2 October 2026 |
 
-> **Portfolio note:** The registration-number field was blank in the source report and has therefore not been populated here.
 
 ---
 
@@ -54,6 +53,14 @@ The project demonstrates how host-level technical evidence can be translated int
 ---
 
 ## Executive Summary
+
+This report presents the results of a Linux security monitoring and control-assurance assessment conducted on the authorised Ubuntu laboratory environment(Ubuntu Practical Hub) assigned for the GRC102 Week 4 practical laboratory. The assessment demonstrates how technical security evidence can be transformed into governance and assurance information.
+The assessment covered Linux auditing using auditd, system and authentication-log analysis using journalctl and relevant Linux log sources, and security configuration assessment using Lynis. It also considered how host-level security evidence can contribute to enterprise monitoring, Security Information and Event Management (SIEM), Continuous Control Monitoring (CCM), automated alerting and governance reporting.
+The assessment identified 3 significant findings requiring attention. The three principal evidence-based findings were:
+1.Audit logging could not be fully verified because no active auditd process was identified and auditctl access was restricted in the Practice Hub environment.
+2. Lynis identified one or more vulnerable packages requiring vulnerability assessment and remediation.
+3. Lynis reported that klog was not running, which could lead to missing kernel messages in log files.
+Each finding should be linked to the affected control objective, accountable owner, monitoring threshold, risk significance, remediation action and retesting requirement. The assessment demonstrates that technical evidence has greater assurance value when it is translated into a structured control-monitoring and follow-up process.  
 
 This laboratory assessed three principal technical areas:
 
@@ -91,7 +98,10 @@ The principal governance lesson is that a security control cannot be confidently
 
 ## Laboratory Overview
 
-The laboratory combined technical investigation with governance analysis. Its assurance cycle was:
+Linux systems frequently support business-critical applications, infrastructure services and security-sensitive workloads. Effective governance therefore requires organisations to maintain reliable evidence that security controls are operating as intended.
+This practical laboratory examined the relationship between Linux technical evidence and security governance. The assessment focused on audit records, system logs, authentication events and security configuration findings.
+
+The laboratory combined technical investigation with governance analysis. Its overall assurance process was:
 
 ```text
 Technical Evidence
@@ -114,7 +124,7 @@ Linux security evidence can be generated through audit frameworks, authenticatio
 ## Objectives
 
 - Understand the purpose and role of `auditd`.
-- Verify audit software, processes, rules, and evidence where permitted.
+- Configure security-relevant audit rules
 - Use `ausearch` and `aureport` conceptually for audit investigation.
 - Use `journalctl`, `grep`, and traditional Linux logs to investigate events.
 - Analyse authentication and privilege-use evidence.
@@ -564,23 +574,6 @@ flowchart TD
 | E-16 | Lynis audit | 232 tests | Assessment scope |
 | E-17 | Lynis audit | 3 warnings | Findings requiring review |
 | E-18 | Lynis audit | 43 suggestions | Improvement opportunities |
-
-## Suggested Screenshot Register
-
-| Screenshot | Evidence to Capture |
-|---:|---|
-| 1 | `which auditd` and version |
-| 2 | `dpkg -l \| grep auditd` |
-| 3 | `ps aux \| grep '[a]uditd'` |
-| 4 | `auditctl` errors |
-| 5 | PID 1 result |
-| 6 | Unavailable `/var/log/auth.log` |
-| 7 | `journalctl` result |
-| 8 | Lynis version |
-| 9 | Lynis audit summary |
-| 10 | Lynis warnings |
-| 11 | Lynis suggestions |
-| 12 | Final control-monitoring table |
 
 ---
 
