@@ -565,22 +565,6 @@ flowchart TD
 | E-17 | Lynis audit | 3 warnings | Findings requiring review |
 | E-18 | Lynis audit | 43 suggestions | Improvement opportunities |
 
-## Suggested Screenshot Register
-
-| Screenshot | Evidence to Capture |
-|---:|---|
-| 1 | `which auditd` and version |
-| 2 | `dpkg -l \| grep auditd` |
-| 3 | `ps aux \| grep '[a]uditd'` |
-| 4 | `auditctl` errors |
-| 5 | PID 1 result |
-| 6 | Unavailable `/var/log/auth.log` |
-| 7 | `journalctl` result |
-| 8 | Lynis version |
-| 9 | Lynis audit summary |
-| 10 | Lynis warnings |
-| 11 | Lynis suggestions |
-| 12 | Final control-monitoring table |
 
 ---
 
