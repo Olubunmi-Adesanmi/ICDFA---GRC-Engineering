@@ -9,7 +9,7 @@
 
 ##  Report Readme
 
-This repository documents a practical **Linux security monitoring, auditing, and continuous control assurance assessment** completed for **GRC102: Information Security Governance** at the **International Cybersecurity and Digital Forensics Academy (ICDFA)**.
+This report documents a practical **Linux security monitoring, auditing, and continuous control assurance assessment** completed for **GRC102: Information Security Governance** at the **International Cybersecurity and Digital Forensics Academy (ICDFA)**.
 
 The project demonstrates how host-level technical evidence can be translated into control assessments, risk significance, ownership, remediation, retesting, and governance assurance.
 
