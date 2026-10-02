@@ -15,7 +15,7 @@ The project demonstrates how host-level technical evidence can be translated int
 
 ---
 
-
+| Field | Details |
 |---|---|
 | **Student** | Olubunmi Adesanmi |
 | **Course** | GRC102: Information Security Governance |
