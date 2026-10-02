@@ -574,7 +574,7 @@ The three key Lynis warnings concerned vulnerable packages, insufficient respons
 
 These observations do not automatically prove that equivalent production controls are disabled. They demonstrate that the restricted training environment did not provide sufficient evidence to verify those controls fully. The affected controls should therefore be retested in an authorised, fully supported Ubuntu environment before definitive operational-effectiveness conclusions are made.
 
-References
+# References
 
 CISOfy. (n.d.). Lynis documentation: Installation and usage guide. CISOfy. https://cisofy.com/documentation/lynis/
 
