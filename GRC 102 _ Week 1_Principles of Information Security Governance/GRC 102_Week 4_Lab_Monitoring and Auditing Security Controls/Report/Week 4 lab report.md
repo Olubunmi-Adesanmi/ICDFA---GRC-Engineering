@@ -84,7 +84,6 @@ This laboratory assessed three principal technical areas:
 | Warnings | 3 | Needs Review |
 | Suggestions | 43 | Improvement opportunities |
 
-The principal governance lesson is that a security control cannot be confidently assessed when sufficient evidence of its operation cannot be obtained. The report therefore distinguishes a **confirmed control failure** from a **control verification limitation**.
 
 ---
 
