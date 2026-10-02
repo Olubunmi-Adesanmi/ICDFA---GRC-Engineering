@@ -15,7 +15,6 @@ The project demonstrates how host-level technical evidence can be translated int
 
 ---
 
-## Student and Assessment Information
 
 | Field | Details |
 |---|---|
