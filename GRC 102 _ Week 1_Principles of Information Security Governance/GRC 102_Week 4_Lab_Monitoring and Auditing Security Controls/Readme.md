@@ -569,8 +569,6 @@ These observations do not automatically prove that equivalent production control
 ## Author
 
 **Olubunmi Adesanmi**  
-ICDFA Trainee, Cohort 11  
-GRC Engineering
 
 ## Disclaimer
 
