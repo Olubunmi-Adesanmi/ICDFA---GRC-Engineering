@@ -67,13 +67,6 @@ This laboratory assessed three principal technical areas:
 2. System and authentication log analysis using `journalctl` and traditional log sources.
 3. Security configuration assessment using Lynis.
 
-The assessment was completed in an authorised ICDFA Ubuntu Practice Hub. The environment was restricted and did not operate as a conventional Ubuntu host using `systemd` as process ID 1. Instead, PID 1 was observed as:
-
-```text
-1  sleep  sleep infinity
-```
-
-This environmental condition materially affected the availability of audit and logging evidence.
 
 ### Key Results
 
