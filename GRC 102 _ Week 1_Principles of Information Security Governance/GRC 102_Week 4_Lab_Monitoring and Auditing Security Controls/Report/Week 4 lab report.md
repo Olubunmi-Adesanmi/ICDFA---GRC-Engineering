@@ -97,6 +97,27 @@ The principal governance lesson is that a security control cannot be confidently
 
 ## Laboratory Overview
 
+The laboratory provides hands-on experience in Linux security monitoring and auditing. Its purpose is not simply to execute Linux commands but to demonstrate how technical evidence can support governance, risk management, compliance and security assurance.
+The assessment follows the principle:
+Technical evidence → Control assessment → Risk significance → Ownership → Remediation → Retesting → Governance assurance
+Linux systems generate security evidence through several mechanisms, including audit frameworks, authentication logs, system journals, kernel messages and configuration assessment tools. Such evidence is important because governance functions depend on reliable information to determine whether security controls are designed appropriately and operating as intended.
+The laboratory therefore combines technical investigation with governance analysis.
+The practical work covers:
+auditd;
+audit rules;
+ausearch and aureport;
+journalctl;
+authentication and privilege-use logs;
+general system logs;
+Lynis;
+SIEM concepts;
+continuous control monitoring;
+governance escalation;
+remediation and retesting.
+The assigned role for this assessment is:
+Security Control Assurance Analyst
+In this role, the objective is to examine available technical evidence, identify conditions requiring attention, determine the relevant control objective, identify an appropriate owner and establish a repeatable remediation and retest process.
+
 Linux systems frequently support business-critical applications, infrastructure services and security-sensitive workloads. Effective governance therefore requires organisations to maintain reliable evidence that security controls are operating as intended.
 This practical laboratory examined the relationship between Linux technical evidence and security governance. The assessment focused on audit records, system logs, authentication events and security configuration findings.
 
@@ -224,7 +245,7 @@ Evidence → Control → Status → Risk → Owner → Remediation → Retest
 
 ---
 
-# Activity 1: Linux Auditing with auditd
+# Module 1: Linux Auditing with auditd
 
 ## Installation Verification
 
@@ -297,7 +318,7 @@ sudo aureport --login
 
 ---
 
-# Activity 2: Log Management and Analysis
+# Module 2: Log Management and Analysis
 
 ## Journal Review
 
@@ -335,7 +356,7 @@ The correct assurance conclusion is not that authentication logging was definite
 
 ---
 
-# Activity 3: Linux Security Assessment with Lynis
+# Module 3: Linux Security Assessment with Lynis
 
 ## Installation Verification
 
