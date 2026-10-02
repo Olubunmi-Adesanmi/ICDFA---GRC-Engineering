@@ -180,19 +180,28 @@ For this reason, affected controls are generally classified as **Needs Review**,
 
 ## Methodology
 
-### Stage 1: Technical Verification
+### Stage 1: Auditd Assessment
+
+The auditd service was checked to determine whether Linux auditing was installed and operational. Custom audit rules were configured to monitor selected security-relevant activities. Audit events were queried using ausearch and summarised using aureport
 
 ```bash
-which auditd
-auditd -v
-dpkg -l | grep auditd
-ps aux | grep '[a]uditd'
+sudo apt update
+sudo apt install auditd audispd-plugins
+sudo systemctl start auditd
+sudo systemctl enable auditd
 
-lynis --version
-which lynis
+sudo nano /etc/audit/rules.d/custom.rules
+
+-w /etc/passwd -p rwxa -k passwd_changes
+-w /etc/shadow -p rwxa -k shadow_changes
+-a always,exit -F arch=b64 -S execve -k program_execution
+-a always,exit -F arch=b32 -S execve -k program_execution
+
 ```
 
 ### Stage 2: Evidence Collection
+Linux Log Analysis
+Systemd journal records and available traditional Linux log files were reviewed for system, SSH, authentication, sudo/privileged activity, errors and warnings. The objective was to distinguish routine activity from conditions requiring additional investigation or governance attention.
 
 Available evidence was assessed using:
 
@@ -219,23 +228,7 @@ Evidence → Control → Status → Risk → Owner → Remediation → Retest
 
 ## Installation Verification
 
-The following checks established that audit software was installed:
-
-```bash
-which auditd
-auditd -v
-dpkg -l | grep auditd
 ```
-
-Installation alone does not prove that auditing is operational.
-
-## Process Verification
-
-```bash
-ps aux | grep '[a]uditd'
-```
-
-No output was returned, so no running `auditd` process was identified in the session.
 
 ## Kernel Audit Subsystem Verification
 
