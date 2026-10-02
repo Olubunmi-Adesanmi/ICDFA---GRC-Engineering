@@ -7,7 +7,6 @@
 ![Tools](https://img.shields.io/badge/Tools-auditd%20%7C%20journalctl%20%7C%20Lynis-6F42C1)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-##  Report Readme
 
 This report documents a practical **Linux security monitoring, auditing, and continuous control assurance assessment** completed for **GRC102: Information Security Governance** at the **International Cybersecurity and Digital Forensics Academy (ICDFA)**.
 
