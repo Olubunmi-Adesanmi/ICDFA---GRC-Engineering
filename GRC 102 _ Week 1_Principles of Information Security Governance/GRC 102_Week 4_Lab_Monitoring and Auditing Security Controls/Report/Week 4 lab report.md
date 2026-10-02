@@ -156,22 +156,6 @@ All activity was confined to the authorised ICDFA training environment. No produ
 
 ---
 
-## Environment and Limitations
-
-The following command was used to identify the init process:
-
-```bash
-ps -p 1 -o pid,comm,args
-```
-
-Observed result:
-
-```text
-1  sleep  sleep infinity
-```
-
-The Practice Hub was therefore treated as a restricted training environment rather than a production-equivalent Ubuntu system.
-
 ### Limitations
 
 1. The environment did not operate with `systemd` as PID 1.
