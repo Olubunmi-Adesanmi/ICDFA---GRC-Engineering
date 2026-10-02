@@ -574,6 +574,28 @@ The three key Lynis warnings concerned vulnerable packages, insufficient respons
 
 These observations do not automatically prove that equivalent production controls are disabled. They demonstrate that the restricted training environment did not provide sufficient evidence to verify those controls fully. The affected controls should therefore be retested in an authorised, fully supported Ubuntu environment before definitive operational-effectiveness conclusions are made.
 
+References
+
+CISOfy. (n.d.). Lynis documentation: Installation and usage guide. CISOfy. https://cisofy.com/documentation/lynis/
+
+CISOfy. (n.d.). Lynis: Security auditing tool for Linux, macOS, and Unix-based systems. CISOfy. https://cisofy.com/lynis/
+
+Dempsey, K. L., Chawla, N. S., Johnson, L. A., Johnston, R., Jones, A. C., Orebaugh, A., Scholl, M. A., & Stine, K. M. (2011). Information security continuous monitoring (ISCM) for federal information systems and organizations (NIST Special Publication 800-137). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-137
+
+Linux man-pages project. (n.d.). Auditd(8) — The Linux Audit daemon. https://man7.org/linux/man-pages/man8/auditd.8.html
+
+Linux man-pages project. (n.d.). Journalctl(1) — Print log entries from the systemd journal. https://man7.org/linux/man-pages/man1/journalctl.1.html
+
+National Institute of Standards and Technology. (2020). Assessing information security continuous monitoring (ISCM) programs: Developing an ISCM program assessment (NIST Special Publication 800-137A). U.S. Department of Commerce. https://doi.org/10.6028/NIST.SP.800-137A
+
+National Institute of Standards and Technology. (2020). Security and privacy controls for information systems and organizations (NIST Special Publication 800-53, Rev. 5). U.S. Department of Commerce. https://doi.org/10.6028/NIST.SP.800-53
+
+Ubuntu. (n.d.). Aureport — A tool that produces summary reports of audit daemon logs. Ubuntu Manpages.
+
+Ubuntu. (n.d.). Ausearch — A tool to query audit daemon logs. Ubuntu Manpages.
+
+Ubuntu. (n.d.). Auditctl — A utility to assist controlling the kernel's audit system. Ubuntu Manpages.
+
 ## Academic Integrity, AI Use and Evidence Authenticity
 The commands, screenshots and log evidence submitted  come from the authorised laboratory environment. Microsoft Copilot and CHATGPT(Open aI) was used for brainstorming to support structuring, drafting and language refinement of this report
 
