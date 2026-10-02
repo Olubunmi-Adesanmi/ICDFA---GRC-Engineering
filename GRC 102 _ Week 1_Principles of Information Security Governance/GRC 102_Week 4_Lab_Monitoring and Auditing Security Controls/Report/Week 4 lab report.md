@@ -450,7 +450,6 @@ Lynis version 3.0.9
 | Kernel logging | Linux/System Administrator | Security Operations |
 | Governance oversight | Security Governance / GRC | CISO, Risk Management |
 
-Ownership must be aligned with the organisation's actual operating model.
 
 ## Escalation Conditions
 
