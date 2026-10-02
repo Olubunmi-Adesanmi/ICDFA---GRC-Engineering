@@ -232,7 +232,7 @@ Evidence → Control → Status → Risk → Owner → Remediation → Retest
 
 ---
 
-# Module 1: Linux Auditing with auditd
+# Activity 1: Linux Auditing with auditd
 
 ## Installation Verification
 
@@ -296,7 +296,7 @@ Where `/var/log/auth.log` exists:
 
 The available evidence did not prove that these rules were loaded successfully. They are therefore not presented as configured controls.
 
-## Module Assessment
+## Activity Assessment
 
 | Item | Assessment |
 |---|---|
@@ -321,7 +321,7 @@ sudo aureport --login
 
 ---
 
-# Module 2: Log Management and Analysis
+# Activity 2: Log Management and Analysis
 
 ## Journal Review
 
@@ -348,7 +348,7 @@ cannot access '/var/log/auth.log': No such file or directory
 
 The correct assurance conclusion is not that authentication logging was definitely disabled. Instead, the expected evidence source was unavailable and an alternative logging mechanism would need to be identified.
 
-## Module Assessment
+## Activity Assessment
 
 | Item | Assessment |
 |---|---|
@@ -359,7 +359,7 @@ The correct assurance conclusion is not that authentication logging was definite
 
 ---
 
-# Module 3: Linux Security Assessment with Lynis
+# Activity 3: Linux Security Assessment with Lynis
 
 ## Installation Verification
 
