@@ -7,7 +7,7 @@
 ![Tools](https://img.shields.io/badge/Tools-auditd%20%7C%20journalctl%20%7C%20Lynis-6F42C1)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-##  Report
+##  Report Readme
 
 This repository documents a practical **Linux security monitoring, auditing, and continuous control assurance assessment** completed for **GRC102: Information Security Governance** at the **International Cybersecurity and Digital Forensics Academy (ICDFA)**.
 
@@ -15,18 +15,15 @@ The project demonstrates how host-level technical evidence can be translated int
 
 ---
 
-## Student and Assessment Information
 
-| Field | Details |
 |---|---|
 | **Student** | Olubunmi Adesanmi |
 | **Course** | GRC102: Information Security Governance |
 | **Laboratory** | Linux Security Monitoring, Auditing and Continuous Control Assurance |
 | **Assessment Type** | Practical Evidence and Governance Assurance Report |
-| **Environment** | ICDFA Ubuntu Practice Hub / Authorised Training Environment |
-| **Assessment Date** | 1 October 2026 |
+| **Environment** | ICDFA Ubuntu Practice Hub |
+| **Assessment Date** | 2 October 2026 |
 
-> **Portfolio note:** The registration-number field was blank in the source report and has therefore not been populated here.
 
 ---
 
@@ -61,13 +58,7 @@ This laboratory assessed three principal technical areas:
 2. System and authentication log analysis using `journalctl` and traditional log sources.
 3. Security configuration assessment using Lynis.
 
-The assessment was completed in an authorised ICDFA Ubuntu Practice Hub. The environment was restricted and did not operate as a conventional Ubuntu host using `systemd` as process ID 1. Instead, PID 1 was observed as:
-
-```text
-1  sleep  sleep infinity
-```
-
-This environmental condition materially affected the availability of audit and logging evidence.
+The assessment was completed in an authorised ICDFA Ubuntu Practice Hub. The environment was restricted and did not operate as a conventional Ubuntu host using `systemd` as process ID 1. Instead, PID 1 was observed.
 
 ### Key Results
 
@@ -146,22 +137,6 @@ All activity was confined to the authorised ICDFA training environment. No produ
 
 ---
 
-## Environment and Limitations
-
-The following command was used to identify the init process:
-
-```bash
-ps -p 1 -o pid,comm,args
-```
-
-Observed result:
-
-```text
-1  sleep  sleep infinity
-```
-
-The Practice Hub was therefore treated as a restricted training environment rather than a production-equivalent Ubuntu system.
-
 ### Limitations
 
 1. The environment did not operate with `systemd` as PID 1.
@@ -222,7 +197,7 @@ Evidence → Control → Status → Risk → Owner → Remediation → Retest
 
 ---
 
-# Module 1: Linux Auditing with auditd
+# Activity 1: Linux Auditing with auditd
 
 ## Installation Verification
 
@@ -286,7 +261,7 @@ Where `/var/log/auth.log` exists:
 
 The available evidence did not prove that these rules were loaded successfully. They are therefore not presented as configured controls.
 
-## Module Assessment
+## Assessment
 
 | Item | Assessment |
 |---|---|
@@ -311,7 +286,7 @@ sudo aureport --login
 
 ---
 
-# Module 2: Log Management and Analysis
+# Activity 2: Log Management and Analysis
 
 ## Journal Review
 
@@ -338,7 +313,7 @@ cannot access '/var/log/auth.log': No such file or directory
 
 The correct assurance conclusion is not that authentication logging was definitely disabled. Instead, the expected evidence source was unavailable and an alternative logging mechanism would need to be identified.
 
-## Module Assessment
+## Assessment
 
 | Item | Assessment |
 |---|---|
@@ -349,7 +324,7 @@ The correct assurance conclusion is not that authentication logging was definite
 
 ---
 
-# Module 3: Linux Security Assessment with Lynis
+# Activity 3: Linux Security Assessment with Lynis
 
 ## Installation Verification
 
