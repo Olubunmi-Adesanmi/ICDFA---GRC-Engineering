@@ -283,8 +283,6 @@ Where `/var/log/auth.log` exists:
 -w /var/log/auth.log -p wa -k auth_failures
 ```
 
-The available evidence did not prove that these rules were loaded successfully. They are therefore not presented as configured controls.
-
 ## Activity Assessment
 
 | Item | Assessment |
