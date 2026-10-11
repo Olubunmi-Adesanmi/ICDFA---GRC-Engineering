@@ -40,20 +40,11 @@ The authorised Struts simulation did not complete: the configured image tag retu
 
 ### 1.1 Environment and files
 
-This  practical laboratory  was carried out  in a Kali Linux environment using a container-based configuration. The files included a Compose configuration, database initialization files, monitoring-related files, Python scripts, governance data, and output reports. 
+This practical laboratory was conducted in a Kali Linux environment using a container-based configuration. The lab environment comprised a Docker Compose configuration, database initialization files, monitoring-related resources, Python scripts for security testing and governance analysis, governance data files, and generated reports and visualisations. 
 
 
-### 1.2 Container startup limitations
+### 1.2 Vulnerability assessment
 
-The terminal first reported that the Compose command could not connect to the Podman user socket at `unix:///run/user/1000/podman/podman.sock`. Subsequently, `podman ps` returned a valid header with no running containers, and `docker compose ps` also showed no services. This indicates that the command could communicate with Podman at that later point, but no lab containers were shown running.
-
-When attempting to start the services, the configured image reference `vulhub/struts2:s2-045` produced `manifest unknown`. The service startup for `database` and `monitoring` was interrupted after the web image failure. The `version` attribute warning is non-fatal; it is not the cause of the missing image tag.
-
-**Assessment impact:** the Compose configuration and supporting files were created, but a functioning multi-container environment was not verified. The Struts application was not available for successful simulation.
-
-### 1.3 Vulnerability assessment
-
-The supplied file `vulnerability_report_20261010_202924.json` contained these results:
 
 | ID | Check | Result | Severity | Interpretation / next action |
 |---|---|---|---|---|
