@@ -22,29 +22,18 @@ This report  documents a simulated security governance lab covering container se
 | File/folder | Purpose |
 |---|---|
 | `report.md` | Full evidence-based report, including the required four parts, Equifax comparison, recommendations and references |
-| `GRC102_Lab8_Security_Governance_Report.docx` | Editable formatted report |
-| `GRC102_Lab8_Security_Governance_Report.pdf` | PDF evidence report; screenshot placeholders must be replaced before final submission |
+| `GRC102_Lab_Security_Governance_Report.docx` | Editable formatted report |
+| `GRC102_Lab5_Security_Governance_Report.pdf` | PDF evidence report; screenshot placeholders must be replaced before final submission |
 | `board_report.md` | Concise board-level report based on the supplied results |
 | `equifax_comparison.md` | Standalone Equifax case-study comparison |
 | `governance_controls_report.md` | Control status and verification report; unresolved tests are explicit |
 | `governance_metrics_framework.md` | Metric definitions, formula, owner, thresholds, review cadence and response rules |
 | `dashboard_user_guide.md` | User guidance for interpreting and validating the governance dashboard |
-| `SUBMISSION_CHECKLIST.md` | Evidence and submission checklist against the four-part rubric |
 | `evidence/figures/` | Report-created visualisations reconstructed from supplied JSON values; they are not original Kali screenshots |
 | `evidence/screenshots/` | Folder for genuine screenshots captured from the authorised lab |
 
-## Evidence status by assessment part
 
-| Part | Maximum marks | Current status based on evidence supplied |
-|---|---:|---|
-| Part 1 - Simulated environment | 30 | Partial: files and vulnerability report supplied; container startup and original screenshot evidence incomplete. |
-| Part 2 - Governance failure analysis | 25 | Partial: JSON report supplied and Equifax comparison drafted; attack log absent because simulation did not complete. |
-| Part 3 - Control implementation | 25 | Partial: patch management component and recorded control statuses exist; successful implementation and retesting are unverified. |
-| Part 4 - Metrics and reporting | 20 | Partial: tracker dashboard output supplied; two status classifications conflict with targets and metrics/HTML dashboard execution is not evidenced. |
-
-## Required original screenshots
-
-Put genuine, redacted captures in `evidence/screenshots/`, for example:
+## Required original screenshots/evidence
 
 - `01_environment_compose_status.png`
 - `02_vulnerability_scan_output.png`
