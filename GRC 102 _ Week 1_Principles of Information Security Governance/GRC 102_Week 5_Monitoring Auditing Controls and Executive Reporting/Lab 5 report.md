@@ -67,7 +67,7 @@ The scanner summary reported three checks, one Medium finding and one Unknown re
 
 ### 1.4 Part 1 evidence gaps
 
-The current work session contains the text of the vulnerability report and dashboard output, but not the original image files from the learner's Kali machine. The learner reported that these five PNG files existed in `metrics_visualizations/`: `monitoring_coverage.png`, `patch_compliance.png`, `security_incidents.png`, `vuln_remediation.png`, and `policy_compliance.png`. Their actual image contents were not uploaded, so their plotted trends cannot be independently described here as shown in the evidences provided
+The current work session contains the text of the vulnerability report and dashboard output,Five PNG files existed in `metrics_visualizations/`: `monitoring_coverage.png`, `patch_compliance.png`, `security_incidents.png`, `vuln_remediation.png`, and `policy_compliance.png`. Their actual image contents were not uploaded, so their plotted trends cannot be independently described here as shown in the evidences provided
 
 ## Part 2: Analysing Security Governance Failures
 
@@ -139,7 +139,7 @@ The lab should not describe these controls as successfully verified until test e
 
 ### 4.1 Tracker and dashboard output
 
-The learner ran `governance_tracker.py --dashboard` and supplied a dashboard JSON output generated at `2026-10-11T00:30:20`. It reported 4 policies, 8 controls, 3 risks, 1 incident, 5 metrics and 1 audit record. The risk summary contained one Critical, one High and one Medium risk. The incident summary contained one High-severity historical incident.
+Running `governance_tracker.py --dashboard` supplied a dashboard JSON output generated at `2026-10-11T00:30:20`. It reported 4 policies, 8 controls, 3 risks, 1 incident, 5 metrics and 1 audit record. The risk summary contained one Critical, one High and one Medium risk. The incident summary contained one High-severity historical incident.
 
 ### 4.2 Metric review
 
