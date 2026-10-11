@@ -32,21 +32,27 @@ This report  documents a simulated security governance lab covering container se
 | `evidence/figures/` | Report-created visualisations reconstructed from supplied JSON values; they are not original Kali screenshots |
 | `evidence/screenshots/` | Folder for genuine screenshots captured from the authorised lab |
 
+ 
+ ## Conclusion
 
-## Required original screenshots/evidence
+This GRC102 practical laboratory demonstrates how technical security assessments can support information security governance, risk management, control monitoring, and executive decision-making. The lab produced evidence for vulnerability assessment, governance failure analysis, risk tracking, security metrics, and reporting within a simulated, container-based environment.
 
-- `01_environment_compose_status.png`
-- `02_vulnerability_scan_output.png`
-- `03_governance_failure_analysis.png`
-- `04_dashboard_output.png`
-- `05_control_verification.png` (only after conducting an actual retest)
-- `06_metric_visualisations.png` or the original five visualisation files
+The findings highlighted three key governance weaknesses: ineffective implementation of the patch management policy, security metrics that were not consistently driving remediation, and insufficient network segmentation. The dashboard also revealed inconsistencies between recorded metric values and their Green status classifications, demonstrating the importance of accurate measurement, validation, and escalation.
 
+However, the lab had technical limitations. The configured Struts2 image could not be resolved, the `web_server` hostname failed to resolve, and no attack log was found. Consequently, the attack simulation was not successfully completed, and the available evidence does not confirm successful post-remediation testing or control effectiveness.
 
+The accompanying reports and documentation provide a foundation for improving governance oversight, prioritising outstanding risks, assigning remediation responsibilities, and strengthening evidence-based reporting. Recommended next steps include resolving the lab configuration issues, correcting metric thresholds, implementing and verifying corrective actions, repeating authorised tests, and documenting the results.
+
+Overall, the lab reinforces an important information security governance principle: **a control should not be considered effective simply because it is recorded as implemented. Its effectiveness must be supported by appropriate evidence, testing, monitoring, and documented follow-up.**
 
 ## References
 
 - [ICDFA GRC102 Week 5 Linux Lab Instructions](https://github.com/icdfa/grc-engineering-labs/blob/master/phase1/grc102/week8/LAB_INSTRUCTIONS.md) - official repository instructions supplied with the assessment brief.
 - [U.S. GAO report GAO-18-559](https://www.gao.gov/products/gao-18-559) - Equifax breach response and contributing factors.
 - [U.S. House Committee report: The Equifax Data Breach](https://oversight.house.gov/wp-content/uploads/2018/12/Equifax-Report.pdf) - patching, monitoring, accountability and other case-study findings.
+
+ ## AI Usage Declaration
+Generative AI(ChatGPT) was used to assist with organising the s lab material into a structured report, refining grammar and professional wording, improving table presentation, 
+AI was not treated as a source of lab evidence. The reported scanner results, governance counts, risk ratings, metric values, dates, and technical limitations were taken from the supplied lab notes and output summaries.
+
 
