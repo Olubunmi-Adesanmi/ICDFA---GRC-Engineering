@@ -53,6 +53,6 @@ Overall, the lab reinforces an important information security governance princip
 
  ## AI Usage Declaration
 Generative AI(ChatGPT) was used to assist with organising the s lab material into a structured report, refining grammar and professional wording, improving table presentation, 
-AI was not treated as a source of lab evidence. The reported scanner results, governance counts, risk ratings, metric values, dates, and technical limitations were taken from the supplied lab notes and output summaries.
+AI was not treated as a source of lab evidence. The reported scanner results, governance counts, risk ratings, metric values, dates, and technical limitations were taken from the laboratory notes and output summaries.
 
 
