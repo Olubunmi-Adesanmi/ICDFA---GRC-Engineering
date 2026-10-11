@@ -143,25 +143,6 @@ Running `governance_tracker.py --dashboard` supplied a dashboard JSON output gen
 | Critical Patch Compliance | October 2026 | 100% | 100% | Green | Meets the recorded target; measurement evidence not supplied. |
 | Security Monitoring Coverage | October 2026 | 100% | 100% | Green | Meets the recorded target; measurement evidence not supplied. |
 
-![Patch compliance actual and target](evidence/figures/figure_02_patch_compliance.png)
-
-*Figure 2. Patch compliance values from the supplied data. Recreated for this report; not an original screenshot.*
-
-![Remediation time actual and target](evidence/figures/figure_03_remediation_time.png)
-
-*Figure 3. Remediation-time values from the supplied data. A lower value is preferable.*
-
-![Security incidents actual and target](evidence/figures/figure_04_incidents.png)
-
-*Figure 4. Incident count compared with the supplied zero-incident target.*
-
-![October metrics](evidence/figures/figure_05_october_metrics.png)
-
-*Figure 5. October 2026 dashboard figures, reproduced from the supplied data. The 100% actual values are not independently validated.*
-
-![Metric status validation](evidence/figures/figure_06_metric_status_review.png)
-
-*Figure 6. Review of recorded dashboard statuses against targets. Red/yellow status in this visual is an analytical correction, not the original dashboard output.*
 
 ### 4.3 Metrics framework
 
