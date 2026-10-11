@@ -1,4 +1,4 @@
-# ICDFA GRC102 Information Security Governance
+# GRC102 Information Security Governance
 ## Practical Lab 5: Monitoring, Auditing Controls and Executive Reporting
 ### Security Governance Simulation Report
 
