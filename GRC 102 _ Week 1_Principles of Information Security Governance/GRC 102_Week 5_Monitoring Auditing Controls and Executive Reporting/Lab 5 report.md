@@ -40,7 +40,8 @@ The authorised Struts simulation did not complete: the configured image tag retu
 
 ### 1.1 Environment and files
 
-The reported project path is `~/security_governance_lab` on Kali Linux. The intended deployment used a Compose file and included a web application, a database, and a monitoring service. 
+This  practical laboratory  was carried out  in a Kali Linux environment using a container-based configuration. The files included a Compose configuration, database initialization files, monitoring-related files, Python scripts, governance data, and output reports. 
+
 
 ### 1.2 Container startup limitations
 
