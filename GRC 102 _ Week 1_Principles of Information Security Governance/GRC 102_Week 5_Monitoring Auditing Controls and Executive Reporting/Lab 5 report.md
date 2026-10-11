@@ -4,7 +4,7 @@
 
 **Student:** [Olubunmi Adesanmi]  
 **Role:** [Security Governance Analyst]  
-**Submission date:** [11 October 2026]  
+ 
 
 
 ## Table of Contents
@@ -21,7 +21,7 @@
 11. [Priority Action Plan and Residual Risk](#priority-action-plan-and-residual-risk)
 12. [Conclusion](#conclusion)
 13. [References](#references)
-14. [Appendix A:
+    
    
     ## Executive Summary
 
@@ -210,7 +210,7 @@ The framework should follow six stages: **Define** the objective and formula; **
 The dashboard is intended to support executives, the board, security leadership and technical control owners. Board users should focus on risk severity, target misses, material incidents and overdue actions; operational users should inspect supporting source data and technical test results.
 
 ### Reading the current output
-The supplied tracker output lists record counts, risk severity counts and five metric statuses. A Green status should be accepted only after checking the value, target, direction, period and supporting evidence. In the supplied output, `Vulnerability Remediation Time` (12 against 7 days) and `Security Incidents` (1 against zero) are Green; both should be treated as exceptions pending logic correction. The two 100% values are recorded for October 2026 but need source evidence.
+The tracker output lists record counts, risk severity counts and five metric statuses. A Green status should be accepted only after checking the value, target, direction, period and supporting evidence. In the supplied output, `Vulnerability Remediation Time` (12 against 7 days) and `Security Incidents` (1 against zero) are Green; both should be treated as exceptions pending logic correction. The two 100% values are recorded for October 2026 but need source evidence.
 
 ### Refresh and review steps
 1. Validate `governance_data.json` and the input reporting period.
@@ -249,45 +249,6 @@ U.S. Government Accountability Office. (2018). *Data protection: Actions taken b
 
 U.S. House of Representatives, Committee on Oversight and Government Reform. (2018). *The Equifax data breach: Majority staff report*. https://oversight.house.gov/wp-content/uploads/2018/12/Equifax-Report.pdf
 
-## Appendix A: Evidence Register
 
-| Evidence ID | Artefact | What it supports | Status / limitation |
-|---|---|---|---|
-| E-01 | `compose.yml` / other Compose-like files | Intended container layout | Multiple config warning observed; final selected file not re-verified. |
-| E-02 | `database_init/` | Database initialisation component | Files reported; runtime initialisation not verified. |
-| E-03 | `vulnerability_report_20261010_202924.json` | Three vulnerability check results | Contents supplied; Struts inconclusive, segmentation finding present. |
-| E-04 | `governance_failure_report_20261011_002329.json` | Three governance failures | Contents supplied; analysis said no attack log found. |
-| E-05 | `governance_data.json` | Policies, controls, risks, incident, metrics and audit data | Contents supplied; control statuses are recorded data, not proof of effectiveness. |
-| E-06 | `governance_tracker.py --dashboard` output | Dashboard record counts, risk summary and metric statuses | Output supplied; status logic has inconsistencies. |
-| E-07 | `patch_management.py` | Patch-management component | Existence/creation and possible execution reported; result unconfirmed. |
-| E-08 | `vulnerability_scanner.py` | Vulnerability assessment script | Script listed by learner; separate retest not recalled. |
-| E-09 | `simulate_attack.py` | Authorised simulation script | Attempt failed at hostname/image stage; no attack log. |
-| E-10 | `analyze_governance_failures.py` | Analysis script | Execution output supplied. |
-| E-11–E-15 | Five `metrics_visualizations/*.png` files | Visualised metrics | File names reported; original image content not uploaded for review. |
-| E-16 | Figures 1–6 in this report | Illustrations from supplied JSON fields | Generated for this report; not original Kali screenshots. |
 
-## Appendix B: Original Screenshot Checklist
-
-- **S1 — Environment and Compose status:** capture the project path and the output of `docker compose ps -a` / service list. If the image error is the final result, include the relevant error and label environment deployment incomplete.
-- **S2 — Vulnerability scanner:** capture the scanner output or open the JSON report showing the inconclusive Struts check, MySQL default-credential result and segmentation finding.
-- **S3 — Governance failure analysis:** capture the output with `No attack log found`, the three failure categories, and the report filename.
-- **S4 — Governance dashboard:** capture the output from `python3 governance_tracker.py --dashboard` showing counts and the five metric statuses.
-- **S5 — Existing metric visualisations:** add the five original images from `metrics_visualizations/` and label each one. State the data period and do not imply an actual trend unless the source data supports it.
-- **S6 — Control verification:** add only after a real post-control check has been run. Show the test, result, date and outcome; do not claim a retest passed if it was not conducted.
-
-## Appendix C: Requirement-to-Evidence Mapping
-
-| Official requirement | Current evidence | Status |
-|---|---|---|
-| Compose configuration, DB initialisation and setup evidence | Files were listed; service startup failed on image reference | Partial |
-| Vulnerability scanner and baseline report | Scanner report supplied | Partially met; Struts check inconclusive |
-| Governance tracker and baseline dashboard | Tracker data and dashboard output supplied | Partially met; metric statuses need correction |
-| Attack simulation log | No attack log found | Not met; simulation did not complete |
-| Governance failure report and Equifax comparison | JSON report supplied; comparison in this report | Partially met; comparison is analytical, based on public sources |
-| Control implementation script and controls report | `patch_management.py` reported; control records in JSON | Partial; official control script not evidenced in listed files |
-| Post-control verification | No retesting output supplied | Outstanding |
-| Metrics script, executive dashboard and board report | Tracker dashboard output provided; board report authored as a supporting document | Partial; metrics script/HTML generation not evidenced |
-| Metrics framework and dashboard user guide | Included in this submission package as documentation | Drafted for report; must be committed into repository |
-| Screenshots and labelled visualisations | Five PNG filenames reported; actual images not uploaded here | Original captures must be inserted/committed |
-| README and exact repository/commit URL | README prepared; repository details not supplied | Complete README; final URL/commit outstanding |
 
