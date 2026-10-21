@@ -41,7 +41,7 @@ The assessment aimed to:
 | Nuclei | Intended template-based vulnerability assessment; execution was limited by missing templates |
 | xsltproc | Conversion of Nmap XML output into an HTML report |
 | Metasploitable | Intentionally vulnerable lab target |
-| Markdown | Documentation and portfolio reporting |
+
 
 ## Assessment Methodology
 
