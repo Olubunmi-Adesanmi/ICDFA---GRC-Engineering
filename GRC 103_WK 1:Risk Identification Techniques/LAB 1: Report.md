@@ -214,7 +214,6 @@ The lab's inherent-risk criteria are:
 - **Medium (M):** May require additional skill or conditions and could result in data leakage or unauthorised access.
 - **Low (L):** Primarily limited information disclosure or lower-impact security weaknesses.
 
-The following ratings are provisional. Final ratings require validation of exploitability, asset criticality, exposure, and existing controls.
 
 | ID | Finding | Affected Service | CVE / Reference | Inherent Risk | Potential Control Mapping | Potential Business Impact |
 |---|---|---|---|---|---|---|
@@ -234,9 +233,6 @@ The following ratings are provisional. Final ratings require validation of explo
 | RA-14 | ETag metadata and default documentation exposure | HTTP/80 | Nikto observations; CVE reference requires verification | Low, provisional | Information disclosure and secure configuration | Unnecessary file metadata or platform information may be disclosed |
 | RA-15 | Nuclei assessment not completed | Nuclei scan process | Missing templates and empty output files | Not a vulnerability rating | Assessment completeness and evidence management | The assessment may lack additional vulnerability coverage until the scan is completed |
 
-**Important validation note:** Weak or default credentials were included in the lab's example risk table, but the evidence reviewed for this project does not confirm that they were tested or discovered. They must not be reported as an actual finding without supporting evidence.
-
-Likewise, the risk register maps observations to relevant security-control themes. It does not establish a formal compliance violation without reviewing the applicable control requirements, scope, and supporting evidence.
 
 ## 6. Executive Summary
 
@@ -251,7 +247,6 @@ A vulnerability assessment was conducted against the authorised Metasploitable t
 
 The combined results indicate a broad attack surface, including legacy software, remote-access services, exposed database ports, a service identified as a root-shell listener, and web-server weaknesses. These observations warrant prioritised investigation and remediation within the simulated environment.
 
-The Nuclei scan could not be verified as complete because the required templates were unavailable and the generated output files were empty.
 
 ### Key Risks
 
@@ -294,8 +289,6 @@ The findings can inform a review against applicable security framework areas.
 | PCI DSS | Requirement 6 and other requirements applicable to the system's actual scope | Apply relevant security practices if payment-card data or in-scope systems are involved |
 | ISO/IEC 27001:2022 | Risk assessment and treatment, access control, vulnerability management, and secure configuration | Document risks, treatment decisions, responsibilities, and verification evidence |
 
-The lab instructions cite specific NIST and CIS identifiers. Control numbering may depend on the framework version; confirm the relevant version before using identifiers in a formal audit report.
-
 No PCI DSS applicability or compliance breach can be established from these lab results alone.
 
 ## 8. Remediation and Follow-Up Plan
@@ -333,8 +326,6 @@ The following files were present when the directory was reviewed:
 | `nuclei_web_scan.txt` | Empty at review | Web Nuclei output file; no results recorded |
 
 
-The Nmap HTML report exists, but a screenshot of that report was not confirmed in the evidence-directory listing. Confirm that the screenshot is saved before submission. The Nuclei deliverable remains incomplete and should be described honestly.
-
 ## 10. Limitations
 
 - The assessment was performed against an intentionally vulnerable lab target.
@@ -354,27 +345,6 @@ The main learning outcome was that a GRC professional must do more than run scan
 
 This project forms part of my ongoing development in **GRC engineering**, with a focus on connecting technical evidence to governance, risk assessment, and control improvement.
 
-## 12. Repository Structure
-
-```text
-Lab1_Vulnerability_Assessment/
-├── README.md
-├── report/
-│ 
-│   └── Lab1_Practical_Vulnerability_Assessment_Report.docx
-└── evidence/
-    ├── initial_scan.nmap
-    ├── initial_scan.gnmap
-    ├── initial_scan.xml
-    ├── initial_scan_report.html
-    ├── nikto_scan.txt
-    ├── nuclei_scan.txt
-    ├── nuclei_web_scan.txt
-    ├── nuclei_terminal.log
-    └── screenshots/
-```
-
-Adjust this structure to match the files actually uploaded to GitHub. Do not include credentials, secrets, or unrelated sensitive data.
 
 ## Ethical and Safety Statement
 
