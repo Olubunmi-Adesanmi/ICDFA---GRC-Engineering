@@ -104,7 +104,6 @@ Nikto reported several issues requiring investigation:
 | Apache MultiViews enabled | May make resource discovery easier in some configurations | Review necessity and disable if not required |
 | Apache default or documentation files present | May disclose implementation details | Remove unnecessary files or restrict access |
 
-These ratings and observations require appropriate validation in the context of the deployed system. Scanner-reported CVE references have not been treated as independently confirmed vulnerabilities.
 
 ## Risk Assessment Approach
 
@@ -112,12 +111,10 @@ The risk register consolidates key network and web assessment observations into 
 
 | Priority Area | Risk Rationale | Recommended Response |
 |---|---|---|
-| Critical — provisional | Service identified as a root-shell listener on port `1524` | Verify the service in the isolated lab and remove or restrict it if confirmed unnecessary |
-| High — provisional | Legacy services, potentially vulnerable software, and exposed remote-access interfaces | Validate exposure, restrict access, patch, or disable affected services |
-| Medium — provisional | Information disclosure and unnecessary web-server functionality | Remove information leaks and harden server configuration |
-| Low to Medium — provisional | Missing security headers and minor configuration weaknesses | Apply appropriate security configuration and verify effectiveness |
-
-**Risk ratings are provisional, not proof of successful exploitation.** Final risk decisions should account for confirmed exploitability, asset criticality, compensating controls, business impact, and the actual deployment context.
+| Critical  | Service identified as a root-shell listener on port `1524` | Verify the service in the isolated lab and remove or restrict it if confirmed unnecessary |
+| High | Legacy services, potentially vulnerable software, and exposed remote-access interfaces | Validate exposure, restrict access, patch, or disable affected services |
+| Medium  | Information disclosure and unnecessary web-server functionality | Remove information leaks and harden server configuration |
+| Low to Medium | Missing security headers and minor configuration weaknesses | Apply appropriate security configuration and verify effectiveness 
 
 ## GRC and Security Framework Alignment
 
