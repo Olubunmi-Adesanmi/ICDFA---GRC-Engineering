@@ -5,6 +5,26 @@
 ![Tools](https://img.shields.io/badge/Tools-Nmap%20%7C%20Nikto%20%7C%20Nuclei-orange)
 
 
+## Table of Contents
+
+- [1. Introduction](#1-introduction)
+- [2. Scenario and Objectives](#2-scenario-and-objectives)
+- [3. Lab Environment and Tools](#3-lab-environment-and-tools)
+- [4. Assessment Methodology](#4-assessment-methodology)
+  - [Phase 1: Discovery and Enumeration](#phase-1-discovery-and-enumeration)
+  - [Phase 2: Vulnerability Identification](#phase-2-vulnerability-identification)
+- [5. Risk Assessment and Triage](#5-risk-assessment-and-triage)
+- [6. Executive Summary](#6-executive-summary)
+- [7. GRC and Compliance Framework Mapping](#7-grc-and-compliance-framework-mapping)
+- [8. Remediation and Follow-Up Plan](#8-remediation-and-follow-up-plan)
+- [9. Evidence and Deliverables](#9-evidence-and-deliverables)
+- [10. Limitations](#10-limitations)
+- [11. Conclusion and Learning Outcomes](#11-conclusion-and-learning-outcomes)
+- [12. Suggested Repository Structure](#12-suggested-repository-structure)
+- [Ethical and Safety Statement](#ethical-and-safety-statement)
+- [References](#references)
+
+
 ## 1. Introduction
 
 This project documents a practical vulnerability assessment performed as part of my development in Governance, Risk and Compliance (GRC) engineering.
@@ -362,7 +382,38 @@ All assessment activities were intended for the authorised, isolated lab environ
 
 ---
 
-**Author:** [Your Name]  
-**Learning Path:** GRC Engineering  
-**Project:** Lab 1 — Practical Vulnerability Assessment for GRC Professionals  
-**Assessment Status:** Findings documented; Nuclei scan and screenshot evidence require completion or confirmation
+## References
+
+Center for Internet Security. (n.d.). *CIS Critical Security Controls v8.1*. https://www.cisecurity.org/controls/v8-1
+
+International Organization for Standardization. (2022). *ISO/IEC 27001:2022—Information security, cybersecurity and privacy protection—Information security management systems—Requirements*. https://www.iso.org/standard/27001
+
+MITRE. (n.d.). *CWE-548: Exposure of information through directory listing*. https://cwe.mitre.org/data/definitions/548.html
+
+National Institute of Standards and Technology. (n.d.). *National Vulnerability Database: CVE-2011-2523*. https://nvd.nist.gov/vuln/detail/CVE-2011-2523
+
+Nmap Project. (n.d.). *Nmap reference guide*. https://nmap.org/book/man.html
+
+OWASP Foundation. (2025). *OWASP Top 10:2025*. https://top10.owasp.org/2025/
+
+OWASP Foundation. (n.d.). *Web Security Testing Guide*. https://owasp.org/projects/web-security-testing-guide
+
+Pascoe, C., Quinn, S., & Scarfone, K. (2024). *The NIST Cybersecurity Framework (CSF) 2.0* (NIST Cybersecurity White Paper 29). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.CSWP.29
+
+PCI Security Standards Council. (n.d.). *Document library: PCI DSS v4.0.1*. https://www.pcisecuritystandards.org/document_library/
+
+ProjectDiscovery. (n.d.-a). *Nuclei documentation: Supported input formats*. https://docs.projectdiscovery.io/tools/nuclei/input-formats
+
+ProjectDiscovery. (n.d.-b). *Nuclei templates* [GitHub repository]. https://github.com/projectdiscovery/nuclei-templates
+
+Sullo. (n.d.). *Nikto documentation*. GitHub. https://github.com/sullo/nikto/wiki/
+
+### Reference and validation note
+
+These sources provide guidance for the assessment tools and frameworks. Their inclusion does not mean that every observed issue is a confirmed vulnerability or compliance breach. In particular, CVE-2011-2523 applies to affected vsftpd 2.3.4 distributions downloaded during a specific period in 2011, so the exact target build must be validated before the finding is treated as confirmed. [NVD](https://nvd.nist.gov/vuln/detail/CVE-2011-2523)
+
+**Author:** Olubunmi Adesanmi  
+**Course:** GRC 103:Risk Assessment and Management Techniques
+**Module:** Risk Identification Techniques 
+Lab 1 — Practical Vulnerability Assessment for GRC Professionals  
+
