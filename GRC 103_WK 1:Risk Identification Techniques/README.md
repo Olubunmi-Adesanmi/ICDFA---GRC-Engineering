@@ -87,7 +87,6 @@ The observed services included:
 - UnrealIRCd.
 - A service identified by Nmap as a Metasploitable root shell on port `1524`.
 
-These observations indicate a broad attack surface within the lab. Exposed services and legacy software require investigation, access restriction, or removal where not needed. A service banner alone does not prove that a specific exploit is successful.
 
 ### Web-Server Assessment
 
