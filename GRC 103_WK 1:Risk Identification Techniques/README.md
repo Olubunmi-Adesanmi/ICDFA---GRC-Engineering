@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-blue)
 ![Assessment](https://img.shields.io/badge/Assessment-Vulnerability%20Assessment-orange)
 ![Focus](https://img.shields.io/badge/Focus-Cybersecurity%20%7C%20GRC-green)
-![Status](https://img.shields.io/badge/Status-Completed%20with%20Limitations-yellow)
+![Status](https://img.shields.io/badge/Status-Completed%20-yellow)
 
 ## Project Overview
 
