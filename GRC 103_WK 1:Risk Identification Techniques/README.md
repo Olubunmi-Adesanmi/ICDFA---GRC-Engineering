@@ -65,7 +65,7 @@ Nuclei was installed and execution was attempted. However, the required template
 
 ### 5. Risk Evaluation
 
-Observed issues were documented in a consolidated risk register. Provisional ratings considered potential impact, exposure, and the importance of affected services. Findings that require further validation were clearly identified.
+Observed issues were documented in a consolidated risk register.
 
 ### 6. GRC Mapping and Remediation Planning
 
