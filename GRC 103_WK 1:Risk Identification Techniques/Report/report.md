@@ -6,10 +6,15 @@
 
 
 **Prepared by:** Olubunmi Adesanmi 
+
 **Course:**  GRC103 — Risk Assessment and Management Techniques 
+
 **Module:** Risk Identification Techniques 
-**Assessment role:** Internal GRC Auditor    
+
+**Assessment role:** Internal GRC Auditor 
+
 **Target:** Metasploitable 2 
+
 **Environment:** Kali Linux 
 
 
