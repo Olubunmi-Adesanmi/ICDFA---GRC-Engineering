@@ -5,18 +5,17 @@
 ![Focus](https://img.shields.io/badge/Focus-Cybersecurity%20%7C%20GRC-green)
 ![Status](https://img.shields.io/badge/Status-Completed%20-yellow)
 
-## Project Overview
+## Lab Overview
 
 This project documents a practical vulnerability assessment conducted in an authorised, isolated lab environment using Kali Linux and a deliberately vulnerable Metasploitable target.
 
 The objective was to identify exposed network services, examine web-server security weaknesses, evaluate potential business risks, and translate technical observations into actionable governance, risk, and compliance (GRC) recommendations.
 
 The assessment demonstrates how vulnerability assessment findings can support risk identification, control improvement, remediation planning, and security reporting. It also highlights the importance of distinguishing confirmed observations from unverified vulnerabilities.
-
-> **Project type:** Hands-on cybersecurity and GRC lab  
-> **Environment:** Authorised isolated lab  
+  
+> **Environment:** Authorised isolated lab (Kali Linux)  
 > **Primary focus:** Vulnerability identification, risk assessment, evidence documentation, and remediation prioritisation  
-> **Target:** Deliberately vulnerable Metasploitable test server
+> **Target:** Deliberately vulnerable Metasploitable test server (Metasploitable 2)
 
 ## Objectives
 
@@ -61,7 +60,7 @@ Nikto was run against the target's HTTP service to check for potential weaknesse
 
 ### 4. Vulnerability Assessment Tool Attempt
 
-Nuclei was installed and execution was attempted. However, the required template directory was unavailable, and the generated scan output files were empty. The Nuclei assessment is therefore recorded as **incomplete**, rather than as a successful scan with zero findings.
+Nuclei was installed and execution was attempted. However, the required template directory was unavailable, and the generated scan output files were empty.
 
 ### 5. Risk Evaluation
 
