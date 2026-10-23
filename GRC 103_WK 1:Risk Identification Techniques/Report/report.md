@@ -380,9 +380,6 @@ ProjectDiscovery. (n.d.-b). *Nuclei templates* [GitHub repository]. https://gith
 
 Sullo. (n.d.). *Nikto documentation*. GitHub. https://github.com/sullo/nikto/wiki/
 
-### Reference and validation note
-
-These sources provide guidance for the assessment tools and frameworks. Their inclusion does not mean that every observed issue is a confirmed vulnerability or compliance breach. In particular, CVE-2011-2523 applies to affected vsftpd 2.3.4 distributions downloaded during a specific period in 2011, so the exact target build must be validated before the finding is treated as confirmed. [NVD](https://nvd.nist.gov/vuln/detail/CVE-2011-2523)
 
 **Author:** Olubunmi Adesanmi  
 **Course:** GRC 103:Risk Assessment and Management Techniques
