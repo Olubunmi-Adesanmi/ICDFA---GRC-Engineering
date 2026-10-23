@@ -79,7 +79,7 @@ The assessment followed the phases specified in the lab instructions.
 The target's reachability was checked using ICMP ping.
 
 ```bash
-ping -c 4 <TARGET_IP>
+ping -c 4 192.168.**.**
 ```
 
 **Result:** The connectivity check succeeded, according to the recorded lab results.
@@ -327,7 +327,6 @@ The following files were present when the directory was reviewed:
 
 ## 10. Limitations
 
-- The assessment was performed against an intentionally vulnerable lab target.
 - Service detection and banners do not establish exploitability on their own.
 - Risk ratings are provisional and should be revisited after validation.
 - Default credentials were not confirmed by the evidence reviewed.
@@ -348,6 +347,10 @@ This project forms part of my ongoing development in **GRC engineering**, with a
 ## Ethical and Safety Statement
 
 All assessment activities were intended for the authorised, isolated lab environment and deliberately vulnerable target. 
+
+## AI Usage Declaration
+
+Generative AI(ChatGPT) was used to assist with organising the s lab material into a structured report, refining grammar and professional wording, improving table presentation, AI was not treated as a source of lab evidence.
 
 ---
 
