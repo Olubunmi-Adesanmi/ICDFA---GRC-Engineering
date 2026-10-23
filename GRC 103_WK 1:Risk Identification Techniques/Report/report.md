@@ -4,12 +4,11 @@
 ![Focus](https://img.shields.io/badge/Focus-Cybersecurity%20%7C%20GRC-green)
 ![Tools](https://img.shields.io/badge/Tools-Nmap%20%7C%20Nikto%20%7C%20Nuclei-orange)
 
-#Lab 1: Practical Vulnerability Assessment for GRC Professionals
 
-**Prepared by:** [Your Name]  
+**Prepared by:** Olubunmi Adesanmi 
 **Course:**  GRC103 — Risk Assessment and Management Techniques 
-**Assessment role:** Internal GRC Audit Team  
-**Submission date:** 23 October 2026  
+**Module:** Risk Identification Techniques 
+**Assessment role:** Internal GRC Auditor    
 **Target:** Metasploitable 2 
 **Environment:** Kali Linux 
 
@@ -583,16 +582,10 @@ The Nuclei commands above are recorded as the lab's intended workflow. In this a
 6. The Nmap HTML screenshot is required by the lab instructions but was not confirmed in the supplied evidence-directory listing. Add the screenshot before final submission if the deliverable remains mandatory.
 
 
-
-
 ## AI Usage Declaration
 
 Generative AI(ChatGPT) was used to assist with organising the s lab material into a structured report, refining grammar and professional wording, improving table presentation, AI was not treated as a source of lab evidence.
 
 
-**Author:** Olubunmi Adesanmi  
-**Course:** GRC 103:Risk Assessment and Management Techniques
-**Module:** Risk Identification Techniques 
-Lab 1 — Practical Vulnerability Assessment for GRC Professionals  
 
 
