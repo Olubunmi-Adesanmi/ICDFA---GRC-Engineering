@@ -59,7 +59,7 @@ The assessment objectives were to:
 | Component | Purpose |
 |---|---|
 | Kali Linux | Assessment workstation |
-| Metasploitable | Intentionally vulnerable target |
+| Metasploitable 2 | Intentionally vulnerable target |
 | Nmap | Host discovery, port scanning, service/version enumeration, and OS detection |
 | Nikto | Web-server configuration and vulnerability checks |
 | Nuclei | Template-based vulnerability scanning; assessment incomplete |
@@ -91,7 +91,7 @@ ping -c 4 <TARGET_IP>
 A comprehensive scan was run against the authorised target:
 
 ```bash
-nmap -sV -sC -O -p- -oA initial_scan <TARGET_IP>
+nmap -sV -sC -O -p- -oA initial_scan 192.168.**.**
 ```
 
 The command was used to identify open ports, probe services and versions, run default Nmap scripts, and estimate the operating system.
@@ -164,7 +164,7 @@ The detected operating-system estimate was Linux 2.6.x, with the supplied Nmap o
 Nikto was used to check the target's HTTP service:
 
 ```bash
-nikto -h http://<TARGET_IP> -o nikto_scan.txt
+nikto -h http://192.168.**.** -o nikto_scan.txt
 ```
 
 The saved output contained the following observations:
@@ -191,18 +191,17 @@ CVE references appearing in automated tool output are treated as leads for verif
 The intended Nuclei commands were:
 
 ```bash
-nuclei -u http://<TARGET_IP> -o nuclei_web_scan.txt
+nuclei -u http://192.168.**.** -o nuclei_web_scan.txt
 ```
 
 ```bash
-nuclei -target <TARGET_IP> -o nuclei_full_scan.txt
+nuclei -target 192.168.**.** -o nuclei_full_scan.txt
 ```
 
 Nuclei v3.11.1 was installed, and scan execution was attempted. However, the expected template directory was unavailable. The recorded output files `nuclei_scan.txt` and `nuclei_web_scan.txt` were empty when checked.
 
 **Status: Incomplete.** The evidence does not demonstrate a valid completed Nuclei scan. No conclusion that the target has zero Nuclei-detectable vulnerabilities can be drawn from these empty output files.
 
-The scan should be repeated after an appropriate template set is installed and its availability is confirmed.
 
 ## 5. Risk Assessment and Triage
 
@@ -218,7 +217,7 @@ The lab's inherent-risk criteria are:
 | ID | Finding | Affected Service | CVE / Reference | Inherent Risk | Potential Control Mapping | Potential Business Impact |
 |---|---|---|---|---|---|---|
 | RA-01 | Service identified as a root-shell listener | TCP/1524 | Nmap service identification; validate manually | High — potentially critical | CIS secure configuration and access control; NIST Protect outcomes | Potential unauthorised privileged access and system compromise |
-| RA-02 | Legacy vsftpd 2.3.4 version | FTP/21 | CVE-2011-2523 is associated with a backdoored vsftpd 2.3.4 release; verify the exact build | High, provisional | CIS vulnerability management and secure configuration | Potential remote compromise if the affected build is present and vulnerable |
+| RA-02 | Legacy vsftpd 2.3.4 version | FTP/21 | CVE-2011-2523 is associated with a backdoored vsftpd 2.3.4 release | High, provisional | CIS vulnerability management and secure configuration | Potential remote compromise if the affected build is present and vulnerable |
 | RA-03 | Unencrypted remote-access services | Telnet/23, rlogin/513, rsh/512 and 514 | Service and protocol observations; no separate CVE assigned | High, provisional | NIST data protection and access-control outcomes; CIS secure configuration | Potential credential interception, unauthorised access, and exposure of session data |
 | RA-04 | Legacy Apache and PHP versions | HTTP/80 | Detected version banners; specific vulnerabilities require validation | High, provisional | CIS vulnerability management; applicable web-security requirements | Potential exploitation of unpatched software and compromise of the web service |
 | RA-05 | Exposed database services | MySQL/3306 and PostgreSQL/5432 | Nmap service/version observations | High, provisional | CIS access control and secure configuration | Potential unauthorised database access or data exposure |
@@ -237,7 +236,7 @@ The lab's inherent-risk criteria are:
 ## 6. Executive Summary
 
 **To:** IT Management  
-**From:** GRC Audit Team  
+**From:** Internal GRC Auditor  
 **Date:** 21 October 2026  
 **Subject:** Vulnerability Assessment Findings — Development Test Server
 
@@ -348,7 +347,7 @@ This project forms part of my ongoing development in **GRC engineering**, with a
 
 ## Ethical and Safety Statement
 
-All assessment activities were intended for the authorised, isolated lab environment and deliberately vulnerable target. The commands and workflow should only be used on systems for which explicit permission has been granted.
+All assessment activities were intended for the authorised, isolated lab environment and deliberately vulnerable target. 
 
 ---
 
