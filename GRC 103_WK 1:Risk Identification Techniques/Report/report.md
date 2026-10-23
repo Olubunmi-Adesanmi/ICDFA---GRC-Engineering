@@ -441,10 +441,6 @@ The actions below are prioritised for the lab scenario. Timeframes are suggested
 | Follow-up | Restore the Nuclei template set and rerun the web-focused and broader scans against the authorised target | Assessment operator | Non-empty scan output, template availability evidence, and review of each result |
 | Ongoing | Maintain a risk register, assign owners and target dates, record risk acceptance, and retain closure evidence | GRC/risk owner | Updated register, management decisions, and verification records |
 
-### 9.1 Remediation validation criteria
-
-A finding should not be marked closed merely because a configuration change was made. Closure should be based on appropriate verification, such as a repeat scan, service check, access-control test, software-version evidence, or review of relevant logs. Where the risk cannot be fully removed, document the residual risk, compensating controls, decision owner, and approved acceptance period.
-
 ---
 
 ## 10. Evidence Inventory and Submission Checklist
@@ -496,7 +492,7 @@ This lab reinforces that GRC work requires evidence-based interpretation rather 
 
 ## 12. Ethical and Safety Statement
 
-All activity documented in this report was intended for the authorised, isolated lab environment using a deliberately vulnerable Metasploitable target. The assessment should not be repeated against public, production, organisational, or third-party systems without explicit authorisation and an approved scope. The target should remain isolated from production and untrusted networks. No real credentials, secrets, or personal data should be included in public portfolio evidence.
+All activity documented in this report was intended for the authorised, isolated lab environment using a deliberately vulnerable Metasploitable target. The assessment should not be repeated against public, production, organisational, or third-party systems without explicit authorisation and an approved scope.
 
 ---
 
@@ -526,62 +522,8 @@ ProjectDiscovery. (n.d.). *Nuclei templates* [GitHub repository]. https://github
 
 Sullo. (n.d.). *Nikto documentation*. GitHub. https://github.com/sullo/nikto/wiki/
 
-### Reference note
-
-The sources above support the tool descriptions and control-framework discussion. The references do not establish that every scanner observation is a confirmed vulnerability. In particular, CVE-2011-2523 applies to a specific backdoored vsftpd 2.3.4 distribution downloaded during 30 June–3 July 2011; the exact build must be validated against the target before recording the CVE as confirmed. Nikto's references to CVE-1999-0678 and CVE-2003-1418 also require independent, context-specific verification.
-
 ---
-
-## Appendix A: Commands Used
-
-Use these command patterns only against the authorised lab target. Replace `<TARGET_IP>` locally with the instructor-provided target address; do not scan any other system.
-
-### A.1 Connectivity check
-
-```bash
-ping -c 4 <TARGET_IP>
-```
-
-### A.2 Nmap scan with outputs in three formats
-
-```bash
-nmap -sV -sC -O -p- -oA initial_scan <TARGET_IP>
-```
-
-### A.3 Convert Nmap XML to HTML
-
-```bash
-xsltproc -o initial_scan_report.html \
-  /usr/share/nmap/nmap.xsl initial_scan.xml
-```
-
-### A.4 Nikto scan
-
-```bash
-nikto -h http://<TARGET_IP> -o nikto_scan.txt
-```
-
-### A.5 Nuclei scan attempts
-
-```bash
-nuclei -u http://<TARGET_IP> -o nuclei_web_scan.txt
-nuclei -target <TARGET_IP> -o nuclei_full_scan.txt
-```
-
-The Nuclei commands above are recorded as the lab's intended workflow. In this assessment, a working template directory was not available, so the scan should not be reported as complete until the tool can read templates and generates valid results.
-
----
-
-## Appendix B: Evidence and Interpretation Notes
-
-1. The open-port inventory in Section 5.3 is based on the supplied Nmap output. Version strings should be checked against the installed packages if a definitive vulnerability statement is required.
-2. Nikto findings in Section 6.2 describe what the scanner reported. They are not all equivalent in severity, and some may be informational, context-dependent, or false positives.
-3. The risk register is a triage tool. A production risk register should also record affected asset, finding owner, likelihood, impact, residual risk, target date, risk acceptance, and closure evidence.
-4. The reported CVE-2011-2523 reference is relevant to verification of the vsftpd version but does not independently establish that the lab target has the backdoored release.
-5. The evidence folder contained zero-byte Nuclei output files at the time it was reviewed. Preserve the terminal log and replace the empty outputs with authentic results after a successful scan.
-6. The Nmap HTML screenshot is required by the lab instructions but was not confirmed in the supplied evidence-directory listing. Add the screenshot before final submission if the deliverable remains mandatory.
-
-
+   
 ## AI Usage Declaration
 
 Generative AI(ChatGPT) was used to assist with organising the s lab material into a structured report, refining grammar and professional wording, improving table presentation, AI was not treated as a source of lab evidence.
