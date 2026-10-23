@@ -59,7 +59,7 @@ The assessment objectives were to:
 | Component | Purpose |
 |---|---|
 | Kali Linux | Assessment workstation |
-| Metasploitable | Intentionally vulnerable target |
+| Metasploitable 2 | Intentionally vulnerable target |
 | Nmap | Host discovery, port scanning, service/version enumeration, and OS detection |
 | Nikto | Web-server configuration and vulnerability checks |
 | Nuclei | Template-based vulnerability scanning; assessment incomplete |
@@ -79,7 +79,7 @@ The assessment followed the phases specified in the lab instructions.
 The target's reachability was checked using ICMP ping.
 
 ```bash
-ping -c 4 <TARGET_IP>
+ping -c 4 192.168.**.**
 ```
 
 **Result:** The connectivity check succeeded, according to the recorded lab results.
@@ -91,7 +91,7 @@ ping -c 4 <TARGET_IP>
 A comprehensive scan was run against the authorised target:
 
 ```bash
-nmap -sV -sC -O -p- -oA initial_scan <TARGET_IP>
+nmap -sV -sC -O -p- -oA initial_scan 192.168.**.**
 ```
 
 The command was used to identify open ports, probe services and versions, run default Nmap scripts, and estimate the operating system.
@@ -164,7 +164,7 @@ The detected operating-system estimate was Linux 2.6.x, with the supplied Nmap o
 Nikto was used to check the target's HTTP service:
 
 ```bash
-nikto -h http://<TARGET_IP> -o nikto_scan.txt
+nikto -h http://192.168.**.** -o nikto_scan.txt
 ```
 
 The saved output contained the following observations:
@@ -191,18 +191,17 @@ CVE references appearing in automated tool output are treated as leads for verif
 The intended Nuclei commands were:
 
 ```bash
-nuclei -u http://<TARGET_IP> -o nuclei_web_scan.txt
+nuclei -u http://192.168.**.** -o nuclei_web_scan.txt
 ```
 
 ```bash
-nuclei -target <TARGET_IP> -o nuclei_full_scan.txt
+nuclei -target 192.168.**.** -o nuclei_full_scan.txt
 ```
 
 Nuclei v3.11.1 was installed, and scan execution was attempted. However, the expected template directory was unavailable. The recorded output files `nuclei_scan.txt` and `nuclei_web_scan.txt` were empty when checked.
 
 **Status: Incomplete.** The evidence does not demonstrate a valid completed Nuclei scan. No conclusion that the target has zero Nuclei-detectable vulnerabilities can be drawn from these empty output files.
 
-The scan should be repeated after an appropriate template set is installed and its availability is confirmed.
 
 ## 5. Risk Assessment and Triage
 
@@ -218,26 +217,26 @@ The lab's inherent-risk criteria are:
 | ID | Finding | Affected Service | CVE / Reference | Inherent Risk | Potential Control Mapping | Potential Business Impact |
 |---|---|---|---|---|---|---|
 | RA-01 | Service identified as a root-shell listener | TCP/1524 | Nmap service identification; validate manually | High — potentially critical | CIS secure configuration and access control; NIST Protect outcomes | Potential unauthorised privileged access and system compromise |
-| RA-02 | Legacy vsftpd 2.3.4 version | FTP/21 | CVE-2011-2523 is associated with a backdoored vsftpd 2.3.4 release; verify the exact build | High, provisional | CIS vulnerability management and secure configuration | Potential remote compromise if the affected build is present and vulnerable |
-| RA-03 | Unencrypted remote-access services | Telnet/23, rlogin/513, rsh/512 and 514 | Service and protocol observations; no separate CVE assigned | High, provisional | NIST data protection and access-control outcomes; CIS secure configuration | Potential credential interception, unauthorised access, and exposure of session data |
-| RA-04 | Legacy Apache and PHP versions | HTTP/80 | Detected version banners; specific vulnerabilities require validation | High, provisional | CIS vulnerability management; applicable web-security requirements | Potential exploitation of unpatched software and compromise of the web service |
-| RA-05 | Exposed database services | MySQL/3306 and PostgreSQL/5432 | Nmap service/version observations | High, provisional | CIS access control and secure configuration | Potential unauthorised database access or data exposure |
-| RA-06 | Legacy SMB/Samba service | SMB/139 and 445 | Detected Samba version; validate applicable vulnerabilities | High, provisional | CIS vulnerability management and access control | Potential unauthorised file access or service compromise |
-| RA-07 | Other remotely accessible services | Java RMI, distccd, VNC, AJP, Ruby DRb, NFS and RPC services | Service exposure; exploitability not established | High, provisional | CIS attack-surface reduction and secure configuration | Potential remote attack paths or unintended access to internal resources |
-| RA-08 | Directory indexing enabled | HTTP/80 | Nikto; CWE-548 reference | Medium, provisional | Applicable CIS secure-configuration practices; OWASP guidance | Exposure of filenames, documentation, or unintended resources |
-| RA-09 | PHP diagnostic page exposed | HTTP/80 | Nikto; information-disclosure observation | Medium, provisional | Applicable information-protection and secure-configuration controls | Disclosure of system or application configuration information |
-| RA-10 | phpMyAdmin resources accessible | HTTP/80 | Nikto observation | Medium, provisional | Access control and administrative-interface protection | Increased exposure of database-management functions |
-| RA-11 | HTTP TRACE enabled | HTTP/80 | Nikto observation | Medium, provisional | Web-server hardening and applicable OWASP guidance | Additional HTTP attack surface; practical exploitability depends on the application and client configuration |
-| RA-12 | Recommended security headers missing | HTTP/80 | Nikto observations | Low–Medium, provisional | Applicable secure-configuration controls | Reduced defence-in-depth for browser-based security |
-| RA-13 | Apache MultiViews enabled | HTTP/80 | Nikto observation; X-Force reference reported by scanner | Low, provisional | Secure configuration and minimisation of unnecessary functionality | Easier discovery of alternative resources in some configurations |
-| RA-14 | ETag metadata and default documentation exposure | HTTP/80 | Nikto observations; CVE reference requires verification | Low, provisional | Information disclosure and secure configuration | Unnecessary file metadata or platform information may be disclosed |
+| RA-02 | Legacy vsftpd 2.3.4 version | FTP/21 | CVE-2011-2523 is associated with a backdoored vsftpd 2.3.4 release | High | CIS vulnerability management and secure configuration | Potential remote compromise if the affected build is present and vulnerable |
+| RA-03 | Unencrypted remote-access services | Telnet/23, rlogin/513, rsh/512 and 514 | Service and protocol observations; no separate CVE assigned | High  | NIST data protection and access-control outcomes; CIS secure configuration | Potential credential interception, unauthorised access, and exposure of session data |
+| RA-04 | Legacy Apache and PHP versions | HTTP/80 | Detected version banners; specific vulnerabilities require validation | High  | CIS vulnerability management; applicable web-security requirements | Potential exploitation of unpatched software and compromise of the web service |
+| RA-05 | Exposed database services | MySQL/3306 and PostgreSQL/5432 | Nmap service/version observations | High  | CIS access control and secure configuration | Potential unauthorised database access or data exposure |
+| RA-06 | Legacy SMB/Samba service | SMB/139 and 445 | Detected Samba version; validate applicable vulnerabilities | High  | CIS vulnerability management and access control | Potential unauthorised file access or service compromise |
+| RA-07 | Other remotely accessible services | Java RMI, distccd, VNC, AJP, Ruby DRb, NFS and RPC services | Service exposure; exploitability not established | High | CIS attack-surface reduction and secure configuration | Potential remote attack paths or unintended access to internal resources |
+| RA-08 | Directory indexing enabled | HTTP/80 | Nikto; CWE-548 reference | Medium  | Applicable CIS secure-configuration practices; OWASP guidance | Exposure of filenames, documentation, or unintended resources |
+| RA-09 | PHP diagnostic page exposed | HTTP/80 | Nikto; information-disclosure observation | Medium  | Applicable information-protection and secure-configuration controls | Disclosure of system or application configuration information |
+| RA-10 | phpMyAdmin resources accessible | HTTP/80 | Nikto observation | Medium  | Access control and administrative-interface protection | Increased exposure of database-management functions |
+| RA-11 | HTTP TRACE enabled | HTTP/80 | Nikto observation | Medium  | Web-server hardening and applicable OWASP guidance | Additional HTTP attack surface; practical exploitability depends on the application and client configuration |
+| RA-12 | Recommended security headers missing | HTTP/80 | Nikto observations | Low–Medium  | Applicable secure-configuration controls | Reduced defence-in-depth for browser-based security |
+| RA-13 | Apache MultiViews enabled | HTTP/80 | Nikto observation; X-Force reference reported by scanner | Low,  | Secure configuration and minimisation of unnecessary functionality | Easier discovery of alternative resources in some configurations |
+| RA-14 | ETag metadata and default documentation exposure | HTTP/80 | Nikto observations; CVE reference requires verification | Low,  | Information disclosure and secure configuration | Unnecessary file metadata or platform information may be disclosed |
 | RA-15 | Nuclei assessment not completed | Nuclei scan process | Missing templates and empty output files | Not a vulnerability rating | Assessment completeness and evidence management | The assessment may lack additional vulnerability coverage until the scan is completed |
 
 
 ## 6. Executive Summary
 
 **To:** IT Management  
-**From:** GRC Audit Team  
+**From:** Internal GRC Auditor  
 **Date:** 21 October 2026  
 **Subject:** Vulnerability Assessment Findings — Development Test Server
 
@@ -328,7 +327,6 @@ The following files were present when the directory was reviewed:
 
 ## 10. Limitations
 
-- The assessment was performed against an intentionally vulnerable lab target.
 - Service detection and banners do not establish exploitability on their own.
 - Risk ratings are provisional and should be revisited after validation.
 - Default credentials were not confirmed by the evidence reviewed.
@@ -348,7 +346,11 @@ This project forms part of my ongoing development in **GRC engineering**, with a
 
 ## Ethical and Safety Statement
 
-All assessment activities were intended for the authorised, isolated lab environment and deliberately vulnerable target. The commands and workflow should only be used on systems for which explicit permission has been granted.
+All assessment activities were intended for the authorised, isolated lab environment and deliberately vulnerable target. 
+
+## AI Usage Declaration
+
+Generative AI(ChatGPT) was used to assist with organising the s lab material into a structured report, refining grammar and professional wording, improving table presentation, AI was not treated as a source of lab evidence.
 
 ---
 
@@ -378,12 +380,10 @@ ProjectDiscovery. (n.d.-b). *Nuclei templates* [GitHub repository]. https://gith
 
 Sullo. (n.d.). *Nikto documentation*. GitHub. https://github.com/sullo/nikto/wiki/
 
-### Reference and validation note
-
-These sources provide guidance for the assessment tools and frameworks. Their inclusion does not mean that every observed issue is a confirmed vulnerability or compliance breach. In particular, CVE-2011-2523 applies to affected vsftpd 2.3.4 distributions downloaded during a specific period in 2011, so the exact target build must be validated before the finding is treated as confirmed. [NVD](https://nvd.nist.gov/vuln/detail/CVE-2011-2523)
 
 **Author:** Olubunmi Adesanmi  
 **Course:** GRC 103:Risk Assessment and Management Techniques
 **Module:** Risk Identification Techniques 
 Lab 1 — Practical Vulnerability Assessment for GRC Professionals  
+
 
