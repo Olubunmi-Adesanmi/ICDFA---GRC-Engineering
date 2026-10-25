@@ -34,8 +34,7 @@
 11. [Conclusion and Learning Outcomes](#11-conclusion-and-learning-outcomes)
 12. [Ethical and Safety Statement](#12-ethical-and-safety-statement)
 13. [References](#13-references)
-14. [Appendix A: Commands Used](#appendix-a-commands-used)
-15. [Appendix B: Evidence and Interpretation Notes](#appendix-b-evidence-and-interpretation-notes)
+    
 
 ---
 
@@ -79,16 +78,8 @@ High-priority PHP exposure; confirm configuration and CVE applicability
 
 ### 1.3 . Business Impact by Technical Finding
 
-No.	Finding / Security Weakness	Potential Business Impact	Preliminary Priority
-1	Outdated Apache and PHP software	Exploitation of applicable vulnerabilities could compromise the web server, expose information or disrupt services.	High
-2	PHP CGI vulnerability — CVE-2012-1823	If the vulnerable CGI configuration is present, an attacker may execute commands remotely and compromise application data or server resources.	High; verify CGI configuration
-3	PHP end-of-life version detection	Unsupported software increases exposure to known vulnerabilities and ongoing maintenance risk. The specific newer CVE requires version-specific validation.	High software lifecycle concern; specific CVE unconfirmed
-4	Anonymous FTP access and legacy FTP service	Unauthorised users may retrieve exposed files, potentially disclosing confidential information.	High
-5	Telnet and legacy remote-shell services	Unencrypted communications may expose credentials and session data, increasing the risk of account compromise.	High
-6	Root-shell-labelled service on port 1524	If unauthorised root-level access is available, an attacker could gain extensive system control, access data or alter configurations.	Critical potential impact; validate access
-7	Exposed MySQL and PostgreSQL services	Weak authentication or access controls could permit unauthorised access, disclosure, alteration or deletion of business records.	High; configuration-dependent
-8	Exposed SMB and NFS services	Inadequately restricted file-sharing services could expose confidential files and shared resources.	High; validate permissions
-9	Exposed phpMyAdmin and diagnostic files	Accessible administration resources and diagnostic pages may reveal database, software and configuration information.	Medium–High
+
+
 
 ### 1.4 Highest-priority risks
 
@@ -98,7 +89,7 @@ No.	Finding / Security Weakness	Potential Business Impact	Preliminary Priority
 4. **Web-server information disclosure and configuration issues:** Directory indexing, an accessible `phpinfo.php` page, accessible phpMyAdmin resources, and other Nikto observations should be reviewed and remediated where confirmed.
 5. **Incomplete vulnerability coverage:** Nuclei needs a functioning template set and a repeat scan before its findings can contribute to the final risk assessment.
 
-### 1.4 Management recommendations
+### 1.5 Management recommendations
 
 Management should keep the intentionally vulnerable target isolated, prioritise validation of the port 1524 service and the FTP build, reduce unnecessary network exposure, replace unsupported software, harden the web server, and ensure that database and administrative interfaces are only available to authorised users and systems. Each remediation should have an accountable owner, target date, and verification evidence. A follow-up assessment should confirm that the changes have reduced the documented risks.
 
