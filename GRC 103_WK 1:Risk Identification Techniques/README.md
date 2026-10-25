@@ -103,11 +103,14 @@ Nikto reported several issues requiring investigation:
 | Apache MultiViews enabled | May make resource discovery easier in some configurations | Review necessity and disable if not required |
 | Apache default or documentation files present | May disclose implementation details | Remove unnecessary files or restrict access |
 
-## The lab instructions called for web-focused and broader Nuclei scans using commands similar to:
-nuclei -u http://192.168.**.*** -o nuclei_web_scan.txt
+## Nuclei  vulnerability scanning
+
+A web-focused and broader Nuclei scans was conducted  using these commands:
+nuclei -u http:// 192.168.**.*** -o nuclei_web_scan.txt
 nuclei -target 192.168.**.*** -o nuclei_full_scan.txt
-Nuclei v3.11.1 was installed. During the attempt, the tool reported that it could not find the expected template path under /home/kali/.local/nuclei-templates. 
-Assessment Findings: CVE-2012-1823 High; CVE-2026-109618 version/EOL branch Critical
+Nuclei v3.11.1 was installed. During the attempt, the tool initially reported that it could not find the expected template path under /home/kali/.local/nuclei-templates which was later resolved.
+
+Assessment Findings summary: CVE-2012-1823 High; CVE-2026-109618 version/EOL branch Critical
 High-priority PHP exposure; confirm configuration and CVE applicability
 
 ## Risk Assessment Approach
@@ -146,21 +149,6 @@ The following actions are recommended in order of priority:
 6. **Confirm remediation.** Re-scan the authorised target after changes and retain before-and-after evidence.
 7. **Complete the Nuclei assessment.** Install or restore an appropriate template set, confirm the templates are available, rerun the scan, and review the resulting output.
 8. **Maintain a remediation register.** Assign action owners, target dates, risk status, and verification evidence.
-
-## Evidence and Deliverables
-
-The assessment generated the following evidence files:
-
-| Evidence File | Purpose |
-|---|---|
-| `initial_scan.nmap` | Human-readable Nmap results |
-| `initial_scan.xml` | Structured Nmap results for analysis or reuse |
-| `initial_scan.gnmap` | Grepable Nmap output |
-| `initial_scan_report.html` | HTML presentation of Nmap results |
-| `nikto_scan.txt` | Nikto web-server assessment output |
-| `nuclei_terminal.log` | Records the Nuclei execution issue |
-| `nuclei_scan.txt` | Empty Nuclei output file at the time of evidence review |
-| `nuclei_web_scan.txt` | Empty Nuclei web-scan output file at the time of evidence review |
 
 
 ## Learning Outcomes
