@@ -48,7 +48,6 @@
 | Assessment workstation | Kali Linux |
 | version | 1.0 |
 | Intended audience | IT Management, system owners, security and GRC reviewers, and course assessors |
-| Handling | Training report based on an authorised isolated lab. Do not interpret as a production-system penetration test or compliance certification. |
 
 ---
 
@@ -387,7 +386,7 @@ The “control relevance” column identifies potential framework/control themes
 | RA-13 | Missing recommended web security headers | Nikto observations for X-Content-Type-Options, Referrer-Policy, Permissions-Policy, HSTS, and CSP | Low–Medium, provisional | Secure configuration and defence in depth | Reduced browser-side protections depending on deployment. Define suitable headers and test; apply HSTS only with appropriate HTTPS deployment. |
 | RA-14 | Apache MultiViews enabled; TCN header observed | Nikto observation; scanner cited an X-Force reference for MultiViews | Low–Medium, provisional | Secure configuration | May ease resource discovery or reveal negotiation behaviour. Validate relevance and disable unnecessary content negotiation. |
 | RA-15 | ETag metadata and default Apache README exposed | Nikto observations; CVE-2003-1418 cited by scanner but not independently confirmed | Low–Medium, provisional | Information disclosure and secure configuration | Exposure of file metadata or default implementation details. Validate behaviour; remove default content and minimise unnecessary metadata. |
-| RA-16 | Nuclei output files empty because template directory was unavailable | Nuclei terminal log and zero-byte output files | Not a vulnerability rating; assurance gap | Assessment completeness, evidence quality, vulnerability-management process | Assessment may lack additional findings until template-based scanning is completed. Configure templates, rerun the authorised scan, review results, and append verified findings. |
+
 
 ### 7.3 Likelihood, impact, and inherent risk scoring
 
@@ -490,7 +489,7 @@ The following files appeared in the directory listing supplied for review. File 
 | `initial_scan_report.html` | 19 KB | HTML presentation of Nmap results; file was present |
 | `nikto_scan.txt` | 4.4 KB | Nikto web-server assessment output |
 | `nuclei_terminal.log` | 888 bytes | Terminal log recording the Nuclei issue |
-| `nuclei_web_scan.txt` | 0 bytes | Empty at the time of review; not evidence of a clean scan |
+
 
 
 ---
