@@ -60,7 +60,7 @@ Nikto was run against the target's HTTP service to check for potential weaknesse
 
 ### 4. Vulnerability Assessment Tool Attempt
 
-Nuclei was installed and execution was attempted. However, the required template directory was unavailable, and the generated scan output files were empty.
+ Nuclei is template-based: the engine loads YAML templates and reports matches that satisfy a template's conditions . An earlier run failed because no templates were available; its “No results found” was not a clean scan. The later saved output contains two lines, so the report treats these as target-specific Nuclei results, while still distinguishing a version/EOL template from an exploit-confirmation test.
 
 ### 5. Risk Evaluation
 
@@ -74,7 +74,7 @@ Relevant observations were mapped to applicable security framework themes. Recom
 
 ### Network and Service Enumeration
 
-Nmap identified **31 open TCP ports** on the lab target.
+Nmap identified **30 open TCP ports** on the lab target.
 
 The observed services included:
 
@@ -103,6 +103,12 @@ Nikto reported several issues requiring investigation:
 | Apache MultiViews enabled | May make resource discovery easier in some configurations | Review necessity and disable if not required |
 | Apache default or documentation files present | May disclose implementation details | Remove unnecessary files or restrict access |
 
+## The lab instructions called for web-focused and broader Nuclei scans using commands similar to:
+nuclei -u http://192.168.**.*** -o nuclei_web_scan.txt
+nuclei -target 192.168.**.*** -o nuclei_full_scan.txt
+Nuclei v3.11.1 was installed. During the attempt, the tool reported that it could not find the expected template path under /home/kali/.local/nuclei-templates. 
+Assessment Findings: CVE-2012-1823 High; CVE-2026-109618 version/EOL branch Critical
+High-priority PHP exposure; confirm configuration and CVE applicability
 
 ## Risk Assessment Approach
 
@@ -156,8 +162,6 @@ The assessment generated the following evidence files:
 | `nuclei_scan.txt` | Empty Nuclei output file at the time of evidence review |
 | `nuclei_web_scan.txt` | Empty Nuclei web-scan output file at the time of evidence review |
 
-The evidence inventory reflects the state of the files when reviewed. Screenshots should also be included where required by the lab instructions and should correspond to the actual command output or report displayed.
-
 
 ## Learning Outcomes
 
@@ -171,7 +175,6 @@ Through this exercise, I practised:
 - Relating technical findings to recognised GRC frameworks.
 - Communicating assessment limitations and recommendations clearly.
 
-This project forms part of my ongoing development in **GRC engineering**, with an emphasis on connecting technical security evidence to risk-based decisions, control improvement, and governance reporting.
 
 ## Ethical and Safety Considerations
 
