@@ -392,24 +392,22 @@ The qualitative scoring logic used here is: High likelihood + High impact = High
 
 | ID | Likelihood | Impact | Inherent risk |
 |---|---|---|---|
-| RA-01 | Medium | High | High, provisional |
-| RA-02 | Medium | High | High, provisional |
-| RA-03 | Medium | High | High, provisional |
-| RA-04 | Medium | High | High, provisional |
-| RA-05 | Medium | High | High, provisional |
-| RA-06 | Medium | High | High, provisional |
-| RA-07 | Medium | High | High, provisional |
-| RA-08 | Medium | Medium | Medium, provisional |
-| RA-09 | Medium | Medium | Medium, provisional |
-| RA-10 | Medium | Medium | Medium, provisional |
-| RA-11 | Medium | Medium | Medium, provisional |
-| RA-12 | Medium | Medium | Medium, provisional |
-| RA-13 | Medium | Low | Low–Medium, provisional |
-| RA-14 | Medium | Low | Low–Medium, provisional |
-| RA-15 | Medium | Low | Low–Medium, provisional |
-| RA-16 | N/A | N/A | Not scored: assessment-completeness gap, not a vulnerability |
+| RA-01 | Medium | High | High |
+| RA-02 | Medium | High | High |
+| RA-03 | Medium | High | High |
+| RA-04 | Medium | High | High|
+| RA-05 | Medium | High | High |
+| RA-06 | Medium | High | High |
+| RA-07 | Medium | High | High |
+| RA-08 | Medium | Medium | Medium |
+| RA-09 | Medium | Medium | Medium |
+| RA-10 | Medium | Medium | Medium |
+| RA-11 | Medium | Medium | Medium |
+| RA-12 | Medium | Medium | Medium |
+| RA-13 | Medium | Low | Low–Medium|
+| RA-14 | Medium | Low | Low–Medium |
+| RA-15 | Medium | Low | Low–Medium |
 
-These scores correspond to the finding IDs in the consolidated risk register above. The ratings should be revisited after manual validation, review of the target's actual configuration, and verification of remediation.
 
 ### 7.4 Important triage notes
 
@@ -451,7 +449,7 @@ The actions below are prioritised for the lab scenario. Timeframes are suggested
 |---|---|---|---|
 | Immediate | Maintain isolation of the intentionally vulnerable Metasploitable target and investigate the service identified on port 1524 | Lab administrator / system owner | Service identity and exposure review; configuration before and after change; follow-up scan |
 | Immediate | Verify exact vsftpd package/build and determine whether the CVE-2011-2523 affected distribution is present | System administrator | Package/version evidence, trusted advisory comparison, and remediation/retest result |
-| High | Review all 31 open ports and document business purpose, exposure, and control owner for each service | System/network administrator | Approved service inventory and documented disposition for each service |
+| High | Review all 30 open ports and document business purpose, exposure, and control owner for each service | System/network administrator | Approved service inventory and documented disposition for each service |
 | High | Disable Telnet/rsh/rlogin and other unnecessary services; restrict required management access | System/network administrator | Service status, firewall/routing rules, and validation output |
 | High | Verify versions and support status for Apache, PHP, databases, Samba, FTP, IRC, Tomcat/AJP, RMI, distccd, VNC, and other detected services | System/application owners | Version inventory, applicable vulnerability review, patch/upgrade records |
 | High | Restrict MySQL/PostgreSQL and SMB/NFS to authorised hosts and appropriate accounts | Database and system administrators | Network access rules, account/permission review, and authorised connectivity tests |
@@ -482,7 +480,6 @@ The following files appeared in the directory listing supplied for review. File 
 | `initial_scan.xml` | 24 KB | Structured Nmap results and input for HTML conversion |
 | `initial_scan_report.html` | 19 KB | HTML presentation of Nmap results; file was present |
 | `nikto_scan.txt` | 4.4 KB | Nikto web-server assessment output |
-| `nuclei_scan.txt` | 0 bytes | Empty at the time of review; not evidence of a clean scan |
 | `nuclei_terminal.log` | 888 bytes | Terminal log recording the Nuclei issue |
 | `nuclei_web_scan.txt` | 0 bytes | Empty at the time of review; not evidence of a clean scan |
 
