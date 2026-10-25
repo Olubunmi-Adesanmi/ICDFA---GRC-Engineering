@@ -66,13 +66,31 @@ A vulnerability assessment was conducted against a deliberately vulnerable Metas
 
 ### 1.2 Overall results
 
-Nmap identified **31 open TCP ports** and estimated that the target was running a Linux 2.6-series operating system. The exposed services included FTP, SSH, Telnet, remote shell/login services, SMB/Samba, NFS, MySQL, PostgreSQL, Java RMI, VNC, Apache HTTP, Tomcat, AJP, distccd, UnrealIRCd, and other network services. The breadth of exposed services represents a substantial attack surface within the lab and warrants review of service necessity, network reachability, authentication, and configuration.
+Nmap identified **30 open TCP ports** and estimated that the target was running a Linux 2.6-series operating system. The exposed services included FTP, SSH, Telnet, remote shell/login services, SMB/Samba, NFS, MySQL, PostgreSQL, Java RMI, VNC, Apache HTTP, Tomcat, AJP, distccd, UnrealIRCd, and other network services. The breadth of exposed services represents a substantial attack surface within the lab and warrants review of service necessity, network reachability, authentication, and configuration.
 
 Nikto reported multiple web-server concerns, including legacy PHP and Apache version banners, directory indexing, an accessible PHP diagnostic page, accessible phpMyAdmin resources, an enabled HTTP TRACE method, and missing recommended security headers. These observations indicate potential weaknesses in software maintenance, information disclosure, and secure configuration.
 
-Nuclei v3.11.1 was installed and an execution attempt was made. However, the expected template directory was unavailable and the saved Nuclei output files were empty. Therefore, **the Nuclei scan is incomplete**; the empty files are not evidence that the target has no vulnerabilities.
+Nuclei v3.11.1 was installed and an execution was made.The lab instructions called for web-focused and broader Nuclei scans using commands:
+nuclei -u http://192.168.**.*** -o nuclei_web_scan.txt
+nuclei -target 192.168.**.*** -o nuclei_full_scan.txt
 
-### 1.3 Highest-priority risks
+Assessment Findings: CVE-2012-1823 High; CVE-2026-109618 version/EOL branch Critical
+High-priority PHP exposure; confirm configuration and CVE applicability
+
+### 1.3 . Business Impact by Technical Finding
+
+No.	Finding / Security Weakness	Potential Business Impact	Preliminary Priority
+1	Outdated Apache and PHP software	Exploitation of applicable vulnerabilities could compromise the web server, expose information or disrupt services.	High
+2	PHP CGI vulnerability — CVE-2012-1823	If the vulnerable CGI configuration is present, an attacker may execute commands remotely and compromise application data or server resources.	High; verify CGI configuration
+3	PHP end-of-life version detection	Unsupported software increases exposure to known vulnerabilities and ongoing maintenance risk. The specific newer CVE requires version-specific validation.	High software lifecycle concern; specific CVE unconfirmed
+4	Anonymous FTP access and legacy FTP service	Unauthorised users may retrieve exposed files, potentially disclosing confidential information.	High
+5	Telnet and legacy remote-shell services	Unencrypted communications may expose credentials and session data, increasing the risk of account compromise.	High
+6	Root-shell-labelled service on port 1524	If unauthorised root-level access is available, an attacker could gain extensive system control, access data or alter configurations.	Critical potential impact; validate access
+7	Exposed MySQL and PostgreSQL services	Weak authentication or access controls could permit unauthorised access, disclosure, alteration or deletion of business records.	High; configuration-dependent
+8	Exposed SMB and NFS services	Inadequately restricted file-sharing services could expose confidential files and shared resources.	High; validate permissions
+9	Exposed phpMyAdmin and diagnostic files	Accessible administration resources and diagnostic pages may reveal database, software and configuration information.	Medium–High
+
+### 1.4 Highest-priority risks
 
 1. **Potential privileged access:** Nmap identified TCP port 1524 as a service associated with a Metasploitable root shell. If the service offers the access indicated by the scan and is reachable by an unauthorised party, the potential impact could include full host compromise. The service identity and exposure should be validated.
 2. **Legacy FTP service:** Nmap identified `vsftpd 2.3.4`. CVE-2011-2523 affects a specific backdoored vsftpd 2.3.4 distribution downloaded during a defined period in 2011. The version banner makes this a priority for verification but does not, alone, prove that the affected build is present.
@@ -110,7 +128,7 @@ The assessment aimed to:
 - Recommend practical remediation and follow-up validation steps.
 - Maintain a clear distinction between scanner observations, verified vulnerabilities, and limitations in assessment coverage.
 
-### 2.3 Intended deliverables
+### 2.3 Deliverables
 
 The lab brief requires Nmap output files, a screenshot of the Nmap HTML report, Nikto and Nuclei output, a completed risk assessment table, and an executive summary. The evidence inventory in Section 10 records which files were present when the supplied evidence directory was reviewed and identifies remaining evidence gaps.
 
@@ -149,7 +167,7 @@ The assessment simulates an internal audit of a newly discovered Metasploitable 
 - The exact vsftpd build associated with CVE-2011-2523 has not been independently established from the supplied output.
 - The Nuclei template directory could not be found, and its output files were empty; the Nuclei assessment remains incomplete.
 - The evidence directory listing did not show a screenshot of the Nmap HTML report. A Nikto screenshot was reported as captured, but its filename was not visible in that listing.
-- The target IP is intentionally omitted from this report; use the authorised lab address in the local evidence and do not publish unnecessary network details in a public portfolio.
+
 
 ---
 
@@ -258,7 +276,7 @@ The following table transcribes the 31 open TCP entries in the supplied Nmap out
 | 50703/tcp | Open | Java RMI | GNU Classpath grmiregistry |
 | 55353/tcp | Open | RPC status | Version 1 (RPC #100024) |
 
-### 5.4 Initial GRC interpretation
+### 5.4  GRC interpretation
 
 The service inventory indicates several risk areas for review:
 
@@ -322,15 +340,14 @@ nuclei -u http://192.168.**.*** -o nuclei_web_scan.txt
 nuclei -target 192.168.**.*** -o nuclei_full_scan.txt
 ```
 
-Nuclei v3.11.1 was installed. During the attempt, the tool reported that it could not find the expected template path under `/home/kali/.local/nuclei-templates`. The evidence-directory listing showed the following:
+Nuclei v3.11.1 was installed. The lab instructions called for web-focused and broader Nuclei scans using commands:
+nuclei -u http://192.168.**.*** -o nuclei_web_scan.txt
+nuclei -target 192.168.**.*** -o nuclei_full_scan.txt.
 
-- `nuclei_scan.txt` — 0 bytes
-- `nuclei_web_scan.txt` — 0 bytes
-- `nuclei_terminal.log` — 888 bytes
+During the attempt,it initially stated that  the tool could not find the expected template path under /home/kali/.local/nuclei-templates. But new templates was downloaded and it was resolved.
 
-**Assessment status: Incomplete.** No valid Nuclei result set is available in the supplied evidence. This report does not claim that Nuclei detected zero vulnerabilities and does not invent CVE identifiers or severity scores.
-
-**Required follow-up:** Restore or install an appropriate Nuclei template set using the official ProjectDiscovery documentation, confirm that the templates can be read, rerun the scan only against the authorised lab target, save the actual output, and validate any reported finding before adding it to the risk register.
+Assessment Findings summary: CVE-2012-1823 High; CVE-2026-109618 version/EOL branch Critical
+High-priority PHP exposure; confirm configuration and CVE applicability
 
 ---
 
@@ -400,7 +417,7 @@ These scores correspond to the finding IDs in the consolidated risk register abo
 - **CVE-2011-2523:** The CVE is associated with a particular backdoored vsftpd 2.3.4 distribution. The Nmap banner warrants validation but is not sufficient, on its own, to confirm that exact build.
 - **CVE-1999-0678 and CVE-2003-1418:** These references appeared in Nikto's output. Their applicability to the exact target and observed behaviour has not been independently confirmed.
 - **Compliance violations:** The control mapping is preliminary. A formal violation should be declared only after comparing verified evidence with the exact requirement and confirming scope and applicability.
-- **Nuclei:** Empty output does not establish that a system is clean. The scan must be successfully run before its findings can be assessed.
+  
 
 ---
 
@@ -423,8 +440,6 @@ The following mapping identifies control themes that could be relevant to the re
 ### 8.1 Compliance interpretation
 
 The open ports and Nikto observations may indicate areas where security controls should be reviewed, but they do not automatically establish non-compliance. For example, the PCI DSS requirements apply to relevant in-scope payment-card environments; their inclusion here does not mean that this training target handles cardholder data. Similarly, a missing HTTP header should be evaluated against the application's architecture and approved secure configuration rather than treated as a universal compliance breach.
-
-When using this report for a formal audit, identify the exact framework edition and relevant safeguard or requirement, document the system scope, collect corroborating evidence, and record whether the control is implemented, partially implemented, not implemented, or not applicable.
 
 ---
 
