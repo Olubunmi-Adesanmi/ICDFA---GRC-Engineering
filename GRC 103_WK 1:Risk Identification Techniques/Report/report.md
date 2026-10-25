@@ -78,7 +78,7 @@ High-priority PHP exposure; confirm configuration and CVE applicability
 
 ### 1.3 . Business Impact by Technical Finding
 
-# 1. Business Impact by Technical Finding
+#### Business Impact
 
 | No. | Finding / Security Weakness | Potential Business Impact | Preliminary Priority |
 |---:|---|---|---|
