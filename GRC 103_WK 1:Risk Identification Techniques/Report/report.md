@@ -46,7 +46,7 @@
 | Assessment purpose | Identify exposed services and potential security weaknesses, assess risk, map relevant control themes, and recommend remediation |
 | Assessment target | Metasploitable lab server; target IP intentionally omitted from this report |
 | Assessment workstation | Kali Linux |
-| Evidence reviewed | Nmap and Nikto outputs and evidence-directory listing supplied for the lab; file timestamps indicate 19 October 2026 |
+| version | 1.0 |
 | Intended audience | IT Management, system owners, security and GRC reviewers, and course assessors |
 | Handling | Training report based on an authorised isolated lab. Do not interpret as a production-system penetration test or compliance certification. |
 
