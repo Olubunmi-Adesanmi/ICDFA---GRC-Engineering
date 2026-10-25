@@ -42,7 +42,7 @@ The assessment aimed to:
 | Metasploitable | Intentionally vulnerable lab target |
 
 
-## Assessment Methodology
+## Methodology
 
 The assessment followed a structured workflow.
 
@@ -58,7 +58,7 @@ Nmap was used to identify open TCP ports, service banners, software versions, an
 
 Nikto was run against the target's HTTP service to check for potential weaknesses, including directory indexing, information disclosure, legacy software, enabled HTTP methods, and missing security headers.
 
-### 4. Vulnerability Assessment Tool Attempt
+### 4. Vulnerability Assessment Tool 
 
  Nuclei is template-based: the engine loads YAML templates and reports matches that satisfy a template's conditions . An earlier run failed because no templates were available; its “No results found” was not a clean scan. The later saved output contains two lines, so the report treats these as target-specific Nuclei results, while still distinguishing a version/EOL template from an exploit-confirmation test.
 
