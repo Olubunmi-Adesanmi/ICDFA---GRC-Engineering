@@ -69,7 +69,7 @@ Nmap identified **30 open TCP ports** and estimated that the target was running 
 Nikto reported multiple web-server concerns, including legacy PHP and Apache version banners, directory indexing, an accessible PHP diagnostic page, accessible phpMyAdmin resources, an enabled HTTP TRACE method, and missing recommended security headers. These observations indicate potential weaknesses in software maintenance, information disclosure, and secure configuration.
 
 Nuclei v3.11.1 was installed and an execution was made.A web-focused and broader Nuclei scanning was conducted using these commands:
-nuclei -u http:// 192.168.**.*** -o nuclei_web_scan.txt
+nuclei -u http:// 192.168.56.101 -o nuclei_web_scan.txt
 nuclei -target 192.168.**.*** -o nuclei_full_scan.txt
 
 Assessment Findings: CVE-2012-1823 High; CVE-2026-109618 version/EOL branch Critical
@@ -186,7 +186,7 @@ The assessment simulates an internal audit of a newly discovered Metasploitable 
 | Component | Description |
 |---|---|
 | Assessment workstation | Kali Linux |
-| Target | Metasploitable intentionally vulnerable test server |
+| Target | Metasploitable intentionally vulnerable test server ip:192.168.56.101 |
 | Network context | Authorised isolated lab network |
 | Nmap | Used for discovery, port/service enumeration, version detection, and OS estimation; precise version not recorded in the supplied notes |
 | Nikto | Version 2.6.1, according to the supplied lab notes/output context |
