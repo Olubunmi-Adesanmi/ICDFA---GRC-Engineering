@@ -111,4 +111,8 @@ The report applies the following formulas:
 
 ---
 
-*This project is an educational risk assessment based on a supplied laboratory scenario. Financial estimates should be validated before being used for real-world investment decisions.*
+## AI Tool Usage
+
+**AI Tool Used:** ChatGPT (OpenAI)
+
+ChatGPT was used to assist with structuring and refining the assessment report, and improving the clarity and presentation of the documentation. The assessment inputs, assumptions, and final conclusions were reviewed by the author.
