@@ -19,7 +19,7 @@ SecureMobile supports **500,000 active customers** and processes approximately *
 
 *Daily transaction throughput represents the value processed, not the amount necessarily lost in a security incident.*
 
-## Assessment Scope
+##  Scope
 
 The assessment covers:
 
