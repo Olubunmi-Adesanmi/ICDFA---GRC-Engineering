@@ -1,6 +1,6 @@
 # SecureBank Financial — Quantitative Cybersecurity Risk Assessment
 
-## Project Overview
+##  Overview
 
 This project presents a quantitative cybersecurity risk assessment of SecureBank Financial’s SecureMobile Banking Platform. It evaluates three identified security vulnerabilities, estimates their financial exposure, and assesses proposed security controls to support risk-based decision-making.
 
