@@ -26,8 +26,7 @@
 11. [Limitations and Key Assumptions](#11-limitations-and-key-assumptions)
 12. [Conclusion and Management Recommendations](#12-conclusion-and-management-recommendations)
 13. [References](#13-references)
-14. [Appendix A: Formula Reference](#appendix-a-formula-reference)
-15. [Appendix B: Chart-Ready Data](#appendix-b-chart-ready-data)
+    
 
 ---
 
@@ -165,7 +164,6 @@ Daily throughput is calculated as `50,000 × $2,500`. It indicates the approxima
 | Web Application Firewall (WAF) | $150,000 | 75% reduction in web vulnerabilities | $25,000 |
 | MFA enhancement | $200,000 | 95% reduction in account takeover | $30,000 |
 
-Effectiveness figures are laboratory inputs, not independently verified measurements.
 
 ---
 
@@ -190,8 +188,6 @@ The supplied probabilities (15%, 25%, 40%) do not specify a time period. For thi
 | API authentication bypass | 15% | 0.15 |
 | Database injection | 25% | 0.25 |
 | Session hijacking | 40% | 0.40 |
-
-A probability of at least one event in a year is not automatically equivalent to expected annual incident frequency, especially if multiple events can occur. Actual ARO should be estimated from incident history, threat intelligence, exposure, exploitability, controls, and operating data.
 
 ### 5.3 Control Mapping Assumptions
 
@@ -239,7 +235,6 @@ Assuming all 500,000 records are affected at $250 per record:
 
 `SLE_DB = 500,000 × $250 = $125,000,000`
 
-This estimate must be validated against the likely number of affected records and actual response, notification, and recovery costs.
 
 #### Session Hijacking
 
@@ -249,7 +244,7 @@ Assuming 5,000 accounts/sessions are affected at $1,500 average loss per account
 
 ### 6.2 Annual Rate of Occurrence (ARO)
 
-The supplied probabilities are used as annual ARO proxies: 0.15, 0.25, and 0.40 respectively. They are model inputs, not evidence of actual incident frequency.
+The supplied probabilities are used as annual ARO proxies: 0.15, 0.25, and 0.40 respectively. 
 
 ### 6.3 Annualised Loss Expectancy (ALE)
 
@@ -340,7 +335,6 @@ The gateway may provide authentication enforcement, request validation, rate lim
 
 `Annual risk reduction = $31,250,000 − $7,812,500 = $23,437,500`
 
-The WAF-to-database-injection mapping is a modelling assumption. Actual protection depends on configuration, rules, application architecture, and attack payloads. A WAF is supplementary and must not replace safe query construction, parameterised queries/prepared statements, and least-privilege database access (OWASP Foundation, n.d.-a).
 
 ### 7.4 MFA Enhancement
 
@@ -394,7 +388,6 @@ For consistent comparison, the report uses a three-year evaluation period.
 | MFA enhancement | $2,850,000 | $8,550,000 | $290,000 | $8,260,000 | 2,848.3% |
 | **Combined portfolio** | **$26,962,500** | **$80,887,500** | **$1,015,000** | **$79,872,500** | **7,869.2%** |
 
-The portfolio ROI is calculated from total benefit and total cost, not by adding or averaging individual ROI percentages. The WAF result is especially sensitive to the assumed database-injection SLE and control mapping.
 
 ### 7.8 Payback Period
 
@@ -410,7 +403,7 @@ The WAF payback estimate is less than one day under the simplified model and mus
 
 ### 7.9 Control Selection
 
-The base-case model evaluates all three controls because no budget cap was supplied and each addresses a different primary risk. Before approval, validate costs, dependencies, operational impacts, and technical effectiveness. If a budget ceiling is introduced, recalculate the portfolio against an explicit objective, such as minimising residual ALE within budget.
+The base-case model evaluates all three controls because no budget cap was supplied and each addresses a different primary risk. Before approval, validate costs, dependencies, operational impacts, and technical effectiveness. 
 
 ---
 
@@ -440,20 +433,7 @@ The base-case model evaluates all three controls because no budget cap was suppl
 | Session hijacking | $3,000,000 | $150,000 |
 | **Total** | **$35,000,000** | **$8,037,500** |
 
-### 8.3 Recommended Visualisations
-
-Create the following charts from Appendix B:
-
-1. **Annualised Loss Expectancy by Vulnerability:** bar chart, vulnerability on the horizontal axis and ALE (USD) on the vertical axis.
-2. **ALE Distribution:** pie chart showing each vulnerability's share of total ALE.
-3. **Three-Year ROI Comparison:** bar chart comparing each control's ROI.
-4. **Three-Year Security Control Investment Breakdown:** stacked bar chart showing initial investment and three-year maintenance.
-5. **Initial Control Cost Versus Stated Effectiveness:** scatter plot with initial cost on the horizontal axis and effectiveness (%) on the vertical axis.
-6. **Risk Reduction Over Time:** line or bar chart showing cumulative gross modelled benefit across the three-year period.
-
-The cost-effectiveness scatter plot compares upfront cost with stated effectiveness; it does not independently establish business value because each control addresses a different risk.
-
-### 8.4 Cumulative Gross Modelled Risk Reduction
+### 8.3 Cumulative Gross Modelled Risk Reduction
 
 | Evaluation year | API Gateway | WAF | MFA | Cumulative portfolio benefit |
 |---|---:|---:|---:|---:|
@@ -461,13 +441,10 @@ The cost-effectiveness scatter plot compares upfront cost with stated effectiven
 | Year 2 | $1,350,000 | $46,875,000 | $5,700,000 | $53,925,000 |
 | Year 3 | $2,025,000 | $70,312,500 | $8,550,000 | $80,887,500 |
 
-These are gross modelled benefits and do not subtract control costs.
 
 ---
 
 ## 9. Risk Treatment Plan and Implementation Timeline
-
-The schedule below is illustrative planning guidance, not a confirmed project commitment.
 
 ### 9.1 Immediate Actions: Days 0–30
 
@@ -540,21 +517,8 @@ The schedule below is illustrative planning guidance, not a confirmed project co
 | Actual financial losses from relevant incidents | Improve loss estimates | Quarterly |
 | Residual ALE and treatment status | Support management oversight | Quarterly |
 
-### 10.2 Control Assurance
 
-Assurance activities should include:
-
-- Retest original vulnerabilities after remediation.
-- Verify controls protect the affected endpoints and business processes.
-- Confirm logs support detection and investigation.
-- Test alerting and escalation paths.
-- Document exceptions, limitations, and unresolved risks.
-- Recalculate risk estimates when assumptions or effectiveness change.
-- Obtain risk-owner acceptance for residual risks that cannot be eliminated.
-
-Retain approved configurations, test results, remediation tickets, risk-register updates, and management decisions as evidence.
-
-### 10.3 Management Reporting
+### 10.2 Management Reporting
 
 Quarterly reporting to the CISO and CFO should include current and residual ALE, high-priority vulnerability status, control implementation and maintenance costs, actual test results, incidents and losses, overdue treatment actions, changed assumptions, and decisions required.
 
@@ -636,61 +600,8 @@ OWASP Foundation. (n.d.-c). *OWASP API Security Project*. https://owasp.org/proj
 *Study Guide: Quantitative Risk Calculations for GRC Professionals*. (n.d.). Course learning material supplied for the exercise.
 
 ---
+## AI Tool Usage
 
-## Appendix A: Formula Reference
+**AI Tool Used:** ChatGPT (OpenAI)
 
-| Measure | Formula |
-|---|---|
-| API SLE | Supplied maximum single-incident loss |
-| Database SLE | Records at risk × cost per record |
-| Session SLE | Accounts at risk × average loss per account |
-| ALE | SLE × ARO |
-| Residual ALE | Current ALE × (1 − control effectiveness) |
-| Risk reduction | Current ALE − residual ALE |
-| Risk share | Scenario ALE ÷ total ALE × 100 |
-| Three-year gross benefit | Annual risk reduction × 3 |
-| Lifecycle cost | Initial investment + (annual maintenance × 3) |
-| ROI | (Gross benefit − lifecycle cost) ÷ lifecycle cost × 100 |
-| Payback (months) | Initial investment ÷ (annual risk reduction − annual maintenance) × 12 |
-
-## Appendix B: Chart-Ready Data
-
-### B.1 ALE Distribution
-
-| Vulnerability | ALE (USD) | Share (%) |
-|---|---:|---:|
-| API authentication bypass | 750000 | 2.14 |
-| Database injection | 31250000 | 89.29 |
-| Session hijacking | 3000000 | 8.57 |
-
-### B.2 Current and Residual ALE
-
-| Vulnerability | Current ALE (USD) | Residual ALE (USD) |
-|---|---:|---:|
-| API authentication bypass | 750000 | 75000 |
-| Database injection | 31250000 | 7812500 |
-| Session hijacking | 3000000 | 150000 |
-
-### B.3 Three-Year ROI
-
-| Control | ROI (%) |
-|---|---:|
-| Advanced API Security Gateway | 305.0 |
-| WAF | 31150.0 |
-| MFA enhancement | 2848.3 |
-
-### B.4 Investment Breakdown
-
-| Control | Initial investment (USD) | Three-year maintenance (USD) |
-|---|---:|---:|
-| Advanced API Security Gateway | 350000 | 150000 |
-| WAF | 150000 | 75000 |
-| MFA enhancement | 200000 | 90000 |
-
-### B.5 Control Cost and Effectiveness
-
-| Control | Initial cost (USD) | Effectiveness (%) |
-|---|---:|---:|
-| Advanced API Security Gateway | 350000 | 90 |
-| WAF | 150000 | 75 |
-| MFA enhancement | 200000 | 95 |
+ChatGPT was used to assist with structuring and refining the assessment report, organising quantitative risk calculations, and improving the clarity and presentation of the documentation. The assessment inputs, assumptions, and final conclusions were reviewed by the author.
