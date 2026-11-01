@@ -8,6 +8,61 @@
 **Currency:** United States dollars (USD)
 
 ---
+# TABLE OF CONTENTS
+
+**Executive Summary**
+
+**1. Introduction and Assessment Objectives**
+- 1.1 Introduction
+- 1.2 Assessment Objectives
+
+**2. Scope, Source Data and Methodology**
+- 2.1 Scope
+- 2.2 Supplied Campaign Data
+- 2.3 Organisational and Financial Assumptions
+- 2.4 Calculation Method and Terminology
+
+**3. Phase 1 – Basic Phishing Metrics**
+- 3.1 Fundamental Rates
+- 3.2 Attack-Stage Conversion Metrics
+- 3.3 Combined Results Across All Campaign Sends
+
+**4. Phase 2 – Advanced Risk Quantification**
+- 4.1 Workforce Projection
+- 4.2 Financial Impact and Modelled Annualized Loss Expectancy (ALE)
+- 4.3 Employee and Payroll Context
+
+**5. Phase 3 – Comprehensive Risk Assessment**
+- 5.1 Risk Assessment Matrix
+- 5.2 Risk Interpretation
+- 5.3 Statistical Confidence Intervals (95%)
+
+**6. Phase 4 – Executive Briefing and Control Economics**
+- 6.1 Board-Level Briefing
+- 6.2 Stand-Alone Control Cost-Benefit Analysis
+  - 6.2.1 Multi-Factor Authentication (MFA)
+  - 6.2.2 Security Awareness Training
+  - 6.2.3 Email Filtering
+- 6.3 Proposed Security Investment Portfolio
+- 6.4 Expected Risk Posture After Controls
+- 6.5 Break-Even Analysis
+
+**7. Strategic Recommendations and Implementation Roadmap**
+- 7.1 Immediate Actions – First 90 Days
+- 7.2 Strategic Actions – Next 6 to 12 Months
+- 7.3 Suggested Quarterly Security KPIs
+
+**8. Limitations, Assumptions and Corrections to the Supplied Brief**
+- 8.1 Limitations and Assumptions
+- 8.2 Corrections to Headline Values
+
+**9. Conclusion**
+
+**Appendix A – Formula Reference**
+
+**Appendix B – References**
+
+**AI Usage Declaration**
 
 ## Executive summary
 
