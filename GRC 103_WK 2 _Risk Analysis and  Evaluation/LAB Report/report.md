@@ -608,4 +608,4 @@ OWASP Foundation. (n.d.-c). *OWASP API Security Project*. https://owasp.org/proj
 
 **AI Tool Used:** ChatGPT (OpenAI)
 
-ChatGPT was used to assist with structuring and refining the assessment report, organising quantitative risk calculations, and improving the clarity and presentation of the documentation. The assessment inputs, assumptions, and final conclusions were reviewed by me.
+ChatGPT was used to assist with structuring and refining the  report, organising quantitative risk calculations, and improving the clarity and presentation of the documentation. 
