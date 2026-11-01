@@ -249,7 +249,7 @@ This project demonstrates practical GRC capabilities in:
 
 ## 12. AI Usage Declaration
 
-ChatGPT (OpenAI) and Microsoft Copilot were used as supporting tools for brainstorming, quantitative analysis assistance, report structuring and editing. AI-assisted outputs were reviewed, and the author retains responsibility for the accuracy and final content of the report.
+ChatGPT (OpenAI) and Microsoft Copilot were used as supporting tools for brainstorming, quantitative analysis assistance, report structuring and editing. AI-assisted outputs were reviewed, am  responsible for the accuracy and final content of the report.
 
 ## 13. References
 
@@ -277,8 +277,8 @@ This project demonstrates how GRC professionals can translate phishing simulatio
 
 By combining technical metrics, statistical analysis, financial modelling and control evaluation, the assessment provides a structured approach to prioritising security investments and communicating risk to organisational leadership.
 
-**The central takeaway:** Effective GRC practice involves more than identifying vulnerabilities. It requires understanding their business impact, quantifying potential exposure, evaluating appropriate controls and supporting informed risk-based decisions.
+**Key takeaway:** Effective GRC practice involves more than identifying vulnerabilities. It requires understanding their business impact, quantifying potential exposure, evaluating appropriate controls and supporting informed risk-based decisions.
 
 ## Author
-Student Name:Olubunmi Adesanmi
-Registration Number:C11/26/CGRCE 17550
+**Student Name:** Olubunmi Adesanmi
+**Registration Number:** C11/26/CGRCE 17550
