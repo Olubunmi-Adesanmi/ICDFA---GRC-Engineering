@@ -419,12 +419,22 @@ GlobalTech should prioritise MFA, targeted training, email-layer protection, and
 | 95% confidence interval | p +/- 1.96 x sqrt[p(1-p)/n] |
 | Break-even breach-equivalents | Investment cost / cost per breach |
 
-## Appendix B - References
+##  References
+1.Cybersecurity and Infrastructure Security Agency. (2022, October). Implementing phishing-resistant MFA.
+https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
 
-1. **GlobalTech Inc. Lab 3: Advanced GRC Phishing Simulation & Quantitative Risk Analysis.** Scenario, campaign dataset, required tasks, control assumptions, and deliverables supplied with the lab brief. Undated training material.
-2. **Study Guide: Quantitative Risk Calculations for GRC Professionals.** Formulas and worked examples for phishing metrics, ALE, confidence intervals, ROI, and control effectiveness supplied with the lab materials. Undated training material.
+2.Cybersecurity and Infrastructure Security Agency, National Security Agency, Federal Bureau of Investigation, & Multi-State Information Sharing and Analysis Center. (2023, October). Phishing guidance: Stopping the attack cycle at phase one.
+https://www.cisa.gov/sites/default/files/2025-03/Phishing%20Guidance%20-%20Stopping%20the%20Attack%20Cycle%20at%20Phase%20One%20508.pdf
 
-*No external industry benchmark or breach-cost source was supplied with the exercise. Benchmark values quoted in the lab brief are therefore treated as unverified scenario inputs rather than independently validated research findings.*
+3.GlobalTech Inc. (n.d.). Lab 3: Advanced GRC phishing simulation & quantitative risk analysis.Supplied lab scenario, campaign dataset, control assumptions and deliverables.
+
+4.National Institute of Standards and Technology. (2012). Guide for conducting risk assessments (NIST Special Publication 800-30 Rev. 1). U.S. Department of Commerce.
+https://doi.org/10.6028/NIST.SP.800-30r1
+
+5. GlobalTech Inc. (n.d.). *Lab 3: Advanced GRC Phishing Simulation & Quantitative Risk Analysis*. Supplied training brief.
+6. *Study Guide: Quantitative Risk Calculations for GRC Professionals*. Supplied training material.
+
+
 
 ## AI Usage Declaration
 ChatGPT (OpenAI) and Microsoft Copilot were used  for brainstorming, report structuring and  editing. AI-assisted outputs were reviewed, I  remain  responsible for the accuracy and final content of this report.
