@@ -115,4 +115,8 @@ The report applies the following formulas:
 
 **AI Tool Used:** ChatGPT (OpenAI)
 
-ChatGPT was used to assist with structuring and refining the assessment report, and improving the clarity and presentation of the documentation. The assessment inputs, assumptions, and final conclusions were reviewed by the author.
+ChatGPT was used to assist with structuring and refining the assessment report, and improving the clarity and presentation of the documentation. The assessment inputs, assumptions, and final conclusions were reviewed by me.
+
+ ## Author
+Student Name:Olubunmi Adesanmi
+Registration Number:C11/26/CGRCE 17550
