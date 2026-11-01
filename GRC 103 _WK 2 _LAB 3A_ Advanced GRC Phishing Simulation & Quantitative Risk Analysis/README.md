@@ -1,15 +1,15 @@
-# Lab 3: Advanced GRC Phishing Simulation & Quantitative Risk Analysis
+# Lab 3A: Advanced GRC Phishing Simulation & Quantitative Risk Analysis
 
 **Organisation:** GlobalTech Inc.  
 **Project Domain:** Governance, Risk and Compliance (GRC)  
 **Assessment Area:** Cybersecurity Risk Assessment and Quantitative Risk Analysis  
 **Currency:** United States Dollars (USD)  
-**Report Date:** 31 October 2026  
+**Report Date:** Nov 1 2026  
 **Classification:** Internal – Training and Risk Assessment Exercise
 
 ---
 
-## 1. Project Overview
+## 1.   Lab Overview
 
 This project demonstrates how Governance, Risk and Compliance (GRC) professionals can assess, quantify and communicate human-related cybersecurity risks using phishing simulation results and financial risk analysis.
 
@@ -19,7 +19,7 @@ The project analyses employee responses to simulated phishing emails, calculates
 
 The primary objective is to demonstrate how technical security findings and human-related vulnerabilities can be translated into measurable business risks to support executive decision-making and security investment planning.
 
-## 2. Project Objectives
+## 2. Objectives
 
 The assessment focuses on the following objectives:
 
@@ -55,7 +55,7 @@ The campaigns were designed around realistic organisational communication scenar
 | Estimated cost of a data breach | $4,350,000 |
 | Conditional probability of a major breach following credential theft | 25% |
 
-## 4. Assessment Methodology
+## 4.  Methodology
 
 The assessment follows a structured quantitative risk analysis approach, divided into four phases.
 
@@ -198,7 +198,7 @@ The assessment proposes the following security improvements:
 7. Monitor security control effectiveness using measurable KPIs.
 8. Validate breach frequency and financial-loss assumptions before using projected ALE for actual budget forecasts.
 
-## 9. Project Limitations
+## 9. Lab Limitations
 
 The assessment is based on a supplied training scenario and not on verified organisational incident data.
 
@@ -253,8 +253,19 @@ ChatGPT (OpenAI) and Microsoft Copilot were used as supporting tools for brainst
 
 ## 13. References
 
-1. GlobalTech Inc. (n.d.). *Lab 3: Advanced GRC Phishing Simulation & Quantitative Risk Analysis*. Supplied training brief.
-2. *Study Guide: Quantitative Risk Calculations for GRC Professionals*. Supplied training material.
+1.Cybersecurity and Infrastructure Security Agency. (2022, October). Implementing phishing-resistant MFA.
+https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
+
+2.Cybersecurity and Infrastructure Security Agency, National Security Agency, Federal Bureau of Investigation, & Multi-State Information Sharing and Analysis Center. (2023, October). Phishing guidance: Stopping the attack cycle at phase one.
+https://www.cisa.gov/sites/default/files/2025-03/Phishing%20Guidance%20-%20Stopping%20the%20Attack%20Cycle%20at%20Phase%20One%20508.pdf
+
+3.GlobalTech Inc. (n.d.). Lab 3: Advanced GRC phishing simulation & quantitative risk analysis.Supplied lab scenario, campaign dataset, control assumptions and deliverables.
+
+4.National Institute of Standards and Technology. (2012). Guide for conducting risk assessments (NIST Special Publication 800-30 Rev. 1). U.S. Department of Commerce.
+https://doi.org/10.6028/NIST.SP.800-30r1
+
+5. GlobalTech Inc. (n.d.). *Lab 3: Advanced GRC Phishing Simulation & Quantitative Risk Analysis*. Supplied training brief.
+6. *Study Guide: Quantitative Risk Calculations for GRC Professionals*. Supplied training material.
 
 The assessment uses the formulas and assumptions provided in these training materials. No external industry benchmark or breach-cost source was supplied with the exercise.
 
