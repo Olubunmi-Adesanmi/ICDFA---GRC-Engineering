@@ -435,8 +435,9 @@ https://doi.org/10.6028/NIST.SP.800-30r1
 
 5. GlobalTech Inc. (n.d.). *Lab 3: Advanced GRC Phishing Simulation & Quantitative Risk Analysis*. Supplied training brief.
 6. *Study Guide: Quantitative Risk Calculations for GRC Professionals*. Supplied training material.
+   
 
-## LAB 3A workbook Link: https://docs.google.com/spreadsheets/d/14y7oqt00_K3Uhgt4TW5B2jEp_fjhfOvZmJXRmacaoWY/edit?usp=sharing
+LAB 3A workbook Link: https://docs.google.com/spreadsheets/d/14y7oqt00_K3Uhgt4TW5B2jEp_fjhfOvZmJXRmacaoWY/edit?usp=sharing
 
 
 ## AI Usage Declaration
