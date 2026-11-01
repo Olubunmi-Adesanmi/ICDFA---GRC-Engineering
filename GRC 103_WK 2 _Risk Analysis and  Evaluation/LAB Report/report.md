@@ -600,6 +600,9 @@ OWASP Foundation. (n.d.-c). *OWASP API Security Project*. https://owasp.org/proj
 
 *Study Guide: Quantitative Risk Calculations for GRC Professionals*. (n.d.). Course learning material supplied for the exercise.
 
+##Workbook Link:https://docs.google.com/spreadsheets/d/1dCu9Bug49fMa7zUJZJGHlCyH_sgZbSq5LG6EB2u9cTg/edit?usp=sharing
+
+
 ---
 ## AI Tool Usage
 
