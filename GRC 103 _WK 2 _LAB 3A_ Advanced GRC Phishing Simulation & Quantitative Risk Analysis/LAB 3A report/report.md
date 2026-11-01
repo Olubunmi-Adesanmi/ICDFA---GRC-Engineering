@@ -426,3 +426,5 @@ GlobalTech should prioritise MFA, targeted training, email-layer protection, and
 
 *No external industry benchmark or breach-cost source was supplied with the exercise. Benchmark values quoted in the lab brief are therefore treated as unverified scenario inputs rather than independently validated research findings.*
 
+## AI Usage Declaration
+ChatGPT (OpenAI) and Microsoft Copilot were used  for brainstorming, report structuring and  editing. AI-assisted outputs were reviewed, I  remain  responsible for the accuracy and final content of this report.
