@@ -278,3 +278,7 @@ This project demonstrates how GRC professionals can translate phishing simulatio
 By combining technical metrics, statistical analysis, financial modelling and control evaluation, the assessment provides a structured approach to prioritising security investments and communicating risk to organisational leadership.
 
 **The central takeaway:** Effective GRC practice involves more than identifying vulnerabilities. It requires understanding their business impact, quantifying potential exposure, evaluating appropriate controls and supporting informed risk-based decisions.
+
+## Author
+Student Name:Olubunmi Adesanmi
+Registration Number:C11/26/CGRCE 17550
