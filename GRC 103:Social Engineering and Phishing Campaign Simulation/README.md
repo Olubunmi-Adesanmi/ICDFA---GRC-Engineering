@@ -80,7 +80,7 @@ GRC103_GitHub_Package/
 
 ## Scope and Safety
 
-This repository documents a controlled academic laboratory exercise using fictional identities and a fictional training page.
+This report documents a controlled academic laboratory exercise using fictional identities and a fictional training page.
 
 It does not provide authorisation to target real users or systems.
 
@@ -90,10 +90,10 @@ The simulation should only be repeated in environments for which the operator ha
 
 ## Author
 
-**Student:** Adesanmi Bunmi 
+**Student:** Olubunmi Adesanmi
 **Registration Number** C11/26/CGRCE/17550
 **Course:** GRC103 – Risk Assessment And Management Techniques
-**Assessment:** Social Engineering & Phishing Campaign Simulation
+**Lab:** Social Engineering & Phishing Campaign Simulation
 
 ---
 
