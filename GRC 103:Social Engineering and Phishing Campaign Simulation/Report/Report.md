@@ -1,32 +1,17 @@
 # GRC103 – SOCIAL ENGINEERING AND PHISHING CAMPAIGN SIMULATION
 ## A Practical GRC Assessment of Human Risk and Security Awareness Controls
 
-**Course:** GRC103 – Practical Laboratories  
+**Course:** GRC103 –  Risk Assessment And Management Techniques 
 **Assessment:** Social Engineering and Phishing Campaign Simulation  
-**Student Name:** Adesanmi Bunmi  
-**Registration Number:** [INSERT REGISTRATION NUMBER]  
+**Student Name:** Olubunmi Adesanmi 
+**Registration Number:** [C11/26/CGRCE/17550]  
 **Assessment Date:** 5 November 2026  
-**Submission Deadline:** 8 November 2026, 6:18 PM WAT  
-**Campaign Name:** GRC103 Final Controlled Phishing Simulation  
+**Submission Date:** 8 November 2026,  
 **Phishing Framework:** GoPhish v0.12.1  
 **Operating System:** Kali Linux  
 **Email Capture Service:** MailHog  
 
 ---
-
-# DOCUMENT CONTROL
-
-| Document Information | Details |
-|---|---|
-| Document Title | Social Engineering and Phishing Campaign Simulation Report |
-| Document Reference | GRC103-GRC-PHISHING-001 |
-| Version | 1.0 |
-| Document Status | Final Report Draft – Evidence Verification Required |
-| Prepared By | Adesanmi Bunmi |
-| Course | GRC103 – Practical Laboratories |
-| Assessment Category | Cybersecurity Governance, Risk and Compliance |
-| Classification | Academic Laboratory Report |
-| Date | 5 November 2026 |
 
 # TABLE OF CONTENTS
 
@@ -266,8 +251,6 @@ GoPhish managed the campaign, MailHog captured the messages, Firefox provided ac
 
 | Component | Configuration | Purpose |
 |---|---|---|
-| Host Operating System | [INSERT HOST OS] | Runs the virtual environment. |
-| Virtualisation Software | [INSERT VirtualBox/VMware, if applicable] | Provides the virtual machine environment. |
 | Guest Operating System | Kali Linux | Primary laboratory operating system. |
 | Phishing Framework | GoPhish v0.12.1 | Campaign configuration and event monitoring. |
 | Email Capture Service | MailHog | Local SMTP email capture. |
@@ -462,8 +445,6 @@ Ten fictional recipients were added to represent a simulated organisational test
 
 All identities were fictional and used exclusively for the controlled laboratory exercise.
 
-**Evidence:** Screenshot showing the saved group and ten fictional recipients.
-
 ## 6.6 Phase Six: Campaign Configuration
 
 The campaign was created through the GoPhish Campaigns section.
@@ -486,8 +467,6 @@ The previously configured sending profile, email template, landing page and reci
 The campaign was configured for the fictional recipient group.
 
 The GoPhish dashboard was used to monitor campaign events, while MailHog was used to inspect received test messages.
-
-**Evidence:** Screenshot of the campaign configuration and results.
 
 ---
 
@@ -714,10 +693,6 @@ The simulation demonstrates the operation of email delivery, open tracking and l
 
 The 80% open rate and 80% click-through rate provide useful indicators for discussing email engagement and possible link-related exposure.
 
-The absence of dummy-data submissions is a favourable observation, although it does not provide sufficient evidence to conclude that an organisation's employees are resistant to credential-harvesting attacks.
-
-The assessment identifies areas requiring further organisational evaluation, particularly email filtering, awareness training, authentication protection and phishing-reporting arrangements.
-
 ---
 
 # 9. BUSINESS IMPACT ANALYSIS
@@ -815,65 +790,9 @@ Management should monitor phishing-related performance indicators over time.
 | MFA Coverage | MFA-Protected Eligible Accounts ÷ Eligible Accounts × 100 | Measures authentication protection. |
 | Incident Response Time | Time from Identification to Containment | Evaluates incident response. |
 
-These indicators should be measured consistently using clear definitions, appropriate populations and documented denominators.
-
 ---
 
-# 11. LIMITATIONS OF THE ASSESSMENT
-
-## 11.1 Simulated Population
-
-The exercise used ten fictional identities operated within a laboratory environment.
-
-The results do not represent the behaviour of ten independently observed employees and cannot be generalised to an actual workforce.
-
-## 11.2 Small Sample Size
-
-A sample of ten simulated recipients is insufficient to establish statistically reliable conclusions about the phishing resilience of a real organisation.
-
-## 11.3 Local Testing Environment
-
-The assessment used GoPhish and MailHog locally rather than a production corporate email infrastructure.
-
-Consequently, production email filtering, endpoint protection and organisational network controls were not comprehensively evaluated.
-
-## 11.4 Email-Open Tracking Limitations
-
-Open tracking relies on the loading of a tracking image.
-
-Email-client privacy settings, image blocking and automated image loading can affect open-event accuracy.
-
-## 11.5 Link-Click Measurement Limitations
-
-Link-click events demonstrate that campaign tracking URLs were accessed. Automated link-scanning and security-preview systems may also generate requests.
-
-Therefore, a click event should not automatically be interpreted as a deliberate action by an independent human recipient.
-
-## 11.6 No Genuine Credential Collection
-
-Password capture was disabled throughout the exercise.
-
-The assessment therefore did not measure genuine password disclosure, credential theft or account compromise.
-
-## 11.7 Reporting Behaviour Not Evaluated
-
-The exercise did not establish whether users reported the simulated emails as suspicious.
-
-The effectiveness of organisational phishing-reporting arrangements therefore remains unassessed.
-
-## 11.8 Production MFA Not Tested
-
-MFA was included among the management recommendations, but production authentication configurations were not tested.
-
-## 11.9 Evidence Dependency
-
-The final campaign figures must be supported by the GoPhish dashboard and MailHog inbox evidence.
-
-The final report must be corrected if actual screenshots differ from the agreed reporting scenario.
-
----
-
-# 12. CONCLUSION
+# 11. CONCLUSION
 
 The GRC103 Social Engineering and Phishing Campaign Simulation demonstrated how a GRC professional can use a controlled phishing-awareness exercise to understand social-engineering risks, monitor campaign activity and translate technical observations into risk-management recommendations.
 
@@ -891,53 +810,9 @@ The exercise also demonstrates that a GRC professional must distinguish between 
 
 The recommendations focus on strengthening email security, implementing appropriate MFA, improving security-awareness training, reviewing relevant policies, establishing effective reporting processes and introducing consistent human-risk measurements.
 
-**Ultimately, effective phishing risk management requires a combination of people, processes, technology and governance. A GRC professional must be able not only to identify risks but also to evaluate controls, interpret evidence and communicate actionable recommendations that support informed management decisions.**
-
 ---
 
-# 13. EVIDENCE AND DOCUMENTATION APPENDIX
-
-The following screenshots should be inserted into the final report to demonstrate the activities performed during the practical.
-
-| Evidence No. | Evidence Description | What the Screenshot Should Demonstrate |
-|---:|---|---|
-| 1 | GoPhish Startup / Administration Dashboard | Successful installation and access to GoPhish. |
-| 2 | MailHog Sending Profile | Correct local SMTP configuration. |
-| 3 | MailHog Test Email | Receipt of the separate SMTP connection-test message. |
-| 4 | Fictional Landing Page | Landing-page content and disabled password capture. |
-| 5 | Email Template | Template name, subject, content and GoPhish variables. |
-| 6 | Fictional Test-User Group | Ten saved fictional recipients. |
-| 7 | Campaign Configuration | Correct selection of campaign components and test group. |
-| 8 | MailHog Campaign Inbox | Ten campaign messages received, excluding the separate SMTP test email. |
-| 9 | GoPhish Campaign Results | Ten sent, eight opened, eight clicked and zero submitted, if confirmed. |
-| 10 | Landing Page Display | Fictional training portal displayed during testing, if captured. |
-| 11 | Acknowledgement Page | Local acknowledgement page, if successfully accessed. |
-| 12 | Campaign Shutdown | Evidence that the controlled campaign was stopped. |
-
-## 13.1 Screenshot Naming Convention
-
-Use consistent names for the evidence files in the repository.
-
-| File Name | Description |
-|---|---|
-| `01-gophish-dashboard.png` | GoPhish administration dashboard |
-| `02-sending-profile.png` | MailHog sending-profile configuration |
-| `03-mailhog-test-email.png` | Separate SMTP test email |
-| `04-landing-page.png` | Fictional landing-page configuration |
-| `05-email-template.png` | GRC103 email template |
-| `06-test-user-group.png` | Ten fictional test recipients |
-| `07-campaign-configuration.png` | Final campaign settings |
-| `08-mailhog-campaign-inbox.png` | Campaign messages received |
-| `09-campaign-results.png` | Final campaign dashboard |
-| `10-landing-page-display.png` | Fictional landing-page display |
-| `11-acknowledgement-page.png` | Local acknowledgement page |
-| `12-campaign-shutdown.png` | Campaign shutdown evidence |
-
-All screenshots must be genuine and readable. SMTP credentials, passwords, tokens, private information and other secrets must be concealed before submission.
-
----
-
-# 14. REFERENCES
+# 12. REFERENCES
 
 1. GRC103 Practical Laboratories. *Social Engineering and Phishing Campaign Simulation for GRC Professionals*. Course assessment brief supplied for the practical exercise.
 
@@ -945,30 +820,3 @@ All screenshots must be genuine and readable. SMTP credentials, passwords, token
 
 3. MailHog. (n.d.). *MailHog: Email testing tool for developers*. GitHub. https://github.com/mailhog/MailHog
 
-**Reference note:** The course assessment brief and software repositories identify the principal materials used in the practical. Additional regulatory or academic sources should only be added where their requirements or claims are discussed in the report.
-
----
-
-# 15. DECLARATION
-
-I confirm that this practical assessment was conducted as a controlled academic laboratory exercise using GoPhish and MailHog.
-
-The assessment used fictional recipient identities and a fictional security-awareness training page. No actual employees were targeted, no genuine organisational login page was cloned, and no real passwords were intentionally collected.
-
-Password capture was disabled throughout the exercise.
-
-The reported figures are intended to describe the final controlled simulation scenario and must correspond to the campaign dashboard and supporting evidence attached to the final submission.
-
-I acknowledge that this practical demonstrates the technical operation of a phishing simulation and provides experience in GRC risk assessment. Its findings should not be interpreted as conclusive evidence of the behaviour of an actual organisational workforce.
-
-**Student Name:** Adesanmi Bunmi
-
-**Registration Number:** [INSERT REGISTRATION NUMBER]
-
-**Signature:** ______________________________
-
-**Date:** ______________________________
-
----
-
-# END OF REPORT
