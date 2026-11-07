@@ -820,3 +820,6 @@ The recommendations focus on strengthening email security, implementing appropri
 
 3. MailHog. (n.d.). *MailHog: Email testing tool for developers*. GitHub. https://github.com/mailhog/MailHog
 
+## AI Usage Declaration
+ChatGPT (OpenAI) and Microsoft Copilot were used during the brainstorming stage to generate ideas, and identify and correct grammatical errors. I independently reviewed, edited, and developed the report before submission. I remain responsible for the final work, including its accuracy,and conclusions
+
