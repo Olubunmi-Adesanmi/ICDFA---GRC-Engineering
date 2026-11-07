@@ -1,6 +1,6 @@
-# GRC103 – Risk Assessment And Management Technique
+# GRC103 – Social Engineering & Phishing Campaign Simulation
 
-> **Social Engineering & Phishing Campaign Simulation**
+> **Risk Assessment And Management Technique**
 
 ## Lab Overview
 
