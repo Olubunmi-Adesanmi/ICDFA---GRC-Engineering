@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx/1.28.3 (Ubuntu)
+Date: Sun, 08 Nov 2026 11:30:08 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+<html>
+<head><title>Index of /archive/</title></head>
+<body>
+<h1>Index of /archive/</h1><hr><pre><a href="../">../</a>
+<a href="dummy-records.txt">dummy-records.txt</a>                                  08-Nov-2026 10:44                  34
+</pre><hr></body>
+</html>
