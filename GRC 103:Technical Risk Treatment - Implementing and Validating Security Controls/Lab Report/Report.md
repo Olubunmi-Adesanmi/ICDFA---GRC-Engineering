@@ -306,9 +306,9 @@ This configuration was selected to keep the laboratory traffic within the contro
 
 The actual server and client IP addresses were recorded during the laboratory.
 
-**Ubuntu IP address:** Refer to the recorded `ip -br addr` evidence.
+**Ubuntu IP address:** 192.168.56.105
 
-**Kali IP address:** Refer to the recorded `ip -br addr` evidence.
+**Kali IP address:** 192.168.56.106
 
 
 
