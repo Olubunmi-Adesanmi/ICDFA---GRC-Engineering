@@ -8,7 +8,7 @@ Northbridge Services (Fictional Scenario)
 
 ### Student Information
 - Full Name: Olubunmi Adesanmi
-- Registration Number: [C11/26/CGRCE/17550]
+- Registration Number: C11/26/CGRCE/17550
 - Programme: GRC103 – Risk Assessment and Management Techniques
 - Module: Module 3 – Risk Treatment Strategies
 - Platform: Ubuntu Server 24.04 LTS and Kali Linux
