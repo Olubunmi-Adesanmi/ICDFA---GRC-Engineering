@@ -536,10 +536,10 @@ The initial register documented the risks before treatment.
 
 | ID | Risk event | Weakness | Threat consequence | Likelihood | Impact | Score | Classification |
 |---|---|---|---|---:|---:|---:|---|
-| R1 | Unnecessary service accessed by an unauthorised party | Legacy service running on TCP 8080 | Unnecessary attack surface and potential service misuse | [Actual assessment] | [Actual assessment] | [Calculate] | [Classify] |
-| R2 | Fictional archive records retrieved without authorisation | Archive inside web root, automatic listing enabled | Information disclosure | [Actual assessment] | [Actual assessment] | [Calculate] | [Classify] |
-| R3 | Unapproved network client connects to portal | No effective source-specific restriction at baseline | Unauthorised access to the internal portal | [Actual assessment] | [Actual assessment] | [Calculate] | [Classify] |
-| R4 | Approved portal content is lost | Recovery capability not yet demonstrated | Service unavailability and content loss | [Actual assessment] | [Actual assessment] | [Calculate] | [Classify] |
+| R1 | Unnecessary service accessed by an unauthorised party | Legacy service running on TCP 8080 | Unnecessary attack surface and potential service misuse | 4 | 3 | 12 | High |
+| R2 | Fictional archive records retrieved without authorisation | Archive inside web root, automatic listing enabled | Information disclosure | 4 | 4| 16 | High|
+| R3 | Unapproved network client connects to portal | No effective source-specific restriction at baseline | Unauthorised access to the internal portal | 4| 4 | 16 | High |
+| R4 | Approved portal content is lost | Recovery capability not yet demonstrated | Service unavailability and content loss | 3 | 4 | 12| High |
 
 
 # 9. RISK TREATMENT IMPLEMENTATION
@@ -1442,10 +1442,10 @@ The assessment must consider the observed test outcomes and limitations of the c
 
 | ID | Original risk | Treatment | Residual likelihood | Impact | Residual score | Owner |
 |---|---|---|---:|---:|---:|---|
-| R1 | Legacy service exposure | Avoidance | [Actual score] | [Actual score] | [Calculate] | System Administrator |
-| R2 | Archive exposure | Mitigation | [Actual score] | [Actual score] | [Calculate] | Information Asset Owner |
-| R3 | Unauthorised network access | Mitigation / limited acceptance | [Actual score] | [Actual score] | [Calculate] | Security Administrator |
-| R4 | Portal content loss | Mitigation / proposed transfer | [Actual score] | [Actual score] | [Calculate] | Backup Administrator |
+| R1 | Legacy service exposure | Avoidance | 1 | 3| 3 | System Administrator |
+| R2 | Archive exposure | Mitigation | 2 | 4 | 8 | Information Asset Owner |
+| R3 | Unauthorised network access | Mitigation / limited acceptance | 2 | 4 | 8 | Security Administrator |
+| R4 | Portal content loss | Mitigation / proposed transfer | 3 | 4 | 12 | Backup Administrator |
 
 ## 15.3 Residual Risk Discussion
 
@@ -1634,44 +1634,7 @@ Planned rollback arrangements should be distinguished from rollback tests that w
 ---
 
 # 18. EVIDENCE MANAGEMENT AND DOCUMENTATION
-
-## 18.1 Evidence Management Purpose
-
-Evidence management supports the reproducibility and credibility of the technical assessment.
-
-The practical requires the final submission to include command outputs, configuration files, redacted log extracts, screenshots, a calculation workbook and a README.
-
-## 18.2 Evidence Register
-
-| ID | Evidence description | Source | Related activity |
-|---|---|---|---|
-| EV-001 | Baseline timestamp | Kali | Baseline |
-| EV-002 | Original Nmap scan | Kali | Baseline |
-| EV-003 | Baseline root response | Kali | Baseline |
-| EV-004 | Baseline archive listing | Kali | Baseline |
-| EV-005 | Baseline dummy record | Kali | Baseline |
-| EV-006 | Baseline legacy response | Kali | Baseline |
-| EV-007 | Baseline listening ports | Ubuntu | Baseline |
-| EV-008 | Legacy-service status | Ubuntu | Avoidance |
-| EV-009 | Post-treatment Nmap scan | Kali | Avoidance |
-| EV-010 | Archive permissions | Ubuntu | Mitigation |
-| EV-011 | Hardened Nginx configuration | Ubuntu | Mitigation |
-| EV-012 | Archive HTTP tests | Kali | Mitigation |
-| EV-013 | UFW configuration | Ubuntu | Firewall |
-| EV-014 | Approved-source test | Kali | Firewall |
-| EV-015 | Blocked-source test | Kali | Firewall |
-| EV-016 | Nginx access logs | Ubuntu | Detection |
-| EV-017 | UFW firewall logs | Ubuntu | Detection |
-| EV-018 | Backup archive | Ubuntu | Recovery |
-| EV-019 | Original SHA-256 hash | Ubuntu | Recovery |
-| EV-020 | Simulated deletion | Ubuntu | Recovery |
-| EV-021 | Failed service check | Kali | Recovery |
-| EV-022 | Restored file | Ubuntu | Recovery |
-| EV-023 | SHA-256 verification | Ubuntu | Recovery |
-| EV-024 | Successful service check | Kali | Recovery |
-| EV-025 | Recovery timestamps | Ubuntu | Recovery |
-| EV-026 | Risk and financial workbook | Documentation | Governance |
-| EV-027 | Final README | Documentation | Submission |
+All evidences and screenshots attached
 
 ---
 
