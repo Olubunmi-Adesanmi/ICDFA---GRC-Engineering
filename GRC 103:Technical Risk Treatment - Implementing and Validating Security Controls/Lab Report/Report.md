@@ -1162,7 +1162,7 @@ $120 + ($20 × 12) = **$360**
 
 No actual purchase was required.
 
-## 12.3 Proposed Provider Responsibilities
+## 12.3 Provider Responsibilities
 
 The provider would be expected to perform the agreed backup-storage functions in accordance with a documented service agreement.
 
