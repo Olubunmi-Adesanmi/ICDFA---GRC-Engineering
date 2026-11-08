@@ -3,9 +3,8 @@
 
 ** Practical Laboratory Report**
 
-**Organisation:** Northbridge Services (Fictional Case Study)
-
-**Programme:** ICDFA – GRC Engineering Programme  
+**Organisation:** Northbridge Services ( Case Study)
+ 
 **Module:** GRC103 – Risk Assessment and Management Techniques  
 **Module Component:** Module 3 – Risk Treatment Strategies  
 **Laboratory Platform:** Ubuntu Server 24.04 LTS and Kali Linux  
