@@ -175,21 +175,6 @@ Management requires the identified risks to be treated without interrupting the 
 
 The practical therefore examines the relationship between technical security controls, business continuity, risk ownership, evidence collection and management decision-making.
 
-## 2.3 Importance of Technical Validation
-
-A written recommendation does not independently demonstrate that a security control is functioning.
-
-For this reason, the laboratory requires actual technical tests.
-
-For example, recommending that a legacy service should be disabled does not establish that the service has been successfully retired.
-
-The result must be demonstrated through service-status checks, listening-port inspection and network testing.
-
-Similarly, a firewall configuration does not independently establish that unauthorised clients are blocked. Permitted and blocked connection tests must be performed.
-
-The practical therefore applies an evidence-based approach to control validation.
-
----
 
 # 3. BACKGROUND AND LABORATORY SCENARIO
 
