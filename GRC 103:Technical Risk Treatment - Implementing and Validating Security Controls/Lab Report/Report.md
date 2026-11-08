@@ -165,7 +165,7 @@ The GRC103 Module 3 practical focuses on the technical implementation of risk tr
 
 ## 2.2 Laboratory Context
 
-The practical places the student in the role of a GRC analyst and technical control implementer for Northbridge Services.
+The practical places me in the role of a GRC analyst and technical control implementer for Northbridge Services.
 
 The organisation operates an internal document server containing an approved web portal and a directory of fictional training records.
 
