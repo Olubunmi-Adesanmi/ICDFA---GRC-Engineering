@@ -150,21 +150,12 @@ Contains:
 | Transfer | Assessment of fictional managed-backup arrangement |
 | Acceptance | Temporary, limited HTTP risk acceptance |
 
-## 6. Important Limitations
-
-- The environment contains fictional records only.
-- The laboratory is isolated from public networks.
-- Risk ratings are classroom assessment judgements.
-- Financial estimates are based on the supplied assumptions.
-- The same-host backup does not protect against complete host loss.
-- Management approvals and acceptance decisions are simulated.
-
-## 7. Evidence Integrity
+## 7. Evidence Integrity and AI  Usage
 
 All command outputs and screenshots are intended to represent
 tests performed during the laboratory.
 
 Uncollected or unsuccessful evidence is identified rather
-than fabricated.
+than fabricated. Open AI was used for brainstorming and structuring the report
 
 
