@@ -2,7 +2,8 @@
 
 **International Cybersecurity and Digital Forensics Academy (ICDFA)**  
 **Programme:** GRC103 — Module 3: Risk Treatment Strategies  
-**Assessment:** Lab 2 — Ransomware Risk Treatment Case Lab  
+**Assessment:** Lab 6 — Lab 6: Ransomware Risk Treatment – Case Analysis and Management Decisions
+ 
 **Case organisation:** Northbridge Community Health (fictional)  
 **Student:** Olubunmi Adesanmi
 **Registration number:** C11/26/CGRCE/17550 
