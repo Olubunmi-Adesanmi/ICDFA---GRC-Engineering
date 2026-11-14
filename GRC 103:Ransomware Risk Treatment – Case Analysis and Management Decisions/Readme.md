@@ -6,9 +6,9 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Assessment](https://img.shields.io/badge/Assessment-Case%20Analysis-lightgrey)
 
-## Project Overview
+## Lab Overview
 
-This project was completed as part of the International Cybersecurity and Digital Forensics Academy (ICDFA) GRC103 – Module 3: Risk Treatment Strategies.
+This lab was completed as part of the International Cybersecurity and Digital Forensics Academy (ICDFA) GRC103 – Module 3: Risk Treatment Strategies.
 
 The exercise examines how a fictional healthcare provider, **Northbridge Community Health**, can identify, assess, prioritise and treat ransomware-related business risks within a first-year cybersecurity budget of **$100,000**.
 
@@ -324,5 +324,6 @@ The project does not represent an actual security assessment, insurance purchase
 ---
 
 ## AI Usage
+Open AI was used for brainstorming and structuring the report.
 
 
