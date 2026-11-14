@@ -8,6 +8,7 @@
 **Student:** Olubunmi Adesanmi
 **Registration number:** C11/26/CGRCE/17550 
 **Submission date:** 15 November 2026
+**Workbook:** https://docs.google.com/spreadsheets/d/1Br_9Pm8VyBlCbJ92P9-c807JITivYE0H1O8nST9nSDg/edit?usp=sharing
 
 ---
 
@@ -292,4 +293,3 @@ International Organization for Standardization. (2022). *ISO/IEC 27001:2022: Inf
 
 ---
 
-**Academic-use note:** Northbridge Community Health and all scenario-specific risks, prices, budget figures, insurance terms and financial losses in this report are fictional exercise assumptions. The HSE incident facts are drawn from the official HSE source cited above. This report is a classroom case analysis and not a live security assessment or insurance recommendation.
