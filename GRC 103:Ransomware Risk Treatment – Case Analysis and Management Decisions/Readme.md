@@ -8,7 +8,9 @@
 
 ## Lab Overview
 
-This lab was completed as part of the International Cybersecurity and Digital Forensics Academy (ICDFA) GRC103 – Module 3: Risk Treatment Strategies.
+This lab was completed as part of the International Cybersecurity and Digital Forensics Academy (ICDFA) GRC103 – Risk Assessment And Management Techniques
+
+Module 3 Risk Treatment Strategies
 
 The exercise examines how a fictional healthcare provider, **Northbridge Community Health**, can identify, assess, prioritise and treat ransomware-related business risks within a first-year cybersecurity budget of **$100,000**.
 
@@ -22,7 +24,7 @@ The objective was to develop a practical risk treatment strategy that balances c
 
 ## Learning Objectives
 
-The project demonstrates the ability to:
+The Lab demonstrates the ability to:
 
 - Identify and prioritise business risks associated with ransomware.
 - Develop an initial risk register using likelihood and impact assessments.
