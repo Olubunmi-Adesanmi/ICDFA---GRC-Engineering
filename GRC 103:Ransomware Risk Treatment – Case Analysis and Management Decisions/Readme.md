@@ -89,7 +89,7 @@ Both likelihood and impact are scored from 1 to 5.
 
 | Risk ID | Identified Risk | Likelihood | Impact | Score | Classification |
 |---|---|---:|---:|---:|---|
-| R1 | Healthcare service disruption | 4 | 5 | 20 | Critical |
+| R1 | Healthcare service disruption | 5 | 5 | 25 | Critical |
 | R2 | Sensitive patient information exposure | 4 | 5 | 20 | Critical |
 | R3 | Unnecessary supplier exposure | 3 | 4 | 12 | High |
 | R4 | Delayed incident detection | 4 | 4 | 16 | High |
@@ -323,10 +323,6 @@ The project does not represent an actual security assessment, insurance purchase
 
 ---
 
-## Author
+## AI Usage
 
-**Cybersecurity GRC | GRC Engineering in Training**
 
-Interested in cybersecurity governance, risk management, compliance, AI governance and security engineering.
-
-**Open for collaboration.**
