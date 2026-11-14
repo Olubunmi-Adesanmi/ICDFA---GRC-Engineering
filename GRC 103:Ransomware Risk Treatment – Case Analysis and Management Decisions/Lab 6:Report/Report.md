@@ -6,7 +6,7 @@
 
 **Module 3:** Risk Treatment Strategies  
 
-**Assessment:** Lab 6 — Lab 6: Ransomware Risk Treatment – Case Analysis and Management Decisions
+**Assessment:** Lab 6 —  Ransomware Risk Treatment – Case Analysis and Management Decisions
  
 **Case organisation:** Northbridge Community Health (fictional) 
 
