@@ -4,9 +4,9 @@
 **Programme:** GRC103 — Module 3: Risk Treatment Strategies  
 **Assessment:** Lab 2 — Ransomware Risk Treatment Case Lab  
 **Case organisation:** Northbridge Community Health (fictional)  
-**Student:** [Insert full name]  
-**Registration number:** [Insert registration number]  
-**Submission date:** 14 November 2026
+**Student:** Olubunmi Adesanmi
+**Registration number:** C11/26/CGRCE/17550 
+**Submission date:** 15 November 2026
 
 ---
 
