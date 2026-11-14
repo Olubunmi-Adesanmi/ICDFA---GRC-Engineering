@@ -72,7 +72,7 @@ Risk score is calculated as **Likelihood × Impact**. Both factors use a 1–5 s
 
 | ID | Asset / process | Threat and weakness | Potential business impact | Owner | Likelihood | Impact | Score / rating |
 |---|---|---|---|---|---:|---:|---|
-| R1 | Patient booking systems and clinic operations | Ransomware encrypts systems; backup restoration has not been tested | Booking interruption, delayed appointments and disruption to essential services | Operations Director | 4 | 5 | **20 — Critical** |
+| R1 | Patient booking systems and clinic operations | Ransomware encrypts systems; backup restoration has not been tested | Booking interruption, delayed appointments and disruption to essential services | Operations Director | 5 | 5 | **25 — Critical** |
 | R2 | Patient records and sensitive information | Phishing or compromised accounts enable unauthorised access; access protections require strengthening | Patient privacy harm, regulatory consequences, financial loss and reputational damage | Data Protection Officer | 4 | 5 | **20 — Critical** |
 | R3 | Supplier workflow and connected systems | Unauthorised use of an unnecessary supplier workflow that remains enabled | Expanded attack surface and potential access to connected systems or information | IT Manager | 3 | 4 | **12 — High** |
 | R4 | Email and incident-reporting process | Phishing is not escalated promptly because no reporting owner is assigned | Delayed investigation, longer attacker dwell time and increased incident severity | Information Security Manager | 4 | 4 | **16 — High** |
