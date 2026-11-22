@@ -137,16 +137,6 @@ flowchart TD
 | PowerShell / Windows File Explorer | Controlled file activities |
 | Web Browser | Accessing the Wazuh Dashboard |
 
-### Software Versions
-
-| Component | Version |
-|---|---|
-| Ubuntu Server | To be completed from lab |
-| Wazuh Manager | To be completed from lab |
-| Wazuh Dashboard | To be completed from lab |
-| Wazuh Windows Agent | To be completed from lab |
-| VirtualBox | To be completed from lab |
-| Windows | To be completed from lab |
 
 ---
 
@@ -154,7 +144,7 @@ flowchart TD
 
 ### Part 1 – Wazuh Manager Deployment
 
-The Wazuh monitoring platform is deployed on the Ubuntu Server virtual machine using the installation resources specified in the instructor brief.
+The Wazuh monitoring platform is deployed on the Ubuntu Server(ICDFA WAZUH SERVER) virtual machine using the installation resources specified in the instructor brief.
 
 The laboratory uses the Wazuh all-in-one installation approach.
 
@@ -171,12 +161,11 @@ The actual installation result and service status must be supported by laborator
 The Ubuntu VM IP address is identified and used to access the Wazuh Dashboard through a web browser.
 
 ```text
-https://<UBUNTU_VM_IP_ADDRESS>
+https://10.181.93.69
 ```
 
 The dashboard is accessed using the installation-generated administrator credentials.
 
-Passwords and other authentication secrets must not be included in screenshots or documentation.
 
 ### Part 3 – Windows Agent Installation
 
@@ -192,9 +181,6 @@ The Windows Agent is registered with the Ubuntu-hosted Wazuh Manager.
 
 Agent connectivity is checked through:
 
-**Wazuh Dashboard → Agents**
-
-The actual agent status must be documented using the dashboard evidence.
 
 ### Part 5 – File Integrity Monitoring Configuration
 
@@ -244,26 +230,11 @@ Only events observed in the actual laboratory are recorded as successful test re
 
 The practical uses three controlled tests to assess whether the configured FIM control detects the expected file activities.
 
-| Test ID | Control Test | Expected Evidence | Actual Status |
+| Test ID | Control Test | Evidence | 
 |---|---|---|---|
-| FIM-01 | File creation | Syscheck event identifying the new file | Pending verification |
-| FIM-02 | File modification | Syscheck event showing a modification | Pending verification |
-| FIM-03 | File deletion | Syscheck event identifying the deleted file | Pending verification |
-
-### Evidence Requirements
-
-| Evidence ID | Evidence Description |
-|---|---|
-| E-01 | Ubuntu dashboard access |
-| E-02 | Wazuh version and manager service status |
-| E-03 | Windows Agent registration and Active status |
-| E-04 | FIM configuration and monitored directory |
-| E-05 | File creation alert |
-| E-06 | File modification alert |
-| E-07 | File deletion alert |
-| E-08 | Timestamped test log and syscheck event review |
-
-Evidence filenames should follow the naming structure in the full report.
+| FIM-01 | File creation | Syscheck event identifying the new file | 
+| FIM-02 | File modification | Syscheck event showing a modification |
+| FIM-03 | File deletion | Syscheck event identifying the deleted file |
 
 ---
 
@@ -367,16 +338,11 @@ GRC103-Module-4-Wazuh-FIM/
 └── notes/
     └── lab-observations.md
 ```
-
-Evidence should be added only after it has been captured from the actual laboratory environment.
-
-Do not upload passwords, agent registration keys, private credentials or confidential business information.
-
 ---
 
 ## Key Learning Outcomes
 
-Through this practical, the GRC Analyst demonstrates an understanding of:
+Through this practical, I was able to demonstrates an understanding of:
 
 1. Implementing a technical detective control to address an identified business risk.
 2. Connecting endpoint monitoring with enterprise risk management.
@@ -386,6 +352,16 @@ Through this practical, the GRC Analyst demonstrates an understanding of:
 6. Using monitoring data to support management reporting.
 7. Maintaining evidence for audit and compliance purposes.
 8. Communicating control limitations and residual risk.
+
+---
+
+## Conclusion
+
+This project demonstrates how File Integrity Monitoring can support risk monitoring, security visibility and governance through the detection and centralisation of file-change events.
+
+By connecting Wazuh technical capabilities with a defined business risk, the practical demonstrates the importance of control implementation, verification, monitoring evidence, management metrics and continuous risk treatment.
+
+The exercise reinforces that effective cybersecurity governance requires more than deploying technical tools. It also requires ownership, accountability, investigation procedures, preventive safeguards, corrective actions and reliable evidence.
 
 ---
 
@@ -418,14 +394,6 @@ ChatGPT was not used to execute the practical laboratory activities, configure t
 The student is responsible for reviewing the content, validating technical information and ensuring that all submitted laboratory evidence accurately reflects the work performed.
 
 ---
-
-## Conclusion
-
-This project demonstrates how File Integrity Monitoring can support risk monitoring, security visibility and governance through the detection and centralisation of file-change events.
-
-By connecting Wazuh technical capabilities with a defined business risk, the practical demonstrates the importance of control implementation, verification, monitoring evidence, management metrics and continuous risk treatment.
-
-The exercise reinforces that effective cybersecurity governance requires more than deploying technical tools. It also requires ownership, accountability, investigation procedures, preventive safeguards, corrective actions and reliable evidence.
 
 **Project:** GRC103 – Module 4 – Lab 1  
 **Author:** Olubunmi Adesanmi  
