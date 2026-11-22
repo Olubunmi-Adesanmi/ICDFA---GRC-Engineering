@@ -215,7 +215,7 @@ If an unauthorised user or process modifies or deletes financial forecast docume
 
 | Risk Element | Assessment |
 |---|---|
-| Risk Reference | [ risk register ID |
+| Risk Reference |  risk register ID |
 | Information Asset | Financial forecast documents stored on a Windows endpoint |
 | Threat Event | Unauthorised or inappropriate creation, modification or deletion of forecast files |
 | Potential Weakness | Excessive file permissions, compromised credentials, inadequate change approval, accidental editing or malicious activity |
@@ -403,7 +403,7 @@ The identified server IP address was required for dashboard access and Windows A
 | ICDFA Server Imported | Yes |
 | Pre-built Wazuh Manager Provided | Yes |
 | Virtual Machine Started | Running |
-| Wazuh Manager Service | Active|
+| Wazuh Manager Service | Active running|
 | Ubuntu Server IP Address | 10.181.93.69 |
 | kali Linux IP Address  | 10.181.93.210 |
 
@@ -475,7 +475,6 @@ The registration process involved:
 8. Applying the configuration.
 9. Restarting the Windows Agent.
 
-The extracted registration key was treated as confidential and was not included in the report or public evidence.
 
 ### Agent Connectivity Verification
 
@@ -823,7 +822,6 @@ Three principal metrics were identified.
 | Data Source | Wazuh Dashboard |
 | Management Purpose | Demonstrates whether monitoring is connected and operational. |
 
-For this laboratory, the expected monitoring scope was one Windows endpoint. Its actual status must be supported by evidence from the dashboard.
 
 ### Metric 3: Unapproved Events and Response Performance
 
@@ -885,7 +883,7 @@ Effective governance also depends on correct configuration, reliable connectivit
 
 ## 7.7 Compliance Mapping and Audit Evidence
 
-The instructor-provided brief referenced compliance expectations associated with frameworks and regulations such as:
+The compliance expectations is associated with frameworks and regulations such as follow:
 
 - Sarbanes-Oxley Act (SOX).
 - Payment Card Industry Data Security Standard (PCI DSS).
@@ -967,7 +965,7 @@ The control should not be treated as a standalone preventive measure. It must op
 
 The following recommendations were identified to strengthen the overall control environment and address weaknesses that may remain after FIM implementation.
 
-| Ref. | Recommendation | Control Type | Suggested Owner | Priority |
+| Ref. | Recommendation | Control Type |  Owner | Priority |
 |---|---|---|---|---|
 | R-01 | Apply least-privilege permissions to the financial forecast directory and restrict write access to approved finance roles. | Preventive | IT / Data Owner | High |
 | R-02 | Introduce documented approval procedures for material changes to financial forecast documents. | Preventive / Governance | Finance Manager | High |
@@ -980,7 +978,7 @@ The following recommendations were identified to strengthen the overall control 
 ### Recommended Action Tracking
 
 | Action | Responsible Owner | 
-|---|---|---|---|
+|---|---|
 | Review financial forecast folder permissions | IT / Data Owner | 
 | Establish formal change approval | Finance Manager | 
 | Verify backup and restoration capability | IT Operations | 
