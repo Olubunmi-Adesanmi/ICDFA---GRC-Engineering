@@ -119,7 +119,7 @@ flowchart TD
 | SensitiveFiles | Windows endpoint | Contains dummy files for controlled testing. |
 | VirtualBox | Host computer | Provides the virtualised Ubuntu environment. |
 
-**Network configuration:** Bridged Adapter, as specified in the instructor-provided laboratory brief. Actual network settings and connectivity must be verified and recorded.
+**Network configuration:** Bridged Adapter.
 
 ---
 
@@ -144,7 +144,7 @@ flowchart TD
 
 ### Part 1 – Wazuh Manager Deployment
 
-The Wazuh monitoring platform is deployed on the Ubuntu Server(ICDFA WAZUH SERVER) virtual machine using the installation resources specified in the instructor brief.
+The Wazuh monitoring platform is deployed on the Ubuntu Server(ICDFA WAZUH SERVER) virtual machine.
 
 The laboratory uses the Wazuh all-in-one installation approach.
 
@@ -222,7 +222,6 @@ is used to perform three controlled activities.
 
 The generated events are reviewed in the Wazuh Dashboard.
 
-Only events observed in the actual laboratory are recorded as successful test results.
 
 ---
 
@@ -290,27 +289,6 @@ The practical identifies three principal management metrics:
 | FIM Event Volume and Trend | Measures monitored file-change activity over time. |
 | Monitoring Coverage and Agent Health | Measures endpoint monitoring availability and coverage. |
 | Unapproved Events and Response Performance | Measures confirmed inappropriate activity and investigation performance. |
-
----
-
-## Control Effectiveness Considerations
-
-Wazuh FIM is a detective control. It provides visibility into monitored file changes but does not independently prevent those changes.
-
-The overall control assessment must consider:
-
-- Successful manager deployment.
-- Dashboard availability.
-- Agent registration and connectivity.
-- Correct monitoring configuration.
-- Successful detection of all three test activities.
-- Quality and completeness of generated events.
-- Monitoring coverage and retention.
-- Documented alert investigation and escalation.
-
-The final control rating must be based on actual laboratory evidence.
-
-**Final control rating:** To be completed after testing.
 
 ---
 
@@ -391,7 +369,6 @@ Its assistance included report organisation, technical concept clarification, im
 
 ChatGPT was not used to execute the practical laboratory activities, configure the Wazuh environment, generate actual FIM events, capture screenshots or verify the laboratory results.
 
-The student is responsible for reviewing the content, validating technical information and ensuring that all submitted laboratory evidence accurately reflects the work performed.
 
 ---
 
