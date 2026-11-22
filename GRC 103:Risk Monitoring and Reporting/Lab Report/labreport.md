@@ -658,7 +658,7 @@ The Wazuh Dashboard provided a central interface for reviewing monitoring events
 
 The event review considered the endpoint, affected file and nature of the observed change.
 
-| Review Field | Information to Examine |
+| Review Field | Information  Examined |
 |---|---|
 | Agent | Agent name and ID |
 | File Path | Full path of the affected file |
