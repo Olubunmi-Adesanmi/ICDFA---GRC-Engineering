@@ -653,28 +653,7 @@ The expected result was an event identifying the deleted document and its associ
 
 
 
-## 6.5 Test Results Summary
-
-The following table consolidates the controlled activities performed during the practical.
-
-| Test ID | Activity | Event |  
-|---|---|---|---|---|
-| FIM-01 | Create dummy document | File added | 
-| FIM-02 | Modify dummy document | File modified |
-| FIM-03 | Delete dummy document | File deleted | 
-
-
-### Detection Delay
-
-Where both timestamps were available and recorded in the same timezone, detection delay could be calculated using:
-
-```text
-Detection Delay = Dashboard Alert Time - File Activity Time
-```
-
-The calculated delay should be recorded in seconds or minutes.
-
-## 6.7 Alert Review and Analysis
+## 6.5 Alert Review and Analysis
 
 The Wazuh Dashboard provided a central interface for reviewing monitoring events associated with the designated directory.
 
@@ -856,7 +835,7 @@ For this laboratory, the expected monitoring scope was one Windows endpoint. Its
 | Data Source | Wazuh alerts and incident register |
 | Management Purpose | Evaluates the effectiveness of investigation and response. |
 
-Response performance may be calculated using:
+Response performance is be calculated using:
 
 ```text
 Time to Acknowledge = Acknowledgement Time - Alert Time
@@ -973,13 +952,8 @@ Additional weaknesses may exist where:
 
 Residual risk should therefore be assessed alongside the effectiveness of preventive, detective and corrective controls.
 
-## 8.4 Overall Control Conclusion
-
-**Final Control Rating:** [Effective / Partially Effective / Ineffective]
-
 ### Assessment Basis
 
-[Insert the final assessment using actual server status, agent connectivity, FIM configuration, three test outcomes, alert quality, timestamps and identified limitations.]
 
 The practical demonstrated how an existing Wazuh environment could be used to monitor sensitive files on a Windows endpoint and centralise the resulting monitoring information.
 
